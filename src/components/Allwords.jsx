@@ -1,12 +1,7 @@
-import React from 'react';
+import React from "react";
 
 const Allwords = () => {
-    return (
-        <div>
-            There should be Allwords
-            
-        </div>
-    );
+  return <div>There should be All words</div>;
 };
 
 export default Allwords;
