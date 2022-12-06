@@ -1,0 +1,13 @@
+.header{
+    background-color: aqua;
+    padding:1rem;
+    color:blueviolet;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.header a{
+    color: black;
+    text-decoration: none;
+}
