@@ -1,0 +1,943 @@
+[
+  {
+    "name": "tammikuu",
+    "translation": "january",
+    "img": "#",
+    "keywords": ["noun", "months", "nimisana", "kuukaudet"],
+    "example": [],
+    "explanation": [],
+    "level": "easy",
+    "links": ["tammi", "kuu"]
+  },
+  {
+    "name": "helmikuu",
+    "translation": "february",
+    "img": "#",
+    "keywords": ["noun", "months", "nimisana", "kuukaudet"],
+    "example": [],
+    "explanation": [],
+    "level": "easy",
+    "links": ["helmi", "kuu"]
+  },
+  {
+    "name": "maaliskuu",
+    "translation": "march",
+    "img": "#",
+    "keywords": ["noun", "months", "nimisana", "kuukaudet"],
+    "example": [],
+    "explanation": [],
+    "level": "easy",
+    "links": ["maa", "kuu"]
+  },
+  {
+    "name": "huhtikuu",
+    "translation": "april",
+    "img": "#",
+    "keywords": ["noun", "months", "nimisana", "kuukaudet"],
+    "example": [],
+    "explanation": [],
+    "level": "easy",
+    "links": ["huhta", "kuu"]
+  },
+  {
+    "name": "toukokuu",
+    "translation": "may",
+    "img": "#",
+    "keywords": ["noun", "months", "nimisana", "kuukaudet"],
+    "example": [],
+    "explanation": [],
+    "level": "easy",
+    "links": ["touko", "kuu"]
+  },
+  {
+    "name": "kesäkuu",
+    "translation": "june",
+    "img": "#",
+    "keywords": ["noun", "months", "nimisana", "kuukaudet"],
+    "example": [],
+    "explanation": [],
+    "level": "easy",
+    "links": ["kesä", "kuu"]
+  },
+  {
+    "name": "heinäkuu",
+    "translation": "july",
+    "img": "#",
+    "keywords": ["noun", "months", "nimisana", "kuukaudet"],
+    "example": [],
+    "explanation": [],
+    "level": "easy",
+    "links": ["heinä", "kuu"]
+  },
+  {
+    "name": "elokuu",
+    "translation": "august",
+    "img": "#",
+    "keywords": ["noun", "months", "nimisana", "kuukaudet"],
+    "example": [],
+    "explanation": [],
+    "level": "easy",
+    "links": ["elo", "kuu"]
+  },
+  {
+    "name": "syyskuu",
+    "translation": "september",
+    "img": "#",
+    "keywords": ["noun", "months", "nimisana", "kuukaudet"],
+    "example": [],
+    "explanation": [],
+    "level": "easy",
+    "links": ["syksy", "kuu"]
+  },
+  {
+    "name": "lokakuu",
+    "translation": "october",
+    "img": "#",
+    "keywords": ["noun", "months", "nimisana", "kuukaudet"],
+    "example": [],
+    "explanation": [],
+    "level": "easy",
+    "links": ["loka", "kuu"]
+  },
+  {
+    "name": "marraskuu",
+    "translation": "november",
+    "img": "#",
+    "keywords": ["noun", "months", "nimisana", "kuukaudet"],
+    "example": [],
+    "explanation": [],
+    "level": "easy",
+    "links": ["marras", "kuu"]
+  },
+  {
+    "name": "joulukuu",
+    "translation": "december",
+    "img": "#",
+    "keywords": ["noun", "months", "nimisana", "kuukaudet"],
+    "example": [],
+    "explanation": [],
+    "level": "easy",
+    "links": ["joulu", "kuu"]
+  },
+  {
+    "name": "talvi",
+    "translation": "winter",
+    "img": "#",
+    "keywords": ["noun", "seasons", "nimisana", "vuodenajat"],
+    "example": [],
+    "explanation": [],
+    "level": "easy",
+    "links": ["joulu", "kuu"]
+  },
+  {
+    "name": "kevät",
+    "translation": "spring",
+    "img": "#",
+    "keywords": ["noun", "seasons", "nimisana", "vuodenajat"],
+    "example": [],
+    "explanation": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "kesä",
+    "translation": "summer",
+    "img": "#",
+    "keywords": ["noun", "seasons", "nimisana", "vuodenajat"],
+    "example": [],
+    "explanation": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "syksy",
+    "translation": "autumn",
+    "img": "#",
+    "keywords": ["noun", "seasons", "nimisana", "vuodenajat"],
+    "example": [],
+    "explanation": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "maanantai",
+    "translation": "monday",
+    "img": "#",
+    "keywords": ["noun", "daysofweek", "nimisana", "viikonpäivät"],
+    "example": [],
+    "explanation": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "tiistai",
+    "translation": "tuesday",
+    "img": "#",
+    "keywords": ["noun", "daysofweek", "nimisana", "viikonpäivät"],
+    "example": [],
+    "explanation": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "keskiviikko",
+    "translation": "wednesday",
+    "img": "#",
+    "keywords": ["noun", "daysofweek", "nimisana", "viikonpäivät"],
+    "example": [],
+    "explanation": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "torstai",
+    "translation": "thursday",
+    "img": "#",
+    "keywords": ["noun", "daysofweek", "nimisana", "viikonpäivät"],
+    "example": [],
+    "explanation": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "perjantai",
+    "translation": "friday",
+    "img": "#",
+    "keywords": ["noun", "daysofweek", "nimisana", "viikonpäivät"],
+    "example": [],
+    "explanation": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "lauantai",
+    "translation": "saturday",
+    "img": "#",
+    "keywords": ["noun", "daysofweek", "nimisana", "viikonpäivät"],
+    "example": [],
+    "explanation": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "sunnuntai",
+    "translation": "sunday",
+    "img": "#",
+    "keywords": ["noun", "daysofweek", "nimisana", "viikonpäivät"],
+    "example": [],
+    "explanation": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "viikonloppu",
+    "translation": "weekend",
+    "img": "#",
+    "keywords": ["noun", "daysofweek", "nimisana", "viikonpäivät"],
+    "example": [],
+    "explanation": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "punainen",
+    "translation": "red",
+    "img": "#",
+    "keywords": ["adjective", "colors", "adjectiivi", "värit"],
+    "example": [],
+    "explanation": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "valkoinen",
+    "translation": "white",
+    "img": "#",
+    "keywords": ["adjective", "colors", "adjectiivi", "värit"],
+    "example": [],
+    "explanation": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "sininen",
+    "translation": "blue",
+    "img": "#",
+    "keywords": ["adjective", "colors", "adjectiivi", "värit"],
+    "example": [],
+    "explanation": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "vihreä",
+    "translation": "green",
+    "img": "#",
+    "keywords": ["adjective", "colors", "adjectiivi", "värit"],
+    "example": [],
+    "explanation": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "keltainen",
+    "translation": "yellow",
+    "img": "#",
+    "keywords": ["adjective", "colors", "adjectiivi", "värit"],
+    "example": [],
+    "explanation": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "harmaa",
+    "translation": "grey",
+    "img": "#",
+    "keywords": ["adjective", "colors", "adjectiivi", "värit"],
+    "example": [],
+    "explanation": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "musta",
+    "translation": "black",
+    "img": "#",
+    "keywords": ["adjective", "colors", "adjectiivi", "värit"],
+    "example": [],
+    "explanation": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "violetti",
+    "translation": "purple",
+    "img": "#",
+    "keywords": ["adjective", "colors", "adjectiivi", "värit"],
+    "example": [],
+    "explanation": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "nolla",
+    "translation": "zero",
+    "img": "#",
+    "keywords": ["numerals", "numbers", "lukusanat", "numeraalit", "numerot"],
+    "example": [],
+    "explanation": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "yksi",
+    "translation": "one",
+    "img": "#",
+    "keywords": ["numerals", "numbers", "lukusanat", "numeraalit", "numerot"],
+    "example": [],
+    "explanation": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "kaksi",
+    "translation": "two",
+    "img": "#",
+    "keywords": ["numerals", "numbers", "lukusanat", "numeraalit", "numerot"],
+    "example": [],
+    "explanation": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "kolme",
+    "translation": "three",
+    "img": "#",
+    "keywords": ["numerals", "numbers", "lukusanat", "numeraalit", "numerot"],
+    "example": [],
+    "explanation": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "neljä",
+    "translation": "four",
+    "img": "#",
+    "keywords": ["numerals", "numbers", "lukusanat", "numeraalit", "numerot"],
+    "example": [],
+    "explanation": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "viisi",
+    "translation": "five",
+    "img": "#",
+    "keywords": ["numerals", "numbers", "lukusanat", "numeraalit", "numerot"],
+    "example": [],
+    "explanation": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "kuusi",
+    "translation": "six",
+    "img": "#",
+    "keywords": ["numerals", "numbers", "lukusanat", "numeraalit", "numerot"],
+    "example": [],
+    "explanation": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "seitsemän",
+    "translation": "seven",
+    "img": "#",
+    "keywords": ["numerals", "numbers", "lukusanat", "numeraalit", "numerot"],
+    "example": [],
+    "explanation": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "kahdeksan",
+    "translation": "eight",
+    "img": "#",
+    "keywords": ["numerals", "numbers", "lukusanat", "numeraalit", "numerot"],
+    "example": [],
+    "explanation": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "yhdeksan",
+    "translation": "nine",
+    "img": "#",
+    "keywords": ["numerals", "numbers", "lukusanat", "numeraalit", "numerot"],
+    "example": [],
+    "explanation": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "kymmenen",
+    "translation": "ten",
+    "img": "#",
+    "keywords": ["numerals", "numbers", "lukusanat", "numeraalit", "numerot"],
+    "example": [],
+    "explanation": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "hyvä",
+    "translation": "good",
+    "img": "#",
+    "keywords": ["adjective", "adjectiivi"],
+    "example": [],
+    "explanation": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "huono",
+    "translation": "bad",
+    "img": "#",
+    "keywords": ["adjective", "adjectiivi"],
+    "example": [],
+    "explanation": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "kuuma",
+    "translation": "hot",
+    "img": "#",
+    "keywords": ["adjective", "adjectiivi"],
+    "example": [],
+    "explanation": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "kylmä",
+    "translation": "good",
+    "img": "#",
+    "keywords": ["adjective", "adjectiivi"],
+    "example": [],
+    "explanation": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "vaikea",
+    "translation": "difficult",
+    "img": "#",
+    "keywords": ["adjective", "adjectiivi"],
+    "example": [],
+    "explanation": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "helppo",
+    "translation": "easy",
+    "img": "#",
+    "keywords": ["adjective", "adjectiivi"],
+    "example": [],
+    "explanation": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "uusi",
+    "translation": "new",
+    "img": "#",
+    "keywords": ["adjective", "adjectiivi"],
+    "example": [],
+    "explanation": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "vanha",
+    "translation": "pieni",
+    "img": "#",
+    "keywords": ["adjective", "adjectiivi"],
+    "example": [],
+    "explanation": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "iso",
+    "translation": "big",
+    "img": "#",
+    "keywords": ["adjective", "adjectiivi"],
+    "example": [],
+    "explanation": [],
+    "level": "easy",
+    "links": []
+  },
+
+  {
+    "name": "suuri",
+    "translation": "big",
+    "img": "#",
+    "keywords": ["adjective", "adjectiivi"],
+    "example": [],
+    "explanation": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "kaunis",
+    "translation": "beautiful",
+    "img": "#",
+    "keywords": ["adjective", "adjectiivi"],
+    "example": [],
+    "explanation": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "ruma",
+    "translation": "ugly",
+    "img": "#",
+    "keywords": ["adjective", "adjectiivi"],
+    "example": [],
+    "explanation": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "lämmin",
+    "translation": "warm",
+    "img": "#",
+    "keywords": ["adjective", "adjectiivi"],
+    "example": [],
+    "explanation": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "viileä",
+    "translation": "cool",
+    "img": "#",
+    "keywords": ["adjective", "adjectiivi"],
+    "example": [],
+    "explanation": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "valoisa",
+    "translation": "bright",
+    "img": "#",
+    "keywords": ["adjective", "adjectiivi"],
+    "example": [],
+    "explanation": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "pimeä",
+    "translation": "dark",
+    "img": "#",
+    "keywords": ["adjective", "adjectiivi"],
+    "example": [],
+    "explanation": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "lyhyt",
+    "translation": "short",
+    "img": "#",
+    "keywords": ["adjective", "adjectiivi"],
+    "example": [],
+    "explanation": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "pitkä",
+    "translation": "long",
+    "img": "#",
+    "keywords": ["adjective", "adjectiivi"],
+    "example": [],
+    "explanation": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "pikku",
+    "translation": "little",
+    "img": "#",
+    "keywords": ["pikkusanat", "littlewords"],
+    "example": [],
+    "explanation": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "muu",
+    "translation": "other",
+    "img": "#",
+    "keywords": ["pikkusanat", "littlewords"],
+    "example": [],
+    "explanation": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "mutta",
+    "translation": "but",
+    "img": "#",
+    "keywords": ["pikkusanat", "littlewords"],
+    "example": [],
+    "explanation": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "koska",
+    "translation": "because",
+    "img": "#",
+    "keywords": ["pikkusanat", "littlewords"],
+    "example": [],
+    "explanation": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "myös",
+    "translation": "also",
+    "img": "#",
+    "keywords": ["pikkusanat", "littlewords"],
+    "example": [],
+    "explanation": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "nyt",
+    "translation": "now",
+    "img": "#",
+    "keywords": ["pikkusanat", "littlewords"],
+    "example": [],
+    "explanation": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "ensin",
+    "translation": "first",
+    "img": "#",
+    "keywords": ["pikkusanat", "littlewords"],
+    "example": [],
+    "explanation": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "sitten",
+    "translation": "then",
+    "img": "#",
+    "keywords": ["pikkusanat", "littlewords"],
+    "example": [],
+    "explanation": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "tai",
+    "translation": "or",
+    "img": "#",
+    "keywords": ["pikkusanat", "littlewords"],
+    "example": [],
+    "explanation": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "joka",
+    "translation": "every",
+    "img": "#",
+    "keywords": ["pikkusanat", "littlewords"],
+    "example": [],
+    "explanation": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "koko",
+    "translation": "whole",
+    "img": "#",
+    "keywords": ["pikkusanat", "littlewords"],
+    "example": [],
+    "explanation": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "tosi",
+    "translation": "really",
+    "img": "#",
+    "keywords": ["pikkusanat", "littlewords"],
+    "example": [],
+    "explanation": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "päärynä",
+    "translation": "pear",
+    "img": "#",
+    "keywords": ["noun", "fruit", "nimisana", "hedelmät"],
+    "example": [],
+    "explanation": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "omena",
+    "translation": "apple",
+    "img": "#",
+    "keywords": ["noun", "fruit", "nimisana", "hedelmät"],
+    "example": [],
+    "explanation": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "luumu",
+    "translation": "plum",
+    "img": "#",
+    "keywords": ["noun", "fruit", "nimisana", "hedelmät"],
+    "example": [],
+    "explanation": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "greippi",
+    "translation": "grapefruit",
+    "img": "#",
+    "keywords": ["noun", "fruit", "nimisana", "hedelmät"],
+    "example": [],
+    "explanation": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "banaani",
+    "translation": "banana",
+    "img": "#",
+    "keywords": ["noun", "fruit", "nimisana", "hedelmät"],
+    "example": [],
+    "explanation": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "kurkku",
+    "translation": "cucumber",
+    "img": "#",
+    "keywords": ["noun", "vegetables", "nimisana", "kasvikset"],
+    "example": [],
+    "explanation": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "kaali",
+    "translation": "cabbage",
+    "img": "#",
+    "keywords": ["noun", "vegetables", "nimisana", "kasvikset"],
+    "example": [],
+    "explanation": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "peruna",
+    "translation": "potato",
+    "img": "#",
+    "keywords": ["noun", "vegetables", "nimisana", "kasvikset"],
+    "example": [],
+    "explanation": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "kurpitsa",
+    "translation": "pumpkin",
+    "img": "#",
+    "keywords": ["noun", "vegetables", "nimisana", "kasvikset"],
+    "example": [],
+    "explanation": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "koira",
+    "translation": "dog",
+    "img": "#",
+    "keywords": ["noun", "animals", "top100", "top300", "nimisana", "eläimet"],
+    "example": [],
+    "explanation": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "kissa",
+    "translation": "cat",
+    "img": "#",
+    "keywords": ["noun", "animals", "top100", "top300", "nimisana", "eläimet"],
+    "example": [],
+    "explanation": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "hevonen",
+    "translation": "horse",
+    "img": "#",
+    "keywords": ["noun", "animals", "top100", "top300", "nimisana", "eläimet"],
+    "example": [],
+    "explanation": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "vuohi",
+    "translation": "goat",
+    "img": "#",
+    "keywords": ["noun", "animals", "top100", "top300", "nimisana", "eläimet"],
+    "example": [],
+    "explanation": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "susi",
+    "translation": "wolf",
+    "img": "#",
+    "keywords": ["noun", "animals", "top100", "top300", "nimisana", "eläimet"],
+    "example": [],
+    "explanation": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "lammas",
+    "translation": "sheep",
+    "img": "#",
+    "keywords": ["noun", "animals", "top100", "top300", "nimisana", "eläimet"],
+    "example": [],
+    "explanation": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "sika",
+    "translation": "pig",
+    "img": "#",
+    "keywords": ["noun", "animals", "top100", "top300", "nimisana", "eläimet"],
+    "example": [],
+    "explanation": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "apina",
+    "translation": "monkey",
+    "img": "#",
+    "keywords": ["noun", "animals", "top100", "top300", "nimisana", "eläimet"],
+    "example": [],
+    "explanation": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "leijona",
+    "translation": "lion",
+    "img": "#",
+    "keywords": ["noun", "animals", "top100", "top300", "nimisana", "eläimet"],
+    "example": [],
+    "explanation": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "kirahvi",
+    "translation": "giraffe",
+    "img": "#",
+    "keywords": ["noun", "animals", "top100", "top300", "nimisana", "eläimet"],
+    "example": [],
+    "explanation": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "elefantti",
+    "translation": "elephant",
+    "img": "#",
+    "keywords": ["noun", "animals", "top100", "top300", "nimisana", "eläimet"],
+    "example": [],
+    "explanation": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "lehmä",
+    "translation": "cow",
+    "img": "#",
+    "keywords": ["noun", "animals", "top100", "top300", "nimisana", "eläimet"],
+    "example": [],
+    "explanation": [],
+    "level": "easy",
+    "links": []
+  }
+]
