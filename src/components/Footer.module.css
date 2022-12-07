@@ -1,19 +1,13 @@
 .footer {
-  background-color: aqua;
-  padding: 1rem;
-  color: blueviolet;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   margin-top: auto;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+  font-size: 0.8rem;
 }
 
 .footer span {
-  text-align: center;
-  background-color: aqua;
-  padding: 1rem;
-  color: blueviolet;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
