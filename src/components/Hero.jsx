@@ -7,8 +7,12 @@ const Hero = () => {
     <div className={classes.hero}>
       <h1>Learn Finnish Words</h1>
       <div className={classes.buttons}>
-        <button>Where should I start? -></button>
-        <button>why Sanasauna? -></button>
+        <button>
+          Where should I start? <i class="fa-solid fa-arrow-right"></i>
+        </button>
+        <button>
+          Why Sanasauna? <i class="fa-solid fa-arrow-right"></i>
+        </button>
       </div>
       <div className={classes.blobname}>
         <h3>Family</h3>
