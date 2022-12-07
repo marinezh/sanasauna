@@ -1,20 +1,21 @@
-.nav ul li{
-    display:inline-block ;
+.nav ul li {
+  display: inline-block;
 }
 
-.nav ul li a{
-   color: rgb(135, 134, 237);
-   padding: 1rem;
-   text-decoration: none;
-   text-transform: uppercase;
-   transition: all 0.4s;
+.nav ul li a {
+  color: rgb(135, 134, 237);
+  padding: 1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.4s;
 }
-.nav ul li a.active{
-    color: orange;
-    text-decoration: underline;
-    
- }
- .nav ul li a:hover{
-    color: red;
-    text-decoration: underline;
+
+.nav ul li .active {
+  color: orange;
+  text-decoration: underline;
+}
+
+.nav ul li a:hover {
+  color: red;
+  text-decoration: underline;
 }
