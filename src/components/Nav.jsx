@@ -7,10 +7,10 @@ const Nav = () => {
         <nav className={classes.nav}>
         <ul>
 
-            <li><NavLink to="/allwords">All words</NavLink></li>
-            <li><NavLink to="/about">About</NavLink></li>
-            <li><NavLink to="/login">Login</NavLink></li>
-            <li><NavLink to="/signup">Sign up</NavLink></li>
+            <li><NavLink to="allwords">All words</NavLink></li>
+            <li><NavLink to="about">About</NavLink></li>
+            <li><NavLink to="login">Login</NavLink></li>
+            <li><NavLink to="signup">Sign up</NavLink></li>
         </ul>
         
     </nav>
