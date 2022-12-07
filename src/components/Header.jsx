@@ -6,9 +6,8 @@ import Nav from "./Nav";
 const Header = () => {
   return (
     <header className={classes.header}>
-      <Link to="/">
-        <h1>SANASAUNA</h1>
-      </Link>
+      <img src="logo.svg" alt="" />
+      <Link to="/"></Link>
       <Nav />
     </header>
   );
