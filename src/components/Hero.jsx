@@ -6,11 +6,11 @@ const Hero = () => {
   return (
     <div className={classes.hero}>
       <h1>Learn Finnish Words</h1>
-      <div className="buttons">
+      <div className={classes.buttons}>
         <button>Where shuold I start? -></button>
         <button>why Sanasauna? -></button>
       </div>
-      <div className="blobname">
+      <div className={classes.blobname}>
         <h3>Family</h3>
         <h3>Animals</h3>
         <h3>Food</h3>
