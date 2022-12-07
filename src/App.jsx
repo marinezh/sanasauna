@@ -1,11 +1,13 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import "./App.css";
+
 import About from "./components/About";
 import Allwords from "./components/Allwords";
 import Home from "./components/Home";
 import Login from "./components/Login";
 import Signup from "./components/Signup";
 import Layout from "./pages/Layout";
+
+import "./App.css";
 
 function App() {
   return (
