@@ -1,7 +1,7 @@
 .header {
-  background-color: aqua;
+  background-color: #a09eff;
   padding: 1rem;
-  color: blueviolet;
+  color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
