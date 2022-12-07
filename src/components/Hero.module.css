@@ -3,7 +3,10 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  gap: 3rem;
   background: linear-gradient(180deg, white, var(--blush));
+  padding: 3rem;
+  text-align: center;
 }
 
 h1 {
@@ -15,14 +18,14 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 2rem;
+  gap: 3rem;
 }
 
 .calls_to_action button {
   background-color: transparent;
   border: 2px solid black;
   border-radius: 3rem;
-  padding: 0.5rem 1.2rem;
+  padding: 0.4rem 1.2rem;
   font-family: inherit;
   font-size: inherit;
   font-size: 1.4rem;
@@ -32,10 +35,40 @@ h1 {
   font-size: 1rem;
 }
 
-.blobname {
+.blobs {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: row;
   gap: 2rem;
+}
+
+.blob {
+  height: 7rem;
+  width: 7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 2rem;
+  border-radius: 50%;
+}
+
+.blob:nth-child(1) {
+  background-color: var(--coral);
+}
+
+.blob:nth-child(2) {
+  background-color: var(--mint);
+}
+
+.blob:nth-child(3) {
+  background-color: var(--purple);
+}
+
+.blob:nth-child(4) {
+  background-color: var(--yellow);
+}
+
+.blob:nth-child(5) {
+  background-color: var(--pink);
 }
