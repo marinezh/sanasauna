@@ -7,7 +7,7 @@ const Hero = () => {
     <div className={classes.hero}>
       <h1>Learn Finnish Words</h1>
       <div className={classes.buttons}>
-        <button>Where shuold I start? -></button>
+        <button>Where should I start? -></button>
         <button>why Sanasauna? -></button>
       </div>
       <div className={classes.blobname}>
