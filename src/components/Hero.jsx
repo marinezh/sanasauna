@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <div className={classes.hero}>
       <h1>Learn Finnish Words</h1>
-      <div className={classes.buttons}>
+      <div className={classes.calls_to_action}>
         <button>
           Where should I start? <i class="fa-solid fa-arrow-right"></i>
         </button>
