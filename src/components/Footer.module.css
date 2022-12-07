@@ -1,0 +1,18 @@
+.footer {
+  background-color: aqua;
+  padding: 1rem;
+  color: blueviolet;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer span {
+  text-align: center;
+  background-color: aqua;
+  padding: 1rem;
+  color: blueviolet;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

@@ -1,0 +1,25 @@
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: linear-gradient(180deg, #ffe4e4 0%, rgba(217, 217, 217, 0) 100%);
+}
+
+h1 {
+  font-size: 128px;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.blobname {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
