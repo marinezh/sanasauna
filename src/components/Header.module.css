@@ -1,19 +1,12 @@
 .header {
   background-color: #a09eff;
-  padding: 1rem;
+  padding: 1.5rem 0 1.5rem 1.5rem;
   color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.header a {
-  color: black;
-  text-decoration: none;
-}
-
-.header img {
+img {
   background-color: black;
-  width: 200px;
-  height: 50px;
 }

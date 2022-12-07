@@ -13,11 +13,15 @@ const Nav = () => {
         <li>
           <NavLink to="about">About</NavLink>
         </li>
-        <li>
-          <NavLink to="login">Login</NavLink>
+        <li className={classes.user_action}>
+          <NavLink to="login">
+            <span>Login</span>
+          </NavLink>
         </li>
-        <li>
-          <NavLink to="signup">Sign up</NavLink>
+        <li className={classes.user_action}>
+          <NavLink to="signup">
+            <span>Sign up</span>
+          </NavLink>
         </li>
       </ul>
     </nav>
