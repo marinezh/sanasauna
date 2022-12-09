@@ -8,10 +8,10 @@ const Hero = () => {
       <h1>Learn Finnish words</h1>
       <div className={classes.calls_to_action}>
         <button>
-          Where should I start? <i class="fa-solid fa-arrow-right"></i>
+          Where should I start? <i className="fa-solid fa-arrow-right"></i>
         </button>
         <button>
-          Why Sanasauna? <i class="fa-solid fa-arrow-right"></i>
+          Why Sanasauna? <i className="fa-solid fa-arrow-right"></i>
         </button>
       </div>
       <div className={classes.blobs}>
