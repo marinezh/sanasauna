@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { ReactComponent as ReactLogo } from "./logo.svg";
 
 import Nav from "./Nav";
 
@@ -9,8 +10,7 @@ const Header = () => {
   return (
     <header className={classes.header}>
       <Link to="/">
-        {/* TODO: figure out how to insert image here */}
-        <img src="./logo.png" alt="logo" />
+        <ReactLogo />
       </Link>
       <Nav />
     </header>
