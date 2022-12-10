@@ -1,6 +1,10 @@
 import React from "react";
 
+import Blob from "./Blob";
+
 import classes from "./Hero.module.css";
+
+const blobs = require("../featured_topics.json");
 
 const Hero = () => {
   return (
@@ -15,21 +19,9 @@ const Hero = () => {
         </button>
       </div>
       <div className={classes.blobs}>
-        <div className={classes.blob}>
-          <h3>Family</h3>
-        </div>
-        <div className={classes.blob}>
-          <h3>Animals</h3>
-        </div>
-        <div className={classes.blob}>
-          <h3>Food</h3>
-        </div>
-        <div className={classes.blob}>
-          <h3>Colours</h3>
-        </div>
-        <div className={classes.blob}>
-          <h3>Months</h3>
-        </div>
+        {blobs.map((topic) => (
+          <Blob topic={topic} />
+        ))}
       </div>
     </div>
   );

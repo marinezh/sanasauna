@@ -1,0 +1,29 @@
+.blob {
+  height: 7rem;
+  width: 7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 2rem;
+  border-radius: 50%;
+}
+
+.blob:nth-child(5n + 1) {
+  background-color: var(--coral);
+}
+
+.blob:nth-child(5n + 2) {
+  background-color: var(--mint);
+}
+
+.blob:nth-child(5n + 3) {
+  background-color: var(--purple);
+}
+
+.blob:nth-child(5n + 4) {
+  background-color: var(--yellow);
+}
+
+.blob:nth-child(5n + 5) {
+  background-color: var(--pink);
+}
