@@ -1,18 +1,19 @@
-import React from 'react';
-import ProgressBar from '../progressBar/ProgressBar';
-import classes from './Category.module.css';
+import React from "react";
+import ProgressBar from "../progressBar/ProgressBar";
+import classes from "./Category.module.css";
 
-const Category = () => {
-    return (
-        <div className={classes.category_container}>
-            <div className={classes.category}>
-                <div className={classes.link_category}>
-                    <a href="">Colors</a>
-                    </div>
-                <ProgressBar />
-            </div>
-        </div>
-    );
+const Category = (props) => {
+  return (
+    <div className={classes.category}>
+      <div className={classes.categoryName}>
+        <span>&#9679;</span>
+        <a href="#">{props.name}</a>
+      </div>
+      <ProgressBar />
+      <span className={classes.categoryWords}>{props.words}</span>
+      <span>tick</span>
+    </div>
+  );
 };
 
 export default Category;

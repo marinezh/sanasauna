@@ -1,7 +1,7 @@
 import React from "react";
 
-import ByPartOfSpeech from "./ByPartOfSpeech";
-import Bytopic from "./Bytopic";
+import PartOfSpeech from "./PartOfSpeech/PartOfSpeech";
+import Topic from "./Topic/Topic";
 import Hero from "./Hero";
 
 const Home = () => {
@@ -9,8 +9,8 @@ const Home = () => {
     <div>
       
       <Hero />
-      <Bytopic />
-      <ByPartOfSpeech />
+      <Topic />
+      <PartOfSpeech />
     </div>
   );
 };

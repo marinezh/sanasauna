@@ -1,12 +1,7 @@
-.progress_container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.progress_bar{
-    position: relative;
-    height: 1.5rem;
-    width: 5rem;
-    border-radius: 5px;
-    border: 1px solid #333;
+.progress_bar {
+  height: 1.5rem;
+  width: 5rem;
+  border-radius: 5px;
+  border: 1px solid #333;
+  display: inline-block;
 }
