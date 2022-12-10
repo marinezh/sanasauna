@@ -1,5 +1,7 @@
 import React from "react";
+
 import ProgressBar from "../progressBar/ProgressBar";
+
 import classes from "./Category.module.css";
 
 const Category = (props) => {
@@ -7,9 +9,9 @@ const Category = (props) => {
     <div className={classes.category}>
       <div className={classes.categoryName}>
         <span>&#9679;</span>
-        <a href="#">{props.name}</a>
+        <h3>{props.name}</h3>
       </div>
-      <ProgressBar />
+      <ProgressBar percentage={50} />
       <span className={classes.categoryWords}>{props.words}</span>
       <span>tick</span>
     </div>

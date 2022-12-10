@@ -1,8 +1,10 @@
 import React from "react";
-import classes from "./Topic.module.css";
+
 import Category from "../categories/Category";
 
-const topic = () => {
+import classes from "./Topic.module.css";
+
+const Topic = () => {
   return (
     <div>
       <h2 className={classes.header}>By Topic</h2>
@@ -15,4 +17,4 @@ const topic = () => {
   );
 };
 
-export default topic;
+export default Topic;

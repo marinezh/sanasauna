@@ -1,7 +1,7 @@
 .progress_bar {
   height: 1.5rem;
-  width: 5rem;
-  border-radius: 5px;
-  border: 1px solid #333;
+  width: 10rem;
+  border-radius: 5rem;
+  background-color: var(--gray-mid);
   display: inline-block;
 }
