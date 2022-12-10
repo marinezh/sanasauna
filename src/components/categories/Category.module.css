@@ -18,6 +18,10 @@
   display: flex;
 }
 
+.category_name:has(.sub) {
+  width: 13rem;
+}
+
 .category_name h3 {
   height: 100%;
   display: flex;
