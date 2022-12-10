@@ -16,7 +16,7 @@ const Category = (props) => {
       <div className={classes.number_of_words}>
         <p>{props.numberOfWords} words</p>
       </div>
-      <span>tick</span>
+      <i class="fa-regular fa-bookmark"></i>
     </div>
   );
 };

@@ -22,14 +22,15 @@
   display: flex;
   align-items: center;
   border-radius: 5rem;
-  background-color: var(--purple);
-  color: white;
+  background-color: var(--gray-mid);
+  color: black;
   padding: 0 1.5rem;
   font-size: 1.2rem;
+  text-decoration: underline;
 }
 
 .number_of_words {
   width: 5rem;
   display: flex;
-  justify-content: center;
+  justify-content: right;
 }
