@@ -6,6 +6,13 @@ import Category from "../categories/Category";
 import classes from "./Topic.module.css";
 
 const Topic = ({ sectionInfo }) => {
+  const categories = [];
+  sectionInfo.categories.forEach((category) => {
+    categories.push({ name: category.categoryName, sub: false });
+    category.subcategories.forEach((subcategory) =>
+      categories.push({ name: subcategory, sub: true })
+    );
+  });
   console.log(sectionInfo.categories);
   return (
     <div className={classes.topic}>
@@ -14,8 +21,8 @@ const Topic = ({ sectionInfo }) => {
       </h2>
       <div className={classes.topics_container}>
         <div className={classes.topics}>
-          {sectionInfo.categories.map((category) => (
-            <Category key={category.categoryName} categoryInfo={category} />
+          {categories.map((category) => (
+            <Category key={category.name} categoryInfo={category} />
           ))}
         </div>
       </div>

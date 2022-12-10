@@ -9,17 +9,21 @@ console.log(classes);
 
 const Category = ({ categoryInfo }) => {
   return (
-    <div className={classes.category}>
-      <div className={classes.category_name}>
-        <h3>{capitaliseFirstLetter(categoryInfo.categoryName)}</h3>
+    <div className={classes.category_container}>
+      {categoryInfo.sub && <div className={classes.empty}></div>}
+
+      <div className={classes.category}>
+        <div className={classes.category_name}>
+          <h3>{capitaliseFirstLetter(categoryInfo.name)}</h3>
+        </div>
+        <div className={classes.difficulty}>
+          <ProgressBar difficulty="easy" />
+        </div>
+        <div className={classes.number_of_words}>
+          <p>12 words</p>
+        </div>
+        <i className="fa-regular fa-bookmark"></i>
       </div>
-      <div className={classes.difficulty}>
-        <ProgressBar difficulty="easy" />
-      </div>
-      <div className={classes.number_of_words}>
-        <p>12 words</p>
-      </div>
-      <i className="fa-regular fa-bookmark"></i>
     </div>
   );
 };

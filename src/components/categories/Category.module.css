@@ -34,3 +34,13 @@
   display: flex;
   justify-content: right;
 }
+
+.category_container {
+  display: grid;
+}
+
+.empty {
+  width: 10rem;
+  height: 1rem;
+  background-color: yellow;
+}
