@@ -4,7 +4,7 @@
     "categories": [
       { "categoryName": "animals", "subcategories": [] },
       { "categoryName": "months", "subcategories": [] },
-      { "categoryName": "workplace", "subcategories": [] },
+      { "categoryName": "fruits", "subcategories": [] },
       { "categoryName": "colours", "subcategories": [] }
     ]
   },

@@ -10,9 +10,9 @@ const Topic = () => {
       <h2 className={classes.header}>By Topic</h2>
       <div className={classes.topics_container}>
         <div className={classes.topics}>
-          <Category name="Colors" words={12} />
-          <Category name="Workplace" words={5} />
-          <Category name="Shopping" words={""} />
+          <Category name="Colors" difficulty="easy" numberOfWords={12} />
+          <Category name="Workplace" difficulty="easy" numberOfWords={5} />
+          <Category name="Shopping" difficulty="easy" numberOfWords={10} />
         </div>
       </div>
     </div>

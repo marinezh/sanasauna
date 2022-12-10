@@ -4,10 +4,10 @@ import Filler from "./Filler";
 
 import classes from "./ProgressBar.module.css";
 
-const ProgressBar = ({ percentage }) => {
+const ProgressBar = ({ difficulty }) => {
   return (
     <div className={classes.progress_bar}>
-      <Filler percentageFiller={percentage} />
+      <Filler difficulty={difficulty} />
     </div>
   );
 };

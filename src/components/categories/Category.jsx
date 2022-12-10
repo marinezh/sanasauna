@@ -10,8 +10,13 @@ const Category = (props) => {
       <div className={classes.category_name}>
         <h3>{props.name}</h3>
       </div>
-      <ProgressBar percentage={40} />
-      <span className={classes.category_words}>{props.words}</span>
+      <div className={classes.difficulty}>
+        <ProgressBar difficulty={props.difficulty} />
+        <p>Easy</p>
+      </div>
+      <div className={classes.number_of_words}>
+        <p>{props.numberOfWords} words</p>
+      </div>
       <span>tick</span>
     </div>
   );

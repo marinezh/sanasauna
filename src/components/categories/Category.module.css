@@ -2,7 +2,7 @@
   background-color: white;
   height: 3rem;
   border: 1px solid var(--gray-mid);
-  border-radius: 0.5rem;
+  border-radius: 5rem;
   display: flex;
   align-items: center;
   margin-bottom: 1rem;
@@ -12,20 +12,24 @@
 }
 
 .category_name {
-  flex-basis: 8rem;
+  width: 16rem;
+  height: 100%;
+  display: flex;
+}
+
+.category_name h3 {
   height: 100%;
   display: flex;
   align-items: center;
-  background-color: black;
-  gap: 5px;
-  padding: 0 8px;
-  font-size: large;
-}
-
-.category_words {
-  flex-basis: 1.5rem;
-}
-
-a {
+  border-radius: 5rem;
+  background-color: var(--purple);
   color: white;
+  padding: 0 1.5rem;
+  font-size: 1.2rem;
+}
+
+.number_of_words {
+  width: 5rem;
+  display: flex;
+  justify-content: center;
 }
