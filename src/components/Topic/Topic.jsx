@@ -1,18 +1,22 @@
 import React from "react";
+import capitaliseFirstLetter from "../../helperFunctions";
 
 import Category from "../categories/Category";
 
 import classes from "./Topic.module.css";
 
-const Topic = () => {
+const Topic = ({ sectionInfo }) => {
+  console.log(sectionInfo.categories);
   return (
     <div className={classes.topic}>
-      <h2 className={classes.header}>By Topic</h2>
+      <h2 className={classes.header}>
+        {capitaliseFirstLetter("by " + sectionInfo.groupName)}
+      </h2>
       <div className={classes.topics_container}>
         <div className={classes.topics}>
-          <Category name="Colors" difficulty="easy" numberOfWords={12} />
-          <Category name="Workplace" difficulty="easy" numberOfWords={5} />
-          <Category name="Shopping" difficulty="easy" numberOfWords={10} />
+          {sectionInfo.categories.map((category) => (
+            <Category key={category.categoryName} categoryInfo={category} />
+          ))}
         </div>
       </div>
     </div>

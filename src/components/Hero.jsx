@@ -20,7 +20,7 @@ const Hero = () => {
       </div>
       <div className={classes.blobs}>
         {blobs.map((topic) => (
-          <Blob topic={topic} />
+          <Blob topic={topic} key={topic} />
         ))}
       </div>
     </div>

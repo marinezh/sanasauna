@@ -1,22 +1,25 @@
 import React from "react";
+import capitaliseFirstLetter from "../../helperFunctions";
 
 import ProgressBar from "../progressBar/ProgressBar";
 
 import classes from "./Category.module.css";
 
-const Category = (props) => {
+console.log(classes);
+
+const Category = ({ categoryInfo }) => {
   return (
     <div className={classes.category}>
       <div className={classes.category_name}>
-        <h3>{props.name}</h3>
+        <h3>{capitaliseFirstLetter(categoryInfo.categoryName)}</h3>
       </div>
       <div className={classes.difficulty}>
-        <ProgressBar difficulty={props.difficulty} />
+        <ProgressBar difficulty="easy" />
       </div>
       <div className={classes.number_of_words}>
-        <p>{props.numberOfWords} words</p>
+        <p>12 words</p>
       </div>
-      <i class="fa-regular fa-bookmark"></i>
+      <i className="fa-regular fa-bookmark"></i>
     </div>
   );
 };

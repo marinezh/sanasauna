@@ -4,13 +4,15 @@ import PartOfSpeech from "./PartOfSpeech/PartOfSpeech";
 import Topic from "./Topic/Topic";
 import Hero from "./Hero";
 
+const featuredSections = require("../featured_categories.json");
+
 const Home = () => {
   return (
     <div>
-      
       <Hero />
-      <Topic />
-      <PartOfSpeech />
+      {featuredSections.map((section) => (
+        <Topic key={section.groupName} sectionInfo={section} />
+      ))}
     </div>
   );
 };

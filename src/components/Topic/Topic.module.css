@@ -10,9 +10,10 @@
 .topics_container {
   display: flex;
   justify-content: center;
+  background-color: var(--gray-pale);
 }
 
 .topics {
-  margin: 4rem 1rem;
+  margin: 4rem 0;
   width: 1000px;
 }
