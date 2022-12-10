@@ -1,0 +1,25 @@
+[
+  {
+    "groupName": "topic",
+    "categories": ["animals", "months", "workplace", "colours"]
+  },
+  {
+    "groupName": "part of speech",
+    "categories": [
+      {
+        "categoryName": "verbs",
+        "subcategories": [
+          "type 1",
+          "type 2",
+          "type 3",
+          "type 4",
+          "type 5",
+          "type 6"
+        ]
+      },
+      { "categoryName": "nouns", "subcategories": [] },
+      { "categoryName": "adjectives", "subcategories": [] },
+      { "categoryName": "adverbs", "subcategories": [] }
+    ]
+  }
+]

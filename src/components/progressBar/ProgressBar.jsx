@@ -1,6 +1,7 @@
 import React from "react";
-import { useState } from "react";
+
 import Filler from "./Filler";
+
 import classes from "./ProgressBar.module.css";
 
 const ProgressBar = ({ percentage }) => {
