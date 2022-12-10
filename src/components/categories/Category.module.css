@@ -9,6 +9,7 @@
   display: flex;
   justify-content: space-between;
   padding-right: 2rem;
+  width: 100%;
 }
 
 .category_name {
@@ -29,6 +30,11 @@
   text-decoration: underline;
 }
 
+h3.sub {
+  background-color: white;
+  border: 1px solid black;
+}
+
 .number_of_words {
   width: 5rem;
   display: flex;
@@ -36,11 +42,11 @@
 }
 
 .category_container {
-  display: grid;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
 }
 
 .empty {
-  width: 10rem;
-  height: 1rem;
-  background-color: yellow;
+  width: 3rem;
 }
