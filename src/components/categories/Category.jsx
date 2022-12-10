@@ -12,7 +12,6 @@ const Category = (props) => {
       </div>
       <div className={classes.difficulty}>
         <ProgressBar difficulty={props.difficulty} />
-        <p>Easy</p>
       </div>
       <div className={classes.number_of_words}>
         <p>{props.numberOfWords} words</p>
