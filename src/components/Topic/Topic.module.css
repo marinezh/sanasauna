@@ -1,14 +1,18 @@
 .header {
   height: 5rem;
-  background: #505050;
+  background: var(--gray-dark);
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
-  text-decoration: underline;
-  text-underline-offset: 5px;
 }
 
-.topic {
+.topics_container {
+  display: flex;
+  justify-content: center;
+}
+
+.topics {
   margin: 4rem 1rem;
+  width: 1000px;
 }

@@ -1,10 +1,6 @@
-.partofspeech {
-  background: rgb(199, 144, 144);
-}
-
 .header {
   height: 5rem;
-  background: #505050;
+  background: var(--gray-dark);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12,6 +8,4 @@
 
 h2 {
   color: white;
-  text-decoration: underline;
-  text-underline-offset: 5px;
 }
