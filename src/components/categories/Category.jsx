@@ -9,16 +9,25 @@ import classes from "./Category.module.css";
 const words = require("../sanat.json");
 
 const Category = ({ categoryInfo }) => {
-  const wordsFromCategory = words.filter((word) =>
-    word.keywords.includes(categoryInfo.name)
+  const wordsFromCategory = words.filter(
+    (word) =>
+      word.keywords.includes(categoryInfo.name) ||
+      word.keywords.includes(categoryInfo.name + "s")
   );
+
+  const ending =
+    categoryInfo.name[categoryInfo.name.length - 1] <= 9 &&
+    categoryInfo.name[categoryInfo.name.length - 1] >= 0
+      ? ""
+      : "s";
+
   return (
     <div className={classes.category_container}>
       {categoryInfo.sub && <div className={classes.empty}></div>}
       <div className={classes.category}>
         <div className={classes.category_name}>
           <h3 className={categoryInfo.sub ? classes.sub : ""}>
-            {capitaliseFirstLetter(categoryInfo.name)}
+            {capitaliseFirstLetter(categoryInfo.name) + ending}
           </h3>
         </div>
         <div className={classes.difficulty}>

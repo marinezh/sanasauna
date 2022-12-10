@@ -2,17 +2,17 @@
   {
     "groupName": "topic",
     "categories": [
-      { "categoryName": "animals", "subcategories": [] },
-      { "categoryName": "months", "subcategories": [] },
-      { "categoryName": "fruits", "subcategories": [] },
-      { "categoryName": "colors", "subcategories": [] }
+      { "categoryName": "animal", "subcategories": [] },
+      { "categoryName": "month", "subcategories": [] },
+      { "categoryName": "fruit", "subcategories": [] },
+      { "categoryName": "color", "subcategories": [] }
     ]
   },
   {
     "groupName": "part of speech",
     "categories": [
       {
-        "categoryName": "verbs",
+        "categoryName": "verb",
         "subcategories": [
           "type 1",
           "type 2",
@@ -22,9 +22,9 @@
           "type 6"
         ]
       },
-      { "categoryName": "nouns", "subcategories": [] },
-      { "categoryName": "adjectives", "subcategories": [] },
-      { "categoryName": "adverbs", "subcategories": [] }
+      { "categoryName": "noun", "subcategories": [] },
+      { "categoryName": "adjective", "subcategories": [] },
+      { "categoryName": "adverb", "subcategories": [] }
     ]
   }
 ]

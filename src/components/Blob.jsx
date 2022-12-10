@@ -7,7 +7,7 @@ import classes from "./Blob.module.css";
 const Blob = ({ topic }) => {
   return (
     <div className={classes.blob}>
-      <h3>{capitaliseFirstLetter(topic)}</h3>
+      <h3>{capitaliseFirstLetter(topic) + "s"}</h3>
     </div>
   );
 };
