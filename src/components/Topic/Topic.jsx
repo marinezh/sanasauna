@@ -13,7 +13,7 @@ const Topic = ({ sectionInfo }) => {
       categories.push({ name: subcategory, sub: true })
     );
   });
-  console.log(sectionInfo.categories);
+
   return (
     <div className={classes.topic}>
       <h2 className={classes.header}>

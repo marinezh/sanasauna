@@ -5,8 +5,6 @@ import ProgressBar from "../progressBar/ProgressBar";
 
 import classes from "./Category.module.css";
 
-console.log(classes);
-
 const Category = ({ categoryInfo }) => {
   return (
     <div className={classes.category_container}>

@@ -4,7 +4,6 @@ import capitaliseFirstLetter from "../../helperFunctions";
 import classes from "./Filler.module.css";
 
 const Filler = (props) => {
-  console.log(props.difficulty);
   let percentageFiller;
   switch (props.difficulty) {
     case "easy": {
@@ -23,7 +22,6 @@ const Filler = (props) => {
       percentageFiller = 0;
     }
   }
-  console.log(percentageFiller);
 
   return (
     <div className={classes.filler} style={{ width: `${percentageFiller}%` }}>
