@@ -1,7 +1,12 @@
 [
   {
     "groupName": "topic",
-    "categories": ["animals", "months", "workplace", "colours"]
+    "categories": [
+      { "categoryName": "animals", "subcategories": [] },
+      { "categoryName": "months", "subcategories": [] },
+      { "categoryName": "workplace", "subcategories": [] },
+      { "categoryName": "colours", "subcategories": [] }
+    ]
   },
   {
     "groupName": "part of speech",
