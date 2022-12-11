@@ -6,7 +6,7 @@ import ProgressBar from "../progressBar/ProgressBar";
 
 import classes from "./Category.module.css";
 
-const words = require("../sanat.json");
+const words = require("../../sanat.json");
 
 const Category = ({ categoryInfo }) => {
   const wordsFromCategory = words.filter(
