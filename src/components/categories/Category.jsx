@@ -22,13 +22,15 @@ const Category = ({ categoryInfo }) => {
       : "s";
 
   return (
-    <div className={classes.category_container}>
+    <div
+      className={`${classes.category_container} ${
+        categoryInfo.sub ? classes.sub : ""
+      }`}
+    >
       {categoryInfo.sub && <div className={classes.empty}></div>}
       <div className={classes.category}>
         <div className={classes.category_name}>
-          <h3 className={categoryInfo.sub ? classes.sub : ""}>
-            {capitaliseFirstLetter(categoryInfo.name) + ending}
-          </h3>
+          <h3>{capitaliseFirstLetter(categoryInfo.name) + ending}</h3>
         </div>
         <div className={classes.difficulty}>
           <ProgressBar difficulty="easy" />

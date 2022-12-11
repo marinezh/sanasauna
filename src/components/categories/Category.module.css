@@ -18,7 +18,7 @@
   display: flex;
 }
 
-.category_name:has(.sub) {
+.sub .category_name {
   width: 13rem;
 }
 
@@ -34,7 +34,7 @@
   text-decoration: underline;
 }
 
-h3.sub {
+.sub h3 {
   background-color: white;
   border: 1px solid black;
 }
@@ -49,6 +49,7 @@ h3.sub {
   display: flex;
   flex-direction: row;
   width: 100%;
+  background-color: yellow;
 }
 
 .empty {
