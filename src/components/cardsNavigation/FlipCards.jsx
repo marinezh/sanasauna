@@ -3,9 +3,9 @@ import Card from "./Card";
 
 import classes from "./Allwords.module.css";
 
-const sanat = require("../sanat.json");
+const sanat = require("./sanat.json");
 
-const Allwords = () => {
+const FlipCards = () => {
   return (
     <div className={classes.cards}>
       {sanat.map((card) => (
@@ -15,4 +15,4 @@ const Allwords = () => {
   );
 };
 
-export default Allwords;
+export default FlipCards;
