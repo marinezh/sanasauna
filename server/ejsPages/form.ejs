@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/basicStyles.css">
+    <title>
+        <%= title %>
+    </title>
+</head>
+
+<body>
+    <main>
+        <h1>
+            <%= header1 %>
+        </h1>
+        <form action="<%= action %>" method="POST">
+            <div>
+                <p>
+                    <label for="id">Word: </label>
+                    <input type="text" id="id" , name="id" size="5" value="<%= id.value %>" <%= name.readonly %> />
+                </p>
+            </div>
+            <div>
+                <p>
+                    <label for="translation">Translation: </label>
+                    <input type="text" id="ftranslation" , name="translation" size="15" value="<%= translation.value %>"
+                        <%= firstname.readonly %> />
+                </p>
+            </div>
+            <div>
+                <p>
+                    <label for="keywords">Keywords: </label>
+                    <input type="text" id="keywords" , name="keywords" size="15" value="<%= keywords.value %>"
+                        <%= keywords.readonly %> />
+                </p>
+            </div>
+            <div>
+                <p>
+                    <label for="example">Example: </label>
+                    <input type="text" id="example" , name="example" size="15" value="<%= example.value %>"
+                        <%= example.readonly %> />
+                </p>
+            </div>
+            <div>
+                <p>
+                    <label for="level">Level: </label>
+                    <input type="text" id="level" , name="level" size="15" value="<%= level.value %>"
+                        <%= level.readonly %> />
+                </p>
+            </div>
+            <div>
+                <p>
+                    <label for="links">Links: </label>
+                    <input type="text" id="links" , name="links" size="15" value="<%= links.value %>"
+                        <%= links.readonly %> />
+                </p>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+
+        <a href="/"> <button>Menu</button></a>
+    </main>
+</body>
+
+</html>
