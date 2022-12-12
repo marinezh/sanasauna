@@ -6,12 +6,20 @@ import ProgressBar from "../progressBar/ProgressBar";
 
 import classes from "./Category.module.css";
 
-const words = require("../../sanat.json");
+const words = require("../../sanat");
 
 const Category = ({ categoryInfo }) => {
-  const wordsFromCategory = words.filter((word) =>
-    word.keywords.includes(categoryInfo.name)
+  const wordsFromCategory = words.filter(
+    (word) =>
+      word.keywords.includes(categoryInfo.name) ||
+      word.keywords.includes(categoryInfo.name + "s")
   );
+
+  const ending =
+    categoryInfo.name[categoryInfo.name.length - 1] <= 9 &&
+    categoryInfo.name[categoryInfo.name.length - 1] >= 0
+      ? ""
+      : "s";
 
   return (
     <div
@@ -22,7 +30,7 @@ const Category = ({ categoryInfo }) => {
       {categoryInfo.sub && <div className={classes.empty}></div>}
       <div className={classes.category}>
         <div className={classes.category_name}>
-          <h3>{capitaliseFirstLetter(categoryInfo.name)}</h3>
+          <h3>{capitaliseFirstLetter(categoryInfo.name) + ending}</h3>
         </div>
         <div className={classes.difficulty}>
           <ProgressBar difficulty="easy" />
