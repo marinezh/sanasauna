@@ -13,7 +13,7 @@ console.log(storageFilePath);
 const { adapt } = require(path.join(__dirname, adapterFile));
 
 async function getAllFromStorage() {
-  return readStorage(storageFilePath);
+  return await readStorage(storageFilePath);
 }
 
 getAllFromStorage().then(console.log).catch(console.log);
