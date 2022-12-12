@@ -35,19 +35,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "description": "Let's do it",
-  "main": "index.js",
-  "devDependencies": {},
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/marinezh/sanasauna.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/marinezh/sanasauna/issues"
-  },
-  "homepage": "https://github.com/marinezh/sanasauna#readme"
+  }
 }
