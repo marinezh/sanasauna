@@ -10,7 +10,9 @@ const Header = () => {
   return (
     <header className={classes.header}>
       <Link to="/">
-        <ReactLogo />
+        <div className={classes.logo_container}>
+          <ReactLogo className={classes.logo} />
+        </div>
       </Link>
       <Nav />
     </header>
