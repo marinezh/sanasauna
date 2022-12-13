@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/basicStyles.css">
+    <link rel="stylesheet" href="style.css">
     <title>
         <%= title %>
     </title>
@@ -19,15 +19,15 @@
         <form action="<%= action %>" method="POST">
             <div>
                 <p>
-                    <label for="id">Word: </label>
-                    <input type="text" id="id" , name="id" size="5" value="<%= id.value %>" <%= name.readonly %> />
+                    <label for="name">Word: </label>
+                    <input type="text" id="name" , name="name" size="5" value="<%= name.value %>" <%= name.readonly %> />
                 </p>
             </div>
             <div>
                 <p>
                     <label for="translation">Translation: </label>
-                    <input type="text" id="ftranslation" , name="translation" size="15" value="<%= translation.value %>"
-                        <%= firstname.readonly %> />
+                    <input type="text" id="translation" , name="translation" size="15" value="<%= translation.value %>"
+                        <%= translation.readonly %> />
                 </p>
             </div>
             <div>

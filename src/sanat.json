@@ -501,7 +501,7 @@
   },
   {
     "name": "vanha",
-    "translation": "pieni",
+    "translation": "old",
     "img": "#",
     "keywords": ["adjectives", "adjektiivit"],
     "example": [],
@@ -519,10 +519,19 @@
     "level": "easy",
     "links": []
   },
-
   {
     "name": "suuri",
     "translation": "big",
+    "img": "#",
+    "keywords": ["adjectives", "adjektiivit"],
+    "example": [],
+    "explanation": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "pieni",
+    "translation": "little",
     "img": "#",
     "keywords": ["adjectives", "adjektiivit"],
     "example": [],
