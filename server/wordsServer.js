@@ -16,6 +16,16 @@ const Datastorage = require(path.join(
 
 const dataStorage = new Datastorage();
 
+/* Access to XMLHttpRequest has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource. */
+/* FIX */
+// (also did npm install cors --save)
+
+const cors = require("cors");
+
+app.use(cors()); // Use this after the variable declaration
+
+/* FIX END */
+
 app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "ejsPages")); // connect folder pages with ejs files
 
