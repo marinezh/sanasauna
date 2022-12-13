@@ -53,6 +53,31 @@ app.post("/getWord", (req, res) => {
       .catch((error) => sendErrorPage(res, error));
   });
 
+// Adding new word to the database
+app.get("/inputform", (req, res) => {
+    res.render("form", {
+      title: "Add word",
+      header1: "Add a new word",
+      action: "/input",
+      name: { value: "", readonly: "" },
+      translation: { value: "", readonly: "" },
+      keywords: { value: "", readonly: "" },
+      example: { value: "", readonly: "" },
+      level: { value: "", readonly: "" },
+      links: { value: "", readonly: "" },
+    });
+  });
+  
+  app.post("/input", (req, res) => {
+    if (!req.body) return res.statusCode(500);
+  
+    dataStorage
+      .insert(req.body)
+      .then((status) => sendStatusPage(res, status))
+      .catch((error) => sendErrorPage(res, error));
+  });
+
+
 app.listen(port, host, () =>
   console.log(`Server ${host}:${port} listening...`)
 );

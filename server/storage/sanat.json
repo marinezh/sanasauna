@@ -9,7 +9,7 @@
             "substantiivit",
             "kuukaudet"
         ],
-        "example": ["Ilta tulee aikaisin tammikuussa."],
+        "example": [],
         "explanation": [],
         "level": "easy",
         "links": [
@@ -229,7 +229,8 @@
         "explanation": [],
         "level": "easy",
         "links": [
-        
+            "joulu",
+            "kuu"
         ]
     },
     {
@@ -786,7 +787,7 @@
     },
     {
         "name": "vanha",
-        "translation": "pieni",
+        "translation": "old",
         "img": "#",
         "keywords": [
             "adjectives",
@@ -813,6 +814,19 @@
     {
         "name": "suuri",
         "translation": "big",
+        "img": "#",
+        "keywords": [
+            "adjectives",
+            "adjektiivit"
+        ],
+        "example": [],
+        "explanation": [],
+        "level": "easy",
+        "links": []
+    },
+    {
+        "name": "pieni",
+        "translation": "little",
         "img": "#",
         "keywords": [
             "adjectives",
@@ -1421,5 +1435,27 @@
         "explanation": [],
         "level": "easy",
         "links": []
+    },
+    {
+        "name": "sanoa",
+        "translation": "speak",
+        "img": "#",
+        "keywords": [
+            "verbs",
+            "Type 1",
+            "verbit"
+        ],
+        "example": [],
+        "explanation": [],
+        "level": "easy",
+        "links": []
+    },
+    {
+        "name": "puhelin",
+        "translation": "phone",
+        "keywords": "nouns",
+        "example": "",
+        "level": "easy",
+        "links": ""
     }
 ]
