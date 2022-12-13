@@ -151,6 +151,12 @@ app.get("/API/word/:word", (req, res) => {
     .then((data) => res.status(200).send(data));
 });
 
+app.get("/API/keyword/:keyword", (req, res) => {
+  dataStorage
+    .getByKeyword(req.params.keyword)
+    .then((data) => res.status(200).send(data));
+});
+
 // END OF API
 
 app.listen(port, host, () =>
