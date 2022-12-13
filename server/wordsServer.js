@@ -77,7 +77,81 @@ app.get("/inputform", (req, res) => {
       .catch((error) => sendErrorPage(res, error));
   });
 
+  // update the word
+
+  app.get("/updateform", (req, res) =>
+  res.render("form", {
+    title: "Update word",
+    header1: "Update Word data",
+    action: "/updatedata",
+    name: { value: "", readonly: "" },
+      translation: { value: "", readonly: "readonly" },
+      keywords: { value: "", readonly: "readonly" },
+      example: { value: "", readonly: "readonly" },
+      level: { value: "", readonly: "readonly" },
+      links: { value: "", readonly: "readonly" },
+  })
+);
+
+app.post("/updatedata", (req, res) => {
+  if (!req.body) return res.sendStatus(500);
+
+  dataStorage
+    .getOne(req.body.name)
+    .then((word) =>
+      res.render("form", {
+        title: "Update word",
+        header1: "Update Word data",
+        action: "/update1",
+        name: { value: word.name, readonly: "readonly" },
+        translation: { value: word.translation, readonly: "" },
+      keywords: { value: word.keywords, readonly: "" },
+      example: { value: word.example, readonly: "" },
+      level: { value: word.level, readonly: "" },
+      links: { value: word.links, readonly: "" },
+      })
+    )
+    .catch((error) => sendErrorPage(res, error));
+});
+
+app.post("/update1", (req, res) => {
+  if (!req.body) return res.statusCode(500);
+  dataStorage
+    .update(req.body)
+    .then((status) => sendStatusPage(res, status))
+    .catch((error) => sendErrorPage(res, error));
+});
+
+// removing Word
+app.get("/removeword", (req, res) =>
+  res.render("getWord", {
+    title: "Remove",
+    header1: "remove word",
+    action: "/removeword",
+  })
+);
+
+app.post("/removeword", (req, res) => {
+  if (!req.body) return res.sendStatus(500);
+
+  const wordName = req.body.name; 
+  dataStorage
+    .remove(wordName)
+    .then((status) => sendStatusPage(res, status)) 
+    .catch((error) => sendErrorPage(res, error));
+});
+
 
 app.listen(port, host, () =>
   console.log(`Server ${host}:${port} listening...`)
 );
+
+// helper functions
+
+function sendErrorPage(res, error, title = "Error", header1 = "Error") {
+    sendStatusPage(res, error, title, header1);
+  }
+  
+  function sendStatusPage(res, status, title = "Status", header1 = "Status") {
+    return res.render("statusPage", { title, header1, status });
+  }
