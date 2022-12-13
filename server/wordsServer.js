@@ -29,9 +29,7 @@ const menuPath = path.join(__dirname, "menu.html"); // connect home page
 app.get("/", (req, res) => res.sendFile(menuPath));
 // Getting all words list
 app.get("/all", (req, res) =>
-  dataStorage
-    .getAll()
-    .then((data) => res.render("allWords", { result: data }))
+  dataStorage.getAll().then((data) => res.render("allWords", { result: data }))
 );
 
 // Getting one word
@@ -44,52 +42,52 @@ app.get("/getWord", (req, res) =>
 );
 
 app.post("/getWord", (req, res) => {
-    if (!req.body) return res.sendStatus(500);
-  
-    const wordName = req.body.name; // becuose in getPerson we have name=id
-    dataStorage
-      .getOne(wordName)
-      .then((word) => res.render("wordPage", { result: word }))
-      .catch((error) => sendErrorPage(res, error));
-  });
+  if (!req.body) return res.sendStatus(500);
+
+  const wordName = req.body.name; // becuose in getPerson we have name=id
+  dataStorage
+    .getOne(wordName)
+    .then((word) => res.render("wordPage", { result: word }))
+    .catch((error) => sendErrorPage(res, error));
+});
 
 // Adding new word to the database
 app.get("/inputform", (req, res) => {
-    res.render("form", {
-      title: "Add word",
-      header1: "Add a new word",
-      action: "/input",
-      name: { value: "", readonly: "" },
-      translation: { value: "", readonly: "" },
-      keywords: { value: "", readonly: "" },
-      example: { value: "", readonly: "" },
-      level: { value: "", readonly: "" },
-      links: { value: "", readonly: "" },
-    });
+  res.render("form", {
+    title: "Add word",
+    header1: "Add a new word",
+    action: "/input",
+    name: { value: "", readonly: "" },
+    translation: { value: "", readonly: "" },
+    keywords: { value: "", readonly: "" },
+    example: { value: "", readonly: "" },
+    level: { value: "", readonly: "" },
+    links: { value: "", readonly: "" },
   });
-  
-  app.post("/input", (req, res) => {
-    if (!req.body) return res.statusCode(500);
-  
-    dataStorage
-      .insert(req.body)
-      .then((status) => sendStatusPage(res, status))
-      .catch((error) => sendErrorPage(res, error));
-  });
+});
 
-  // update the word
+app.post("/input", (req, res) => {
+  if (!req.body) return res.statusCode(500);
 
-  app.get("/updateform", (req, res) =>
+  dataStorage
+    .insert(req.body)
+    .then((status) => sendStatusPage(res, status))
+    .catch((error) => sendErrorPage(res, error));
+});
+
+// update the word
+
+app.get("/updateform", (req, res) =>
   res.render("form", {
     title: "Update word",
     header1: "Update Word data",
     action: "/updatedata",
     name: { value: "", readonly: "" },
-      translation: { value: "", readonly: "readonly" },
-      keywords: { value: "", readonly: "readonly" },
-      example: { value: "", readonly: "readonly" },
-      level: { value: "", readonly: "readonly" },
-      links: { value: "", readonly: "readonly" },
+    translation: { value: "", readonly: "readonly" },
+    keywords: { value: "", readonly: "readonly" },
+    example: { value: "", readonly: "readonly" },
+    level: { value: "", readonly: "readonly" },
+    links: { value: "", readonly: "readonly" },
   })
 );
 
@@ -105,10 +103,10 @@ app.post("/updatedata", (req, res) => {
         action: "/update1",
         name: { value: word.name, readonly: "readonly" },
         translation: { value: word.translation, readonly: "" },
-      keywords: { value: word.keywords, readonly: "" },
-      example: { value: word.example, readonly: "" },
-      level: { value: word.level, readonly: "" },
-      links: { value: word.links, readonly: "" },
+        keywords: { value: word.keywords, readonly: "" },
+        example: { value: word.example, readonly: "" },
+        level: { value: word.level, readonly: "" },
+        links: { value: word.links, readonly: "" },
       })
     )
     .catch((error) => sendErrorPage(res, error));
@@ -134,13 +132,26 @@ app.get("/removeword", (req, res) =>
 app.post("/removeword", (req, res) => {
   if (!req.body) return res.sendStatus(500);
 
-  const wordName = req.body.name; 
+  const wordName = req.body.name;
   dataStorage
     .remove(wordName)
-    .then((status) => sendStatusPage(res, status)) 
+    .then((status) => sendStatusPage(res, status))
     .catch((error) => sendErrorPage(res, error));
 });
 
+// API
+
+app.get("/API/allwords", (req, res) => {
+  dataStorage.getAll().then((data) => res.status(200).send(data));
+});
+
+app.get("/API/word/:word", (req, res) => {
+  dataStorage
+    .getOne(req.params.word)
+    .then((data) => res.status(200).send(data));
+});
+
+// END OF API
 
 app.listen(port, host, () =>
   console.log(`Server ${host}:${port} listening...`)
@@ -149,9 +160,9 @@ app.listen(port, host, () =>
 // helper functions
 
 function sendErrorPage(res, error, title = "Error", header1 = "Error") {
-    sendStatusPage(res, error, title, header1);
-  }
-  
-  function sendStatusPage(res, status, title = "Status", header1 = "Status") {
-    return res.render("statusPage", { title, header1, status });
-  }
+  sendStatusPage(res, error, title, header1);
+}
+
+function sendStatusPage(res, status, title = "Status", header1 = "Status") {
+  return res.render("statusPage", { title, header1, status });
+}
