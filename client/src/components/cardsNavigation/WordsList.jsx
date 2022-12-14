@@ -1,9 +1,12 @@
 import React from "react";
+import classes from "./WordList.module.css"
 
+
+// const sanat = require("../../sanat.json");
 const WordsList = () => {
   return (
-    <div>
-      <p>table with wordlist will be here</p>
+    <div className={classes.cards}>
+     <h2>words list will be here</h2>
     </div>
   );
 };

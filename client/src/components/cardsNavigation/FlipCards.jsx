@@ -1,9 +1,9 @@
 import React from "react";
-import Card from "./Card";
+import Card from "../Card";
 
-import classes from "./Allwords.module.css";
+import classes from "./FlipCards.module.css";
 
-const sanat = require("./sanat.json");
+const sanat = require("../../sanat.json");
 
 const FlipCards = () => {
   return (
