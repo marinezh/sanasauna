@@ -12,7 +12,12 @@ const getPossibleWrongOptions = (data, currentIndex) => {
   return options;
 };
 
-const getCorrectAnswer = (data, currentIndex) => data[currentIndex].translation;
+const getCorrectAnswer = (data, correctAnswerIndex) =>
+  data[correctAnswerIndex].translation;
+
+const getCorrectAnswerIndex = (options, correctAnswer) => {
+  return options.indexOf(correctAnswer);
+};
 
 const preparePossibleOptions = (data, currentQuestion) => {
   const wrongOptions = getPossibleWrongOptions(data, currentQuestion - 1);
@@ -35,32 +40,103 @@ const preparePossibleOptions = (data, currentQuestion) => {
   return optionsToPresent;
 };
 
+const getTotalRightAnswers = (result) => {
+  return Object.values(result).filter((r) => r === true).length;
+};
+
+const getCurrentQuestionDetails = (currentQuestionNumber, data) => {
+  const questionOptions = preparePossibleOptions(data, currentQuestionNumber);
+  const correctOptionIndex = getCorrectAnswerIndex(
+    questionOptions,
+    getCorrectAnswer(data, currentQuestionNumber - 1)
+  );
+  return {
+    currentQuestionNumber: currentQuestionNumber,
+    questionOptions: questionOptions,
+    correctOptionIndex: correctOptionIndex,
+  };
+};
+
 const Quiz = ({ data }) => {
-  const [currentQuestion, SetCurrentQuestion] = useState(1);
+  const [currentQuestionDetails, setCurrentQuestionDetails] = useState(
+    getCurrentQuestionDetails(1, data)
+  );
+  const [result, setResult] = useState({});
+
+  const [showResult, setShowResult] = useState(false);
+
+  const updateCurrentQuestionDetails = (currentQuestionNumber, data) => {
+    setCurrentQuestionDetails(
+      getCurrentQuestionDetails(currentQuestionNumber, data)
+    );
+  };
+
+  const resetQuiz = () => {
+    setCurrentQuestionDetails(getCurrentQuestionDetails(1, data));
+    setShowResult(false);
+    setResult({});
+  };
 
   return (
     <>
       <QuizProgressBar
-        currentStep={currentQuestion - 1}
+        currentStep={currentQuestionDetails.currentQuestionNumber - 1}
         totalSteps={data.length}
       />
-      <div className={classes.questionContainer}>
-        <button
-          className={classes.arrowButton}
-          onClick={() => SetCurrentQuestion(currentQuestion - 1)}
-        >
-          <i class="fa-solid fa-arrow-left"></i>
-        </button>
+      {showResult ? (
         <div>
-          <Question
-            questionTitle={data[currentQuestion - 1]["name"]}
-            options={preparePossibleOptions(data, currentQuestion)}
-          />
+          <h3>
+            {`You got ${getTotalRightAnswers(result)} / ${data.length} correct`}
+          </h3>
+          <button onClick={() => resetQuiz()}>Try again</button>
         </div>
-        <button onClick={() => SetCurrentQuestion(currentQuestion + 1)}>
-          <i class="fa-solid fa-arrow-right"></i>
-        </button>
-      </div>
+      ) : (
+        <div className={classes.questionContainer}>
+          <button
+            className={classes.arrowButton}
+            onClick={() =>
+              updateCurrentQuestionDetails(
+                currentQuestionDetails.currentQuestionNumber - 1,
+                data
+              )
+            }
+          >
+            <i class="fa-solid fa-arrow-left"></i>
+          </button>
+          <div>
+            <Question
+              questionTitle={
+                data[currentQuestionDetails.currentQuestionNumber - 1]["name"]
+              }
+              options={currentQuestionDetails.questionOptions}
+              correctOptionIndex={currentQuestionDetails.correctOptionIndex}
+              onUpdateResult={(isAnswerCorrect) =>
+                setResult({
+                  ...result,
+                  [currentQuestionDetails.currentQuestionNumber]:
+                    isAnswerCorrect,
+                })
+              }
+            />
+          </div>
+          <button
+            onClick={() => {
+              if (
+                currentQuestionDetails.currentQuestionNumber === data.length
+              ) {
+                setShowResult(true);
+              } else {
+                updateCurrentQuestionDetails(
+                  currentQuestionDetails.currentQuestionNumber + 1,
+                  data
+                );
+              }
+            }}
+          >
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      )}
     </>
   );
 };
