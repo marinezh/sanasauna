@@ -8,6 +8,7 @@ import Signup from "./components/Signup";
 import Layout from "./pages/Layout";
 
 import "./App.css";
+import CategoryDetails from "./components/CategoryDetails/CategoryDetails";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="about" element={<About />} />
           <Route path="login" element={<Login />} />
           <Route path="signup" element={<Signup />} />
+          <Route path=":categoryName/quiz" element={<CategoryDetails />} />
         </Route>
       </Routes>
     </BrowserRouter>

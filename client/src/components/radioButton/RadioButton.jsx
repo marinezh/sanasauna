@@ -3,7 +3,7 @@ import "./RadioButton.css";
 
 const RadioButton = () => {
   return (
-    <div classNameName="radioButtons">
+    <div className="radioButtons">
       <div className="button">
         <input type="radio" id="radio1" name="check-substitution-2" />
         <label className="btn btn-default" for="radio1">
