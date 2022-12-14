@@ -24,6 +24,14 @@ async function getFromStorage(name) {
   );
 }
 
+async function getFromStorageByKeyword(keyword) {
+  return (
+    (await readStorage(storageFilePath)).filter((word) =>
+      word.keywords.includes(keyword)
+    ) || null
+  );
+}
+
 async function addToStorage(newObject) {
   const storageData = await readStorage(storageFilePath);
   storageData.push(newObject);
@@ -83,6 +91,7 @@ getAllFromStorage().then(console.log).catch(console.log);
 module.exports = {
   getAllFromStorage,
   getFromStorage,
+  getFromStorageByKeyword,
   addToStorage,
   removeFromStorage,
   updateStorage,

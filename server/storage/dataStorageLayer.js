@@ -5,6 +5,7 @@ const { CODES, MESSAGES } = require("./statusCodes");
 const {
   getAllFromStorage,
   getFromStorage,
+  getFromStorageByKeyword,
   addToStorage,
   updateStorage,
   removeFromStorage,
@@ -35,6 +36,21 @@ module.exports = class Datastorage {
       }
     });
   } //end of getOne
+
+  getByKeyword(keyword) {
+    return new Promise(async (resolve, reject) => {
+      if (!keyword) {
+        reject(MESSAGES.NOT_FOUND("---empty---"));
+      } else {
+        const result = await getFromStorageByKeyword(keyword); //TODO
+        if (result) {
+          resolve(result);
+        } else {
+          reject(MESSAGES.NOT_FOUND(name));
+        }
+      }
+    });
+  }
 
   insert(word) {
     return new Promise(async (resolve, reject) => {

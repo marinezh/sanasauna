@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import axios from "axios";
 
 import capitaliseFirstLetter from "../../helperFunctions";
 
@@ -6,12 +7,17 @@ import ProgressBar from "../progressBar/ProgressBar";
 
 import classes from "./Category.module.css";
 
-const words = require("../../sanat.json");
-
 const Category = ({ categoryInfo }) => {
-  const wordsFromCategory = words.filter((word) =>
-    word.keywords.includes(categoryInfo.name)
-  );
+  const [wordData, setWordData] = useState([]);
+
+  const endpoint = categoryInfo.name;
+
+  useEffect(() => {
+    axios.get(`http://localhost:3001/API/keyword/${endpoint}`).then((data) => {
+      setWordData(data.data);
+      console.log(data);
+    });
+  }, [endpoint]);
 
   return (
     <div
@@ -28,7 +34,7 @@ const Category = ({ categoryInfo }) => {
           <ProgressBar difficulty="easy" />
         </div>
         <div className={classes.number_of_words}>
-          <p>{wordsFromCategory.length} words</p>
+          <p>{wordData.length} words</p>
         </div>
         <i className="fa-regular fa-bookmark"></i>
       </div>
