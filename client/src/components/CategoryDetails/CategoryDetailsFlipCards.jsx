@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-
 import { useParams } from "react-router-dom";
-import Quiz from "../Quiz/Quiz";
+
+import FlipCards from "../cardsNavigation/FlipCards";
 
 const CategoryDetails = () => {
   const [wordData, setWordData] = useState([]);
@@ -18,7 +18,9 @@ const CategoryDetails = () => {
   }, [categoryName]);
 
   return (
-    <div>{wordData.length ? <Quiz data={wordData} /> : <p>Loading...</p>}</div>
+    <div>
+      {wordData.length ? <FlipCards data={wordData} /> : <p>Loading...</p>}
+    </div>
   );
 };
 

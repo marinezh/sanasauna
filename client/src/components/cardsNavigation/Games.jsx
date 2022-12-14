@@ -1,9 +1,9 @@
 import React from "react";
 
-const Games = () => {
+const Games = ({ topic }) => {
   return (
     <div>
-      <p>games will be here</p>
+      <p>games for {topic} will be here</p>
     </div>
   );
 };
