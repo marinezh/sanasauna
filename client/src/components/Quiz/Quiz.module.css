@@ -1,0 +1,10 @@
+.arrowButton {
+  height: 1.5rem;
+}
+
+.questionContainer {
+  margin: 4rem 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
