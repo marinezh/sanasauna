@@ -28,11 +28,11 @@ const Category = ({ categoryInfo }) => {
     >
       {categoryInfo.sub && <div className={classes.empty}></div>}
       <div className={classes.category}>
-        <Link to={`/${categoryInfo.name}/flipcards`}>
-          <div className={classes.category_name}>
+        <div className={classes.category_name}>
+          <Link to={`/${categoryInfo.name}/flipcards`}>
             <h3>{capitaliseFirstLetter(categoryInfo.name)}</h3>
-          </div>
-        </Link>
+          </Link>
+        </div>
         <div className={classes.difficulty}>
           <ProgressBar difficulty="easy" />
         </div>

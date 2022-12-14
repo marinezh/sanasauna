@@ -1,21 +1,7 @@
-import { Outlet, Link, useParams } from "react-router-dom";
-import React, { useEffect, useState } from "react";
-
-import axios from "axios";
+import { Outlet, Link } from "react-router-dom";
+import React from "react";
 
 const TopicPage = () => {
-  const [wordData, setWordData] = useState([]);
-  const { categoryName } = useParams();
-
-  useEffect(() => {
-    axios
-      .get(`http://localhost:3001/API/keyword/${categoryName}`)
-      .then((data) => {
-        setWordData(data.data);
-        console.log(data.data);
-      });
-  }, [categoryName]);
-
   return (
     <div>
       <h2>Topics</h2>
@@ -37,9 +23,6 @@ const TopicPage = () => {
           </li>
         </ul>
       </div>
-      {/*  <div>
-          {wordData.length ? <FlipCards data={wordData} /> : <p>Loading...</p>}
-        </div> */}
       <Outlet />
     </div>
   );
