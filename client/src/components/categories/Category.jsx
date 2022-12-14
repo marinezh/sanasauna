@@ -28,7 +28,7 @@ const Category = ({ categoryInfo }) => {
     >
       {categoryInfo.sub && <div className={classes.empty}></div>}
       <div className={classes.category}>
-        <Link to={`/${categoryInfo.name}/quiz`}>
+        <Link to={`/${categoryInfo.name}/flipcards`}>
           <div className={classes.category_name}>
             <h3>{capitaliseFirstLetter(categoryInfo.name)}</h3>
           </div>
