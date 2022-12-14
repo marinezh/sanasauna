@@ -6,6 +6,7 @@ import capitaliseFirstLetter from "../../helperFunctions";
 import ProgressBar from "../progressBar/ProgressBar";
 
 import classes from "./Category.module.css";
+import { Link } from "react-router-dom";
 
 const Category = ({ categoryInfo }) => {
   const [wordData, setWordData] = useState([]);
@@ -27,9 +28,11 @@ const Category = ({ categoryInfo }) => {
     >
       {categoryInfo.sub && <div className={classes.empty}></div>}
       <div className={classes.category}>
-        <div className={classes.category_name}>
-          <h3>{capitaliseFirstLetter(categoryInfo.name)}</h3>
-        </div>
+        <Link to={`/${categoryInfo.name}/quiz`}>
+          <div className={classes.category_name}>
+            <h3>{capitaliseFirstLetter(categoryInfo.name)}</h3>
+          </div>
+        </Link>
         <div className={classes.difficulty}>
           <ProgressBar difficulty="easy" />
         </div>
