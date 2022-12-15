@@ -6,7 +6,7 @@ Web app to help you learn Finnish words.
 
 ## About the project
 
-Team project created in December 2022 with [@preetiag18](https://github.com/preetiag18) and [@marinezh](https://github.com/marinezh) as a part of Full Stack We Development course at Business College Helsinki.
+Team project created in December 2022 with [@preetiag18](https://github.com/preetiag18) and [@marinezh](https://github.com/marinezh) as a part of Full Stack Web Development course at Business College Helsinki.
 
 ### Technologies used
 
