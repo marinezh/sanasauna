@@ -10,9 +10,9 @@
 
 .login {
   margin-top: 1rem;
-  max-width: 350px;
+  width: 350px;
   text-align: center;
-  background: linear-gradient(var(--coral), var(--purple));
+  background: linear-gradient(var(--yellow), var(--mint));
   background-color: var(--mint);
   padding: 3rem;
   border-radius: 1rem;
@@ -60,6 +60,6 @@ input {
   font-size: inherit;
   font-family: inherit;
   padding: 0.5rem 1rem;
-  border: none;
+  border: 1px solid black;
   border-radius: 0.3rem;
 }

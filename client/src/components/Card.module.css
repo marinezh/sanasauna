@@ -20,6 +20,7 @@
 
 .flip_card_front,
 .flip_card_back {
+  padding: 0.5rem;
   position: absolute;
   width: 100%;
   height: 100%;

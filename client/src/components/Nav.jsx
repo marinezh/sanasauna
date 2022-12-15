@@ -20,7 +20,7 @@ const Nav = () => {
         </li>
         <li className={classes.user_action}>
           <NavLink to="signup">
-            <span>Sign up</span>
+            <span>Sign Up</span>
           </NavLink>
         </li>
       </ul>

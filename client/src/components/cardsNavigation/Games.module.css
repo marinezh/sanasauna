@@ -1,6 +1,6 @@
 .games_container {
   background-color: white;
-  border: 3px solid var(--mint);
+  border: 3px solid var(--yellow);
   padding: 4rem 3rem;
   border-radius: 0 1rem 1rem 1rem;
 }

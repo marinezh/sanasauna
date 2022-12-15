@@ -1,19 +1,25 @@
 .header {
-  height: 5rem;
-  background: var(--gray-dark);
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
+  color: black;
+  font-size: 3rem;
+  margin: 2rem 0 3rem;
 }
 
-.topics_container {
+.topic {
+  padding: 1rem 0;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  background-color: var(--gray-pale);
+  align-items: center;
+  background: linear-gradient(var(--mint), var(--blush));
+}
+
+.topic:last-child {
+  background: linear-gradient(var(--purple), var(--blush));
 }
 
 .topics {
-  margin: 4rem 0;
-  width: 1000px;
+  width: 800px;
 }

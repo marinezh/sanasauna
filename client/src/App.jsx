@@ -4,7 +4,7 @@ import About from "./components/About";
 import Allwords from "./components/Allwords";
 import Home from "./components/Home";
 import Login from "./components/Login/Login";
-import Signup from "./components/Signup";
+import Signup from "./components/Signup/Signup";
 import TopicPage from "./components/TopicPage";
 import Layout from "./pages/Layout";
 import WordsList from "./components/cardsNavigation/WordsList";

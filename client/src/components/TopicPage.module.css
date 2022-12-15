@@ -5,7 +5,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(to bottom, var(--blush), white);
+  /* background: linear-gradient(to bottom, var(--blush), white); */
 }
 
 .topic_page_container h1 {
@@ -45,6 +45,7 @@
 }
 
 .view_tabs li:nth-child(1) {
+  /* background: linear-gradient(var(--purple), var(--gray-light) 90%); */
   background-color: var(--gray-light);
 }
 
@@ -53,11 +54,11 @@
 }
 
 .features li:nth-child(1) {
-  background-color: var(--yellow);
+  background-color: var(--mint);
 }
 
 .features li:nth-child(2) {
-  background-color: var(--mint);
+  background-color: var(--yellow);
 }
 
 .outlet_container {

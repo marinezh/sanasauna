@@ -33,11 +33,12 @@ const Category = ({ categoryInfo }) => {
             <h3>{capitaliseFirstLetter(categoryInfo.name)}</h3>
           </Link>
         </div>
-        <div className={classes.difficulty}>
-          <ProgressBar difficulty="easy" />
-        </div>
+
         <div className={classes.number_of_words}>
           <p>{wordData.length} words</p>
+        </div>
+        <div className={classes.difficulty}>
+          <ProgressBar difficulty="easy" />
         </div>
         <i className="fa-regular fa-bookmark"></i>
       </div>
