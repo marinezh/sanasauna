@@ -24,7 +24,7 @@ Clone the repo and set up the project:
 - cd into /server
 - `npm install`
 - `node wordsServer`
-- server will start running on port 3001 (change port in storage/serverConfig.json is needed)
+- server will start running on port 3001 (change port in storage/serverConfig.json if needed)
 
 ### Frontend
 
