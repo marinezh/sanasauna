@@ -1,0 +1,7 @@
+.breadcrumb_not_active {
+  color: black;
+}
+
+.breadcrumb_active {
+  color: purple;
+}
