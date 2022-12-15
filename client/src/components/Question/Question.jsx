@@ -1,6 +1,5 @@
-import React from "react";
-import { useEffect } from "react";
-import { useState } from "react";
+import React, { useEffect, useState } from "react";
+
 import classes from "./Question.module.css";
 
 const checkAnswer = (correctAnswerIndex, chosenAnswerIndex) => {
@@ -32,21 +31,11 @@ const Question = ({
   };
 
   return (
-    <div>
-      <h3>{questionTitle}</h3>
+    <div className={classes.question_container}>
+      <h3 className={classes.question_title}>{questionTitle}</h3>
       <div className="options">
         {options.map((value, index) => (
-          <div
-            className={`${classes.option} ${
-              answerDetails.correctAnswerIndex === index
-                ? classes.correctAnswer
-                : ""
-            } ${
-              answerDetails.chosenWrongAnswer === index
-                ? classes.wrongAnswer
-                : ""
-            }`}
-          >
+          <div className={classes.option_container}>
             <input
               type="radio"
               id={`option${index}`}
@@ -54,7 +43,18 @@ const Question = ({
               className={classes.optionRadio}
               onClick={() => onOptionClick(correctOptionIndex, index)}
             />
-            <label className="btn btn-default" htmlFor={`option${index}`}>
+            <label
+              className={`${classes.option_label} ${
+                answerDetails.correctAnswerIndex === index
+                  ? classes.correctAnswer
+                  : ""
+              } ${
+                answerDetails.chosenWrongAnswer === index
+                  ? classes.wrongAnswer
+                  : ""
+              } btn btn-default`}
+              htmlFor={`option${index}`}
+            >
               {value}
             </label>
           </div>

@@ -85,16 +85,22 @@ const Quiz = ({ data }) => {
         totalSteps={data.length}
       />
       {showResult ? (
-        <div>
+        <div className={classes.result}>
           <h3>
-            {`You got ${getTotalRightAnswers(result)} / ${data.length} correct`}
+            You got
+            <span className={classes.total}>
+              {getTotalRightAnswers(result)}
+            </span>
+            / {data.length} correct
           </h3>
-          <button onClick={() => resetQuiz()}>Try again</button>
+          <button onClick={() => resetQuiz()}>
+            Try again <i class="fa-solid fa-repeat"></i>
+          </button>
         </div>
       ) : (
         <div className={classes.questionContainer}>
           <button
-            className={classes.arrowButton}
+            className={`${classes.back} ${classes.arrowButton}`}
             onClick={() =>
               updateCurrentQuestionDetails(
                 currentQuestionDetails.currentQuestionNumber - 1,
@@ -121,6 +127,7 @@ const Quiz = ({ data }) => {
             />
           </div>
           <button
+            className={`${classes.forward} ${classes.arrowButton}`}
             onClick={() => {
               if (
                 currentQuestionDetails.currentQuestionNumber === data.length
