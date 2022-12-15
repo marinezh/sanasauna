@@ -1,0 +1,5 @@
+.games_container {
+  padding: 3rem;
+  border: 3px solid var(--mint);
+  border-radius: 0 0 1rem 1rem;
+}

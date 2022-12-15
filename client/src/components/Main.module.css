@@ -1,4 +1,9 @@
-.main {
+/* .main {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  background-color: wheat;
+  height: 100vh;
 }
+ */

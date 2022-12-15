@@ -7,7 +7,7 @@ const featuredSections = require("../featured_categories.json");
 
 const Home = () => {
   return (
-    <div>
+    <div className="home">
       <Hero />
       {featuredSections.map((section) => (
         <Topic key={section.groupName} sectionInfo={section} />

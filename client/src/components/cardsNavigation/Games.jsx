@@ -1,8 +1,10 @@
 import React from "react";
 
+import classes from "./Games.module.css";
+
 const Games = ({ topic }) => {
   return (
-    <div>
+    <div className={classes.games_container}>
       <p>games will be here</p>
     </div>
   );

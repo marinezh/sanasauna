@@ -80,7 +80,7 @@ const Quiz = ({ data }) => {
   };
 
   return (
-    <>
+    <div className={classes.quiz_container}>
       <QuizProgressBar
         currentStep={currentQuestionDetails.currentQuestionNumber - 1}
         totalSteps={data.length}
@@ -139,7 +139,7 @@ const Quiz = ({ data }) => {
           </button>
         </div>
       )}
-    </>
+    </div>
   );
 };
 
