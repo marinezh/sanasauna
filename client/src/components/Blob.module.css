@@ -1,6 +1,6 @@
 .blob {
-  height: 7rem;
-  width: 10rem;
+  height: 8rem;
+  width: 8rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -60,4 +60,31 @@
 
 .blob h3 {
   font-size: 1.5rem;
+}
+
+.blob_name:nth-child(5n + 1) {
+  background-color: var(--coral);
+  border-radius: 62% 38% 56% 44% / 30% 30% 70% 70%;
+}
+.blob_name:nth-child(5n + 1):hover {
+  background-color: var(--orange);
+  border-radius: 31% 69% 53% 47% / 35% 44% 56% 65%;
+}
+
+.blob_name:nth-child(5n + 2) {
+  background-color: var(--blush);
+  border-radius: 82% 18% 68% 32% / 34% 23% 77% 66%;
+}
+.blob_name:nth-child(5n + 2):hover {
+  background-color: var(--pink);
+  border-radius: 52% 48% 45% 55% / 24% 38% 62% 76%;
+}
+
+.blob_name:nth-child(5n + 3) {
+  background-color: var(--mint);
+  border-radius: 52% 48% 61% 39% / 53% 35% 65% 47%;
+}
+.blob_name:nth-child(5n + 3):hover {
+  background-color: var(--yellow);
+  border-radius: 45% 55% 61% 39% / 61% 53% 47% 39%;
 }

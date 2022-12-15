@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import Blob from "./Blob";
 
@@ -14,9 +15,11 @@ const Hero = () => {
         <button>
           Where should I start? <i className="fa-solid fa-arrow-right"></i>
         </button>
-        <button>
-          Why Sanasauna? <i className="fa-solid fa-arrow-right"></i>
-        </button>
+        <Link to="/about">
+          <button>
+            What is Sanasauna? <i className="fa-solid fa-arrow-right"></i>
+          </button>
+        </Link>
       </div>
       <div className={classes.blobs}>
         {blobs.map((topic) => (

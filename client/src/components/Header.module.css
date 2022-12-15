@@ -7,9 +7,12 @@
 }
 
 .logo_container {
-  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .logo {
-  height: 4rem;
+  height: 3rem;
+  margin: 0.7rem 1.5rem;
 }

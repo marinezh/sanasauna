@@ -6,19 +6,14 @@ import { capitaliseFirstLetter } from "../../helperFunctions";
 
 import classes from "./Breadcrumbs.module.css";
 
-const DynamicUserBreadcrumb = ({ match }) =>
-  capitaliseFirstLetter(match.params.categoryName);
-
 const routes = [
   { path: "/", breadcrumb: "Home" },
-  { path: ":categoryName/*", breadcrumb: DynamicUserBreadcrumb },
+  { path: "/about", breadcrumb: "About" },
 ];
 
-const Breadcrumbs = () => {
+const BreadcrumbsGeneric = () => {
   console.log(routes);
-  const breadcrumbs = useBreadcrumbs(routes, {
-    excludePaths: [":categoryName"],
-  });
+  const breadcrumbs = useBreadcrumbs(routes);
 
   return (
     <nav className={classes.breadCrumb}>
@@ -33,4 +28,4 @@ const Breadcrumbs = () => {
     </nav>
   );
 };
-export default Breadcrumbs;
+export default BreadcrumbsGeneric;

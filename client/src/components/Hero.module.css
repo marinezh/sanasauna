@@ -4,15 +4,16 @@
   justify-content: center;
   flex-direction: column;
   gap: 3rem;
-  background: linear-gradient(180deg, white, var(--blush));
+  background: linear-gradient(180deg, var(--blush), white 100%);
   padding: 3rem;
   text-align: center;
 }
 
 .hero h1 {
+  width: 800px;
   font-size: 7rem;
   line-height: 100%;
-  margin: 3rem 0 0;
+  margin: 2rem 0 0;
 }
 
 .calls_to_action {
@@ -30,6 +31,7 @@
   font-family: inherit;
   font-size: inherit;
   font-size: 1.4rem;
+  cursor: pointer;
 }
 
 .calls_to_action button i {
