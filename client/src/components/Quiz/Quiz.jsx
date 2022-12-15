@@ -83,6 +83,7 @@ const Quiz = ({ data }) => {
       <QuizProgressBar
         currentStep={currentQuestionDetails.currentQuestionNumber - 1}
         totalSteps={data.length}
+        key={currentQuestionDetails.currentQuestionNumber}
       />
       {showResult ? (
         <div className={classes.result}>
