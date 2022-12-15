@@ -1,6 +1,6 @@
 # Sanasauna!
 
-Web app to help you learn Finnish words.
+Web app to help you learn those Finnish words.
 
 ![Screenshot](screenshot_topic.png)
 
