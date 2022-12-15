@@ -37,6 +37,7 @@ body {
 .flip_card:hover .flip_card_inner {
   transform: rotateY(180deg);
 }
+
 .flip_card_front,
 .flip_card_back {
   position: absolute;
@@ -44,7 +45,7 @@ body {
   height: 100%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  border-radius: 5px;
+  border-radius: 0.3rem;
 }
 .flip_card_front {
   display: flex;

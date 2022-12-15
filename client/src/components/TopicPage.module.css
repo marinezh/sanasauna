@@ -32,7 +32,7 @@
 .topic_nav li {
   list-style: none;
   padding: 0.5rem 1rem;
-  border-radius: 0.5rem 0.5rem 0 0;
+  border-radius: 0.3rem 0.3rem 0 0;
 }
 
 .topic_nav li a {
@@ -54,4 +54,7 @@
 
 .features li:nth-child(2) {
   background-color: var(--mint);
+}
+
+.outlet_container {
 }
