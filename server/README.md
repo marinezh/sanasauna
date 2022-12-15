@@ -13,3 +13,7 @@
 - Get all words that have the given keyword
 
   ` localhost:3001/API/keyword/:keyword `
+
+- Get all used keywords
+
+  `localhost:3001/API/allkeywords`
