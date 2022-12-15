@@ -6,13 +6,13 @@ import "./QuizProgressBar.css";
 
 // TODO: Percentage/accomplished needs to be fixed.
 const QuizProgressBar = ({ currentStep, totalSteps }) => {
-  var stepPercentage = (currentStep / (totalSteps - 1)) * 100;
+  const stepPercentage = (currentStep / (totalSteps - 1)) * 100;
 
   return (
     <ProgressBar percent={stepPercentage}>
-      {[...Array(totalSteps)].map(() => {
+      {[...Array(totalSteps)].map((_, i) => {
         return (
-          <Step>
+          <Step key={i}>
             {({ accomplished, index }) => (
               <div
                 className={`indexedStep ${
