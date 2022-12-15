@@ -6,24 +6,44 @@
   align-items: center;
   padding: 1rem 2rem;
   border-radius: 50%;
+  transition: 0.4s;
 }
 
 .blob:nth-child(5n + 1) {
   background-color: var(--coral);
 }
+.blob:nth-child(5n + 1):hover {
+  background-color: var(--yellow);
+}
 
 .blob:nth-child(5n + 2) {
   background-color: var(--mint);
+}
+.blob:nth-child(5n + 2):hover {
+  background-color: var(--pink);
 }
 
 .blob:nth-child(5n + 3) {
   background-color: var(--purple);
 }
+.blob:nth-child(5n + 3):hover {
+  background-color: var(--coral);
+}
 
 .blob:nth-child(5n + 4) {
   background-color: var(--yellow);
 }
+.blob:nth-child(5n + 4):hover {
+  background-color: var(--mint);
+}
 
 .blob:nth-child(5n + 5) {
   background-color: var(--pink);
+}
+.blob:nth-child(5n + 5):hover {
+  background-color: var(--purple);
+}
+
+.blob a {
+  color: inherit;
 }
