@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 
-import capitaliseFirstLetter from "../../helperFunctions";
+import { capitaliseFirstLetter } from "../../helperFunctions";
 
 import ProgressBar from "../progressBar/ProgressBar";
 

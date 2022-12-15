@@ -13,6 +13,7 @@
   --gray-mid: #d4d4d4;
   --gray-light: #e7e7e7;
   --gray-pale: #f8f8f8;
+  --shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
 }
 
 * {

@@ -1,8 +1,8 @@
 .quiz_container {
-  padding: 3rem;
   border: 3px solid var(--yellow);
-  border-radius: 0 0 1rem 1rem;
   background-color: white;
+  padding: 4rem 3rem;
+  border-radius: 0 1rem 1rem 1rem;
 }
 
 .arrowButton {

@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import capitaliseFirstLetter from "../helperFunctions";
+import { capitaliseFirstLetter } from "../helperFunctions";
 
 import classes from "./Blob.module.css";
 

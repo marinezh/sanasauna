@@ -1,5 +1,6 @@
 import React from "react";
-import capitaliseFirstLetter from "../../helperFunctions";
+
+import { capitaliseFirstLetter } from "../../helperFunctions";
 
 import classes from "./Filler.module.css";
 

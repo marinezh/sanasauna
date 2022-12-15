@@ -1,16 +1,19 @@
 import React, { useState } from "react";
 
+import { shuffle } from "../../helperFunctions";
+
 import Card from "../Card";
 
 import classes from "./FlipCards.module.css";
 
 const FlipCards = ({ data }) => {
   const [englishFirst, setEnglishFirst] = useState(false);
+  const [words, setWords] = useState(data);
 
   return (
     <div className={classes.cards_container}>
       <div className={classes.cards}>
-        {data.map((card) => (
+        {words.map((card) => (
           <Card
             key={card.name}
             name={card.name}
@@ -25,6 +28,9 @@ const FlipCards = ({ data }) => {
         </button>
         <button onClick={() => setEnglishFirst(false)}>
           Flip all to Finnish
+        </button>
+        <button onClick={() => setWords(shuffle(words))}>
+          Shuffle cards <i className="fa-solid fa-shuffle"></i>
         </button>
       </div>
     </div>

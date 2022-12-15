@@ -3,6 +3,6 @@
   height: 100%;
   background-color: white;
   border: 3px solid var(--gray-mid);
-  border-radius: 0 0 1rem 1rem;
-  padding: 3rem;
+  padding: 4rem 3rem;
+  border-radius: 0 1rem 1rem 1rem;
 }

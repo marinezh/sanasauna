@@ -1,9 +1,9 @@
 .cards_container {
   display: flex;
   flex-direction: row;
-  padding: 3rem;
   background-color: var(--gray-light);
-  border-radius: 0 0 1rem 1rem;
+  padding: 4rem 3rem;
+  border-radius: 0 1rem 1rem 1rem;
 }
 
 .cards {
@@ -29,11 +29,19 @@
   font-family: inherit;
   font-size: inherit;
   cursor: pointer;
+  box-shadow: var(--shadow);
 }
 
 .buttons button:nth-child(1) {
   background-color: var(--purple);
 }
+
 .buttons button:nth-child(2) {
   background-color: white;
+}
+
+.buttons button:nth-child(3) {
+  margin-top: auto;
+  background-color: var(--gray-dark);
+  color: white;
 }

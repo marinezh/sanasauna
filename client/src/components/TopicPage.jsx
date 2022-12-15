@@ -1,9 +1,11 @@
 import { Outlet, Link, useParams } from "react-router-dom";
 import React from "react";
-import capitaliseFirstLetter from "../helperFunctions";
+
+import { capitaliseFirstLetter } from "../helperFunctions";
+
+import Breadcrumbs from "./breadCrumbs/Breadcrumbs";
 
 import classes from "./TopicPage.module.css";
-import Breadcrumbs from "./breadCrumbs/Breadcrumbs";
 
 const TopicPage = () => {
   const { categoryName } = useParams();

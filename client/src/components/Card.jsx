@@ -1,7 +1,7 @@
 import React from "react";
 
 import classes from "./Card.module.css";
-import capitaliseFirstLetter from "../helperFunctions";
+import { capitaliseFirstLetter } from "../helperFunctions";
 
 const Card = (props) => {
   const extraClass = props.reversed ? classes.rev : "";
