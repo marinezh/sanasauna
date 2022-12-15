@@ -9,9 +9,10 @@
   text-align: center;
 }
 
-h1 {
+.hero h1 {
   font-size: 7rem;
   line-height: 100%;
+  margin: 3rem 0 0;
 }
 
 .calls_to_action {
@@ -42,4 +43,5 @@ h1 {
   flex-direction: row;
   flex-wrap: wrap;
   gap: 2rem;
+  padding: 1rem 0;
 }
