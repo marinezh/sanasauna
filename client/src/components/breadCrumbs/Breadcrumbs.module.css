@@ -1,7 +1,8 @@
-.breadcrumb_not_active {
-  color: black;
+.breadCrumb {
+  color: #a09eff;
+  margin-top: 1rem;
 }
 
-.breadcrumb_active {
-  color: purple;
+.breadCrumbNav {
+  color: black;
 }
