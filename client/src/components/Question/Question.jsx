@@ -35,7 +35,7 @@ const Question = ({
       <h3 className={classes.question_title}>{questionTitle}</h3>
       <div className="options">
         {options.map((value, index) => (
-          <div className={classes.option_container}>
+          <div className={classes.option_container} key={`option${index}`}>
             <input
               type="radio"
               id={`option${index}`}

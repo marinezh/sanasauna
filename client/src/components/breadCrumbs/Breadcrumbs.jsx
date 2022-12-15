@@ -17,6 +17,7 @@ const Breadcrumbs = () => {
     excludePaths: [":categoryName"],
   });
   const location = useLocation();
+  console.log("location", location);
   console.log("bread", breadcrumbs);
 
   return (
