@@ -1,7 +1,9 @@
 import React from "react";
 import { useState } from "react";
+
 import Question from "../Question/Question";
 import QuizProgressBar from "../QuizProgressBar/QuizProgressBar";
+
 import classes from "./Quiz.module.css";
 
 const getCountOfAvailableOptions = (dataLength) => Math.min(4, dataLength);

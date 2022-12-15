@@ -1,11 +1,13 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
 
+import classes from "./Main.module.css";
+
 const Main = () => {
   return (
-    <div>
+    <main className={classes.main}>
       <Outlet />
-    </div>
+    </main>
   );
 };
 
