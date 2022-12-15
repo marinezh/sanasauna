@@ -3,6 +3,7 @@ import React from "react";
 import capitaliseFirstLetter from "../helperFunctions";
 
 import classes from "./TopicPage.module.css";
+import Breadcrumbs from "./breadCrumbs/Breadcrumbs";
 
 const TopicPage = () => {
   const { categoryName } = useParams();
@@ -10,6 +11,7 @@ const TopicPage = () => {
   return (
     <div className={classes.topic_page_container}>
       <div className={classes.topic_page}>
+        <Breadcrumbs />
         <h1>{capitaliseFirstLetter(categoryName)}</h1>
         <nav className={classes.topic_nav}>
           <ul className={classes.view_tabs}>

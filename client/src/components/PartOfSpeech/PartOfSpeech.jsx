@@ -1,4 +1,5 @@
 import React from "react";
+import Breadcrumbs from "../breadCrumbs/Breadcrumbs";
 
 import classes from "./PartOfSpeech.module.css";
 
