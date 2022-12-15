@@ -2,7 +2,7 @@
 
 Web app to help you learn Finnish words.
 
-(insert image and / or live page links here)
+![Screenshot](screenshot_topic.png)
 
 ## About the project
 
