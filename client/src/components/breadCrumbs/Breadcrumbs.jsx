@@ -23,7 +23,7 @@ const Breadcrumbs = () => {
   return (
     <nav className={classes.breadCrumb}>
       {breadcrumbs.map(({ match, breadcrumb }, index) => (
-        <>
+        <span key={match.pathname}>
           <NavLink
             key={match.pathname}
             to={match.pathname}
@@ -32,7 +32,7 @@ const Breadcrumbs = () => {
             {breadcrumb}
           </NavLink>
           {index !== breadcrumbs.length - 1 && " / "}
-        </>
+        </span>
       ))}
     </nav>
   );
