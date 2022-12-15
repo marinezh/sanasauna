@@ -94,7 +94,7 @@ const Quiz = ({ data }) => {
             / {data.length} correct
           </h3>
           <button onClick={() => resetQuiz()}>
-            Try again <i class="fa-solid fa-repeat"></i>
+            Try again <i className="fa-solid fa-repeat"></i>
           </button>
         </div>
       ) : (
