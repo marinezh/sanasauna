@@ -1,15 +1,3 @@
-/* body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #020e26;
-} */
-/* .cards {
-  display: flex;
-  gap: 3rem;
-  flex-wrap: wrap;
-} */
-
 .flip_card {
   background-color: transparent;
   width: 162px;
