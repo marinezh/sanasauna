@@ -64,7 +64,6 @@ const Quiz = ({ data }) => {
     getCurrentQuestionDetails(1, data)
   );
   const [result, setResult] = useState({});
-
   const [showResult, setShowResult] = useState(false);
 
   const updateCurrentQuestionDetails = (currentQuestionNumber, data) => {
@@ -103,7 +102,7 @@ const Quiz = ({ data }) => {
               )
             }
           >
-            <i class="fa-solid fa-arrow-left"></i>
+            <i className="fa-solid fa-arrow-left"></i>
           </button>
           <div>
             <Question
@@ -135,7 +134,7 @@ const Quiz = ({ data }) => {
               }
             }}
           >
-            <i class="fa-solid fa-arrow-right"></i>
+            <i className="fa-solid fa-arrow-right"></i>
           </button>
         </div>
       )}

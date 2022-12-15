@@ -7,6 +7,7 @@ import classes from "./Breadcrumbs.module.css";
 const Breadcrumbs = () => {
   const breadcrumbs = useBreadcrumbs();
   const location = useLocation();
+  console.log("bread", breadcrumbs);
 
   return (
     <nav>

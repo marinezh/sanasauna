@@ -54,7 +54,7 @@ const Question = ({
               className={classes.optionRadio}
               onClick={() => onOptionClick(correctOptionIndex, index)}
             />
-            <label className="btn btn-default" for={`option${index}`}>
+            <label className="btn btn-default" htmlFor={`option${index}`}>
               {value}
             </label>
           </div>

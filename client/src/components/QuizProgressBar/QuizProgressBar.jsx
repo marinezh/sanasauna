@@ -1,6 +1,8 @@
 import React from "react";
-import "./QuizProgressBar.css";
+
 import { ProgressBar, Step } from "react-step-progress-bar";
+
+import "./QuizProgressBar.css";
 
 // TODO: Percentage/accomplished needs to be fixed.
 const QuizProgressBar = ({ currentStep, totalSteps }) => {

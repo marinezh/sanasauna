@@ -1,36 +1,35 @@
 .indexedStep {
-  color: rgb(190, 190, 190);
-  width: 30px;
-  height: 30px;
-  font-size: 12px;
-  background-color: rgb(255, 255, 255);
+  color: black;
+  width: 2rem;
+  height: 2rem;
+  font-size: 1rem;
+  background-color: var(--gray-mid);
   border-radius: 50%;
   border-style: solid;
   border-width: 1px;
-  border-color: rgb(206, 206, 206);
+  border-color: var(--gray-mid);
   display: flex;
   justify-content: center;
   align-items: center;
-  cursor: pointer;
 }
 
 .indexedStep.accomplished {
-  background-color: #664de5;
+  background-color: var(--purple);
   color: white;
   border-style: none;
 }
 
 .RSPBprogressBar {
-  height: 2px;
+  height: 4px;
   line-height: 1;
   border-radius: 10px;
   position: relative;
-  background-color: rgb(207, 207, 207);
+  background-color: var(--gray-mid);
   display: flex;
   justify-content: space-between;
   align-items: center;
   z-index: 0;
-  margin: 20px;
+  margin: 1rem;
 }
 
 .RSPBprogressBar .RSPBstep {
@@ -46,7 +45,7 @@
 
 .RSPBprogressBar .RSPBprogressBarText {
   color: white;
-  font-size: 10px;
+  font-size: 1rem;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -55,19 +54,10 @@
 
 .RSPBprogressBar .RSPBprogression {
   position: absolute;
-  transition: width 0.3s ease;
+  transition: width 0.5s ease;
   left: 0;
   top: 0;
   bottom: 0;
-  border-radius: 10px;
-  background: #664de5;
+  background: var(--purple);
   z-index: -1;
-}
-
-@media screen and (max-width: 480px) {
-  .indexedStep {
-    width: 15px;
-    height: 15px;
-    font-size: 6px;
-  }
 }
