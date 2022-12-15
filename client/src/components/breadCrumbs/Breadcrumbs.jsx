@@ -16,23 +16,16 @@ const Breadcrumbs = () => {
   const breadcrumbs = useBreadcrumbs(routes, {
     excludePaths: [":categoryName"],
   });
-  const location = useLocation();
-  console.log("location", location);
-  console.log("bread", breadcrumbs);
 
   return (
     <nav className={classes.breadCrumb}>
       {breadcrumbs.map(({ match, breadcrumb }, index) => (
-        <span key={match.pathname}>
-          <NavLink
-            key={match.pathname}
-            to={match.pathname}
-            className={classes.breadCrumbNav}
-          >
+        <React.Fragment key={match.pathname}>
+          <NavLink to={match.pathname} className={classes.breadCrumbNav}>
             {breadcrumb}
           </NavLink>
           {index !== breadcrumbs.length - 1 && " / "}
-        </span>
+        </React.Fragment>
       ))}
     </nav>
   );
