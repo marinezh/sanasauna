@@ -167,6 +167,19 @@ app.get("/API/keyword/:keyword", (req, res) => {
     .then((data) => res.status(200).send(data));
 });
 
+app.get("/API/allkeywords", (req, res) => {
+  dataStorage.getAll().then((data) => {
+    const allKeywords = [];
+    data.forEach((word) => {
+      console.log(word);
+      word.keywords.forEach((keyword) => {
+        if (!allKeywords.includes(keyword)) allKeywords.push(keyword);
+      });
+    });
+    res.status(200).send(allKeywords);
+  });
+});
+
 // END OF API
 
 app.listen(port, host, () =>

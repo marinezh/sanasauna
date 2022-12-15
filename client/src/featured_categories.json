@@ -2,10 +2,17 @@
   {
     "groupName": "topic",
     "categories": [
-      { "categoryName": "animals", "subcategories": [] },
+      { "categoryName": "colors", "subcategories": [] },
+      { "categoryName": "numbers", "subcategories": [] },
+      { "categoryName": "seasons", "subcategories": [] },
       { "categoryName": "months", "subcategories": [] },
+      { "categoryName": "days of week", "subcategories": [] },
+      { "categoryName": "littlewords", "subcategories": [] },
+      { "categoryName": "family", "subcategories": [] },
+      { "categoryName": "animals", "subcategories": [] },
+      { "categoryName": "birds", "subcategories": [] },
       { "categoryName": "fruits", "subcategories": [] },
-      { "categoryName": "colors", "subcategories": [] }
+      { "categoryName": "vegetables", "subcategories": [] }
     ]
   },
   {
