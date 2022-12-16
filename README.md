@@ -2,6 +2,8 @@
 
 Web app to help you learn those Finnish words.
 
+![Screenshot](screenshot_home.png)
+
 ![Screenshot](screenshot_topic.png)
 
 ## About the project
