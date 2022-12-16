@@ -7,10 +7,10 @@ import Login from "./components/Login/Login";
 import Signup from "./components/Signup/Signup";
 import TopicPage from "./components/TopicPage";
 import Layout from "./pages/Layout";
-import WordsList from "./components/cardsNavigation/WordsList";
 import Games from "./components/cardsNavigation/Games";
 import CategoryDetailsQuiz from "./components/CategoryDetails/CategoryDetailsQuiz";
 import CategoryDetailsFlipCards from "./components/CategoryDetails/CategoryDetailsFlipCards";
+import CategoryDetailsWordList from "./components/CategoryDetails/CategoryDetailsWordList";
 
 import "./App.css";
 
@@ -26,7 +26,7 @@ function App() {
           <Route path="signup" element={<Signup />} />
           <Route path=":categoryName/*" element={<TopicPage />}>
             <Route path="flipcards" element={<CategoryDetailsFlipCards />} />
-            <Route path="wordslist" element={<WordsList />} />
+            <Route path="wordlist" element={<CategoryDetailsWordList />} />
             <Route path="test" element={<CategoryDetailsQuiz />} />
             <Route path="game" element={<Games />} />
           </Route>

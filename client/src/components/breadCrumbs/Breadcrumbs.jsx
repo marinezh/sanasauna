@@ -15,7 +15,6 @@ const routes = [
 ];
 
 const Breadcrumbs = () => {
-  console.log(routes);
   const breadcrumbs = useBreadcrumbs(routes, {
     excludePaths: [":categoryName"],
   });

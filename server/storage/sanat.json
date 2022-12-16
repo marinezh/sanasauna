@@ -7,7 +7,7 @@
     "example": "",
     "explanation": "",
     "level": "easy",
-    "links": "tammi,kuu"
+    "links": ["tammi", "kuu"]
   },
   {
     "name": "helmikuu",
@@ -127,7 +127,7 @@
     "example": [],
     "explanation": "",
     "level": "easy",
-    "links": ["joulu", "kuu"]
+    "links": ["joulukuu", "tammikuu", "helmikuu"]
   },
   {
     "name": "kevät",
@@ -137,7 +137,7 @@
     "example": [],
     "explanation": "",
     "level": "easy",
-    "links": []
+    "links": ["maaliskuu", "huhtikuu", "toukokuu"]
   },
   {
     "name": "kesä",
@@ -147,7 +147,7 @@
     "example": [],
     "explanation": "",
     "level": "easy",
-    "links": []
+    "links": ["kesäkuu", "heinäkuu", "elokuu"]
   },
   {
     "name": "syksy",
@@ -157,7 +157,7 @@
     "example": [],
     "explanation": "",
     "level": "easy",
-    "links": []
+    "links": ["syyskuu", "lokakuu", "marraskuu"]
   },
   {
     "name": "maanantai",

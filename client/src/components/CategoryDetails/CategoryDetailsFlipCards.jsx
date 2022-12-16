@@ -4,7 +4,7 @@ import { useParams } from "react-router-dom";
 
 import FlipCards from "../cardsNavigation/FlipCards";
 
-const CategoryDetails = () => {
+const CategoryDetailsFlipCards = () => {
   const [wordData, setWordData] = useState([]);
   const { categoryName } = useParams();
 
@@ -13,7 +13,6 @@ const CategoryDetails = () => {
       .get(`http://localhost:3001/API/keyword/${categoryName}`)
       .then((data) => {
         setWordData(data.data);
-        console.log(data);
       });
   }, [categoryName]);
 
@@ -24,4 +23,4 @@ const CategoryDetails = () => {
   );
 };
 
-export default CategoryDetails;
+export default CategoryDetailsFlipCards;

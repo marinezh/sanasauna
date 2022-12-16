@@ -2,9 +2,9 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { useParams } from "react-router-dom";
 
-import Quiz from "../Quiz/Quiz";
+import WordList from "../cardsNavigation/WordList";
 
-const CategoryDetailsQuiz = () => {
+const CategoryDetailsWordList = () => {
   const [wordData, setWordData] = useState([]);
   const { categoryName } = useParams();
 
@@ -17,8 +17,10 @@ const CategoryDetailsQuiz = () => {
   }, [categoryName]);
 
   return (
-    <div>{wordData.length ? <Quiz data={wordData} /> : <p>Loading...</p>}</div>
+    <div>
+      {wordData.length ? <WordList data={wordData} /> : <p>Loading...</p>}
+    </div>
   );
 };
 
-export default CategoryDetailsQuiz;
+export default CategoryDetailsWordList;

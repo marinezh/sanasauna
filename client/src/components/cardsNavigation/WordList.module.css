@@ -3,6 +3,29 @@
   height: 100%;
   background-color: white;
   border: 3px solid var(--gray-mid);
-  padding: 4rem 3rem;
+  padding: 2rem 4rem 4rem;
   border-radius: 0 1rem 1rem 1rem;
+}
+
+.word_list h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin: 0 0 2rem;
+}
+
+.word_list table {
+  width: 100%;
+}
+
+.word_list thead {
+  color: white;
+}
+
+.word_list th {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin: 0.3rem;
+  padding: 1rem;
+  background-color: var(--purple);
+  border-radius: 0.3rem 0.3rem 0 0;
 }

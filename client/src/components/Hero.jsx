@@ -12,9 +12,11 @@ const Hero = () => {
     <div className={classes.hero}>
       <h1>Learn Finnish words</h1>
       <div className={classes.calls_to_action}>
-        <button>
-          Where should I start? <i className="fa-solid fa-arrow-right"></i>
-        </button>
+        <Link to="/allwords">
+          <button>
+            Where should I start? <i className="fa-solid fa-arrow-right"></i>
+          </button>
+        </Link>
         <Link to="/about">
           <button>
             What is Sanasauna? <i className="fa-solid fa-arrow-right"></i>

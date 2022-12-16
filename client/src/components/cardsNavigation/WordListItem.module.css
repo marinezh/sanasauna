@@ -1,0 +1,27 @@
+.word_row {
+  background-color: var(--gray-pale);
+  width: 100%;
+}
+
+.word_row td {
+  padding: 0.7rem 2rem;
+}
+
+.word_row td:nth-child(1) {
+  font-weight: 600;
+  font-size: 1.5rem;
+  width: 25%;
+}
+
+.word_row td:nth-child(2) {
+  font-size: 1.5rem;
+  width: 25%;
+}
+
+.word_row td:nth-child(3) {
+  width: 50%;
+}
+
+.link_name {
+  color: var(--purple);
+}

@@ -21,7 +21,7 @@ const TopicPage = () => {
               <Link to="flipcards">Flip cards</Link>
             </li>
             <li>
-              <Link to="wordslist">Word list</Link>
+              <Link to="wordlist">Word list</Link>
             </li>
           </ul>
           <ul className={classes.features}>

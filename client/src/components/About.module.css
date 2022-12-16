@@ -3,15 +3,14 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: white;
 }
 
 .bread {
-  width: 1000px;
+  width: 900px;
 }
 
 .about {
-  width: 1000px;
+  width: 900px;
   background: linear-gradient(to bottom, var(--blush), var(--purple));
   box-shadow: var(--shadow);
   border-radius: 1rem;
