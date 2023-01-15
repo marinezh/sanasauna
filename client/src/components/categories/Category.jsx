@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import axios from "axios";
 
 import { capitaliseFirstLetter } from "../../helperFunctions";
@@ -6,7 +7,6 @@ import { capitaliseFirstLetter } from "../../helperFunctions";
 import ProgressBar from "../progressBar/ProgressBar";
 
 import classes from "./Category.module.css";
-import { Link } from "react-router-dom";
 
 const Category = ({ categoryInfo }) => {
   const [wordData, setWordData] = useState([]);
