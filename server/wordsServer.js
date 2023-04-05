@@ -1,4 +1,5 @@
 "use strict";
+//const { getWords } = require("../client/src/auth/firebase");
 
 const path = require("path");
 
