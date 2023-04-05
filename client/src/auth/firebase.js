@@ -57,12 +57,12 @@ const logout = () => {
   signOut(auth);
 };
 
-const getWords = () => {
-  const data = db.collection("words").get();
-  return data;
-};
+// const getWords = () => {
+//   const data = db.collection("words").get();
+//   return data;
+// };
 
-const createWord = () => {};
+// const createWord = () => {};
 
 export {
   auth,

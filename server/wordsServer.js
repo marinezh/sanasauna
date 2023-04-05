@@ -1,5 +1,5 @@
 "use strict";
-const { getWords } = require("../client/src/auth/firebase");
+//const { getWords } = require("../client/src/auth/firebase");
 
 const path = require("path");
 
@@ -44,16 +44,12 @@ app.get("/all", (req, res) =>
 );
 
 // Getting one word
-app.get(
-  "/getWords",
-  (req, res) => {
-    return getWords();
-  }
-  // res.render("getWord", {
-  //   title: "Get",
-  //   header1: "Get",
-  //   action: "/getWord",
-  // })
+app.get("/getWord", (req, res) =>
+  res.render("getWord", {
+    title: "Get",
+    header1: "Get",
+    action: "/getWord",
+  })
 );
 
 app.post("/getWord", (req, res) => {
