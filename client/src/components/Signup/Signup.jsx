@@ -11,12 +11,20 @@ import classes from "./Signup.module.css";
 const Signup = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [password_repeat, setPasswordRepeat] = useState("");
   //const [name, setName] = useState("");
   const [user, loading, error] = useAuthState(auth);
   const navigate = useNavigate();
 
   const register = () => {
-    if (!email) alert("please enter name");
+    if (!email) {
+      alert("please enter email");
+      return;
+    }
+    if (password_repeat !== password) {
+      alert("password do not match");
+      return;
+    }
     registerWithEmailAndPassword(email, password);
   };
 
@@ -50,10 +58,15 @@ const Signup = () => {
             placeholder="Password"
           />
         </div>
-        {/* <div className={classes.field_container}>
+        <div className={classes.field_container}>
           <label>Repeat password </label>
-          <input type="password" />
-        </div> */}
+          <input
+            type="password"
+            value={password_repeat}
+            onChange={(e) => setPasswordRepeat(e.target.value)}
+            placeholder="Password repeat"
+          />
+        </div>
         <div className={classes.button_container}>
           <button className={classes.button} onClick={register}>
             Sign Up

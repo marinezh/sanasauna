@@ -35,7 +35,7 @@ const logInWithEmailAndPassword = async (email, password) => {
   }
 };
 
-const registerWithEmailAndPassword = async (name, email, password) => {
+const registerWithEmailAndPassword = async (email, password) => {
   try {
     const res = await createUserWithEmailAndPassword(auth, email, password);
     // the response gives us an "user" object back
@@ -43,7 +43,7 @@ const registerWithEmailAndPassword = async (name, email, password) => {
     // This will be our fields in the database
     await addDoc(collection(db, "users"), {
       uid: user.uid,
-      name,
+
       authProvider: "local",
       email,
     });
@@ -56,6 +56,13 @@ const registerWithEmailAndPassword = async (name, email, password) => {
 const logout = () => {
   signOut(auth);
 };
+
+const getWords = () => {
+  const data = db.collection("words").get();
+  return data;
+};
+
+const createWord = () => {};
 
 export {
   auth,
