@@ -159,7 +159,11 @@ app.get("/API/allwords", (req, res) => {
 app.get("/API/word/:word", (req, res) => {
   dataStorage
     .getOne(req.params.word)
-    .then((data) => res.status(200).send(data));
+    .then((data) => res.status(200).send(data))
+    .catch((err) => {
+      res.status(200).send(null);
+      console.log(err);
+    });
 });
 
 app.get("/API/keyword/:keyword", (req, res) => {

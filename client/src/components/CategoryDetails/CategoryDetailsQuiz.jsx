@@ -13,7 +13,8 @@ const CategoryDetailsQuiz = () => {
       .get(`http://localhost:3001/API/keyword/${categoryName}`)
       .then((data) => {
         setWordData(data.data);
-      });
+      })
+      .catch((err) => console.log(err));
   }, [categoryName]);
 
   return (
