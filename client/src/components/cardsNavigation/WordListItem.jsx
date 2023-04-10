@@ -6,28 +6,13 @@ import classes from "./WordListItem.module.css";
 const WordListItem = ({ word }) => {
   const [relatedWords, setRelatedWords] = useState([]);
 
-  /* const [urls, setUrls] = useMemo([]);
-  const [promises, setPromises] = useMemo([]);
-
-  useEffect(() => {
-    setUrls(word.links.map((word) => `http://localhost:3001/API/word/${word}`));
-    setPromises(
-      urls.map((endpoint) => {
-        return axios.get(endpoint);
-      })
-    );
-  }, []); */
-
-  const urls = word.links.map(
-    (word) => `http://localhost:3001/API/word/${word}`
-  );
-  const promises = urls.map((endpoint) => {
-    return axios.get(endpoint);
-  });
-
   useEffect(() => {
     axios
-      .all(promises)
+      .all(
+        word.links
+          .map((word) => `http://localhost:3001/API/word/${word}`)
+          .map((url) => axios.get(url))
+      )
       .then((data) => {
         console.log("data", data);
         const newWords = [];
@@ -41,11 +26,7 @@ const WordListItem = ({ word }) => {
       .catch((err) => {
         console.log(err);
       });
-  }, []);
-
-  useEffect(() => {
-    console.log("promises changed!!!", promises);
-  }, [promises]);
+  }, [word.links]);
 
   return (
     <tr className={classes.word_row}>
