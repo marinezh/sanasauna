@@ -10,7 +10,7 @@ const WordListItem = ({ word }) => {
     axios
       .all(
         word.links
-          .map((word) => `http://localhost:3001/API/word/${word}`)
+          .map((word) => `/API/word/${word}`)
           .map((url) => axios.get(url))
       )
       .then((data) => {

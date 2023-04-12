@@ -33,8 +33,6 @@ app.set("views", path.join(__dirname, "ejsPages")); // connect folder pages with
 app.use(express.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, "styles"))); // connect folder public with scc file
 
-console.log(__dirname);
-
 const menuPath = path.join(__dirname, "menu.html"); // connect home page
 
 app.get("/", (req, res) => res.sendFile(menuPath));

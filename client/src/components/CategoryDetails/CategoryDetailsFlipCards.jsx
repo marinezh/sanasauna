@@ -1,19 +1,25 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 
 import FlipCards from "../cardsNavigation/FlipCards";
 
 const CategoryDetailsFlipCards = () => {
   const [wordData, setWordData] = useState([]);
   const { categoryName } = useParams();
+  const navigate = useNavigate();
 
   useEffect(() => {
     axios
-      .get(`http://localhost:3001/API/keyword/${categoryName}`)
+      .get(`/API/keyword/${categoryName}`)
       .then((data) => {
-        setWordData(data.data);
+        if (data.data.length) {
+          setWordData(data.data);
+        } else {
+          navigate("/404");
+        }
       })
+
       .catch((err) => console.log(err));
   }, [categoryName]);
 
