@@ -14,7 +14,7 @@ const Category = ({ categoryInfo }) => {
   const endpoint = categoryInfo.name;
 
   useEffect(() => {
-    axios.get(`http://localhost:3001/API/keyword/${endpoint}`).then((data) => {
+    axios.get(`/API/keyword/${endpoint}`).then((data) => {
       setWordData(data.data);
     });
   }, [endpoint]);

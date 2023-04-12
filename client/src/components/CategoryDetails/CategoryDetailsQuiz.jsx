@@ -10,7 +10,7 @@ const CategoryDetailsQuiz = () => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:3001/API/keyword/${categoryName}`)
+      .get(`/API/keyword/${categoryName}`)
       .then((data) => {
         setWordData(data.data);
       })

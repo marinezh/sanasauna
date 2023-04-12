@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 
 import FlipCards from "../cardsNavigation/FlipCards";
 
@@ -10,7 +10,7 @@ const CategoryDetailsFlipCards = () => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:3001/API/keyword/${categoryName}`)
+      .get(`/API/keyword/${categoryName}`)
       .then((data) => {
         setWordData(data.data);
       })
