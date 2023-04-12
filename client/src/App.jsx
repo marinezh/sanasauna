@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 
 import About from "./components/About";
 import Allwords from "./components/Allwords";
@@ -13,6 +13,7 @@ import CategoryDetailsFlipCards from "./components/CategoryDetails/CategoryDetai
 import CategoryDetailsWordList from "./components/CategoryDetails/CategoryDetailsWordList";
 
 import "./App.css";
+import PageNotFound from "./components/PageNotFound/PageNotFound";
 
 function App() {
   return (
@@ -20,15 +21,19 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
+          <Route path="404" element={<PageNotFound />} />
           <Route path="allwords/*" element={<Allwords />} />
           <Route path="about" element={<About />} />
           <Route path="login" element={<Login />} />
           <Route path="signup" element={<Signup />} />
-          <Route path=":categoryName/*" element={<TopicPage />}>
+
+          <Route path=":categoryName" element={<TopicPage />}>
+            <Route index element={<Navigate to="flipcards" replace />} />
             <Route path="flipcards" element={<CategoryDetailsFlipCards />} />
             <Route path="wordlist" element={<CategoryDetailsWordList />} />
             <Route path="test" element={<CategoryDetailsQuiz />} />
             <Route path="game" element={<Games />} />
+            <Route path="*" element={<Navigate to="/404" replace />} />
           </Route>
         </Route>
       </Routes>
