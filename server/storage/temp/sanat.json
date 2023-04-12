@@ -1,0 +1,1428 @@
+[
+  {
+    "name": "tammikuu",
+    "translation": "january",
+    "keywords": "nouns,months,substantiivit,kuukaudet",
+    "example": [],
+    "level": "easy",
+    "links": ["tammi", "kuu"]
+  },
+  {
+    "name": "helmikuu",
+    "translation": "february",
+    "keywords": ["nouns", "months", "substantiivit", "kuukaudet"],
+    "example": [],
+    "level": "easy",
+    "links": ["helmi", "kuu"]
+  },
+  {
+    "name": "maaliskuu",
+    "translation": "march",
+    "keywords": ["nouns", "months", "substantiivit", "kuukaudet"],
+    "example": [],
+    "level": "easy",
+    "links": ["maa", "kuu"]
+  },
+  {
+    "name": "huhtikuu",
+    "translation": "april",
+    "keywords": ["nouns", "months", "substantiivit", "kuukaudet"],
+    "example": [],
+    "level": "easy",
+    "links": ["huhta", "kuu"]
+  },
+  {
+    "name": "toukokuu",
+    "translation": "may",
+    "keywords": ["nouns", "months", "substantiivit", "kuukaudet"],
+    "example": [],
+    "level": "easy",
+    "links": ["touko", "kuu"]
+  },
+  {
+    "name": "kesäkuu",
+    "translation": "june",
+    "keywords": ["nouns", "months", "substantiivit", "kuukaudet"],
+    "example": [],
+    "level": "easy",
+    "links": ["kesä", "kuu"]
+  },
+  {
+    "name": "heinäkuu",
+    "translation": "july",
+    "keywords": ["nouns", "months", "substantiivit", "kuukaudet"],
+    "example": [],
+    "level": "easy",
+    "links": ["heinä", "kuu"]
+  },
+  {
+    "name": "elokuu",
+    "translation": "august",
+    "keywords": ["nouns", "months", "substantiivit", "kuukaudet"],
+    "example": [],
+    "level": "easy",
+    "links": ["elo", "kuu"]
+  },
+  {
+    "name": "syyskuu",
+    "translation": "september",
+    "keywords": ["nouns", "months", "substantiivit", "kuukaudet"],
+    "example": [],
+    "level": "easy",
+    "links": ["syksy", "kuu"]
+  },
+  {
+    "name": "lokakuu",
+    "translation": "october",
+    "keywords": ["nouns", "months", "substantiivit", "kuukaudet"],
+    "example": [],
+    "level": "easy",
+    "links": ["loka", "kuu"]
+  },
+  {
+    "name": "marraskuu",
+    "translation": "november",
+    "keywords": ["nouns", "months", "substantiivit", "kuukaudet"],
+    "example": [],
+    "level": "easy",
+    "links": ["marras", "kuu"]
+  },
+  {
+    "name": "joulukuu",
+    "translation": "december",
+    "keywords": ["nouns", "months", "substantiivit", "kuukaudet"],
+    "example": [],
+    "level": "easy",
+    "links": ["joulu", "kuu"]
+  },
+  {
+    "name": "talvi",
+    "translation": "winter",
+    "keywords": ["nouns", "seasons", "substantiivit", "vuodenajat"],
+    "example": [],
+    "level": "easy",
+    "links": ["joulukuu", "tammikuu", "helmikuu"]
+  },
+  {
+    "name": "kevät",
+    "translation": "spring",
+    "keywords": ["nouns", "seasons", "substantiivit", "vuodenajat"],
+    "example": [],
+    "level": "easy",
+    "links": ["maaliskuu", "huhtikuu", "toukokuu"]
+  },
+  {
+    "name": "kesä",
+    "translation": "summer",
+    "keywords": ["nouns", "seasons", "substantiivit", "vuodenajat"],
+    "example": [],
+    "level": "easy",
+    "links": ["kesäkuu", "heinäkuu", "elokuu"]
+  },
+  {
+    "name": "syksy",
+    "translation": "autumn",
+    "keywords": ["nouns", "seasons", "substantiivit", "vuodenajat"],
+    "example": [],
+    "level": "easy",
+    "links": ["syyskuu", "lokakuu", "marraskuu"]
+  },
+  {
+    "name": "maanantai",
+    "translation": "monday",
+    "keywords": ["nouns", "days of week", "substantiivit", "viikonpäivät"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "tiistai",
+    "translation": "tuesday",
+    "keywords": ["nouns", "days of week", "substantiivit", "viikonpäivät"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "keskiviikko",
+    "translation": "wednesday",
+    "keywords": ["nouns", "days of week", "substantiivit", "viikonpäivät"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "torstai",
+    "translation": "thursday",
+    "keywords": ["nouns", "days of week", "substantiivit", "viikonpäivät"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "perjantai",
+    "translation": "friday",
+    "keywords": ["nouns", "days of week", "substantiivit", "viikonpäivät"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "lauantai",
+    "translation": "saturday",
+    "keywords": ["nouns", "days of week", "substantiivit", "viikonpäivät"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "sunnuntai",
+    "translation": "sunday",
+    "keywords": ["nouns", "days of week", "substantiivit", "viikonpäivät"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "viikonloppu",
+    "translation": "weekend",
+    "keywords": ["nouns", "days of week", "substantiivit", "viikonpäivät"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "punainen",
+    "translation": "red",
+    "keywords": ["adjectives", "colors", "adjektiivit", "värit"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "valkoinen",
+    "translation": "white",
+    "keywords": ["adjectives", "colors", "adjektiivit", "värit"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "sininen",
+    "translation": "blue",
+    "keywords": ["adjectives", "colors", "adjektiivit", "värit"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "vihreä",
+    "translation": "green",
+    "keywords": ["adjectives", "colors", "adjektiivit", "värit"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "keltainen",
+    "translation": "yellow",
+    "keywords": ["adjectives", "colors", "adjektiivit", "värit"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "harmaa",
+    "translation": "grey",
+    "keywords": ["adjectives", "colors", "adjektiivit", "värit"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "musta",
+    "translation": "black",
+    "keywords": ["adjectives", "colors", "adjektiivit", "värit"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "violetti",
+    "translation": "purple",
+    "keywords": ["adjectives", "colors", "adjektiivit", "värit"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "nolla",
+    "translation": "zero",
+    "keywords": ["numerals", "numbers", "lukusanat", "numeraalit", "numerot"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "yksi",
+    "translation": "one",
+    "keywords": ["numerals", "numbers", "lukusanat", "numeraalit", "numerot"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "kaksi",
+    "translation": "two",
+    "keywords": ["numerals", "numbers", "lukusanat", "numeraalit", "numerot"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "kolme",
+    "translation": "three",
+    "keywords": ["numerals", "numbers", "lukusanat", "numeraalit", "numerot"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "neljä",
+    "translation": "four",
+    "keywords": ["numerals", "numbers", "lukusanat", "numeraalit", "numerot"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "viisi",
+    "translation": "five",
+    "keywords": ["numerals", "numbers", "lukusanat", "numeraalit", "numerot"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "kuusi",
+    "translation": "six",
+    "keywords": ["numerals", "numbers", "lukusanat", "numeraalit", "numerot"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "seitsemän",
+    "translation": "seven",
+    "keywords": ["numerals", "numbers", "lukusanat", "numeraalit", "numerot"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "kahdeksan",
+    "translation": "eight",
+    "keywords": ["numerals", "numbers", "lukusanat", "numeraalit", "numerot"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "yhdeksan",
+    "translation": "nine",
+    "keywords": ["numerals", "numbers", "lukusanat", "numeraalit", "numerot"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "kymmenen",
+    "translation": "ten",
+    "keywords": ["numerals", "numbers", "lukusanat", "numeraalit", "numerot"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "hyvä",
+    "translation": "good",
+    "keywords": ["adjectives", "adjektiivit"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "huono",
+    "translation": "bad",
+    "keywords": ["adjectives", "adjektiivit"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "kuuma",
+    "translation": "hot",
+    "keywords": ["adjectives", "adjektiivit"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "kylmä",
+    "translation": "good",
+    "keywords": ["adjectives", "adjektiivit"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "vaikea",
+    "translation": "difficult",
+    "keywords": ["adjectives", "adjektiivit"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "helppo",
+    "translation": "easy",
+    "keywords": ["adjectives", "adjektiivit"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "uusi",
+    "translation": "new",
+    "keywords": ["adjectives", "adjektiivit"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "vanha",
+    "translation": "old",
+    "keywords": ["adjectives", "adjektiivit"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "iso",
+    "translation": "big",
+    "keywords": ["adjectives", "adjektiivit"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "suuri",
+    "translation": "big",
+    "keywords": ["adjectives", "adjektiivit"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "pieni",
+    "translation": "little",
+    "keywords": ["adjectives", "adjektiivit"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "kaunis",
+    "translation": "beautiful",
+    "keywords": ["adjectives", "adjektiivit"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "ruma",
+    "translation": "ugly",
+    "keywords": ["adjectives", "adjektiivit"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "lämmin",
+    "translation": "warm",
+    "keywords": ["adjectives", "adjektiivit"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "viileä",
+    "translation": "cool",
+    "keywords": ["adjectives", "adjektiivit"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "valoisa",
+    "translation": "bright",
+    "keywords": ["adjectives", "adjektiivit"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "pimeä",
+    "translation": "dark",
+    "keywords": ["adjectives", "adjektiivit"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "lyhyt",
+    "translation": "short",
+    "keywords": ["adjectives", "adjektiivit"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "pitkä",
+    "translation": "long",
+    "keywords": ["adjectives", "adjektiivit"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "pikku",
+    "translation": "little",
+    "keywords": ["pikkusanat", "littlewords"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "muu",
+    "translation": "other",
+    "keywords": ["pikkusanat", "littlewords"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "mutta",
+    "translation": "but",
+    "keywords": ["pikkusanat", "littlewords"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "koska",
+    "translation": "because",
+    "keywords": ["pikkusanat", "littlewords"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "myös",
+    "translation": "also",
+    "keywords": ["pikkusanat", "littlewords"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "nyt",
+    "translation": "now",
+    "keywords": ["pikkusanat", "littlewords"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "ensin",
+    "translation": "first",
+    "keywords": ["pikkusanat", "littlewords"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "sitten",
+    "translation": "then",
+    "keywords": ["pikkusanat", "littlewords"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "tai",
+    "translation": "or",
+    "keywords": ["pikkusanat", "littlewords"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "joka",
+    "translation": "every",
+    "keywords": ["pikkusanat", "littlewords"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "koko",
+    "translation": "whole",
+    "keywords": ["pikkusanat", "littlewords"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "tosi",
+    "translation": "really",
+    "keywords": ["pikkusanat", "littlewords"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "päärynä",
+    "translation": "pear",
+    "keywords": ["nouns", "fruits", "substantiivit", "hedelmät"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "omena",
+    "translation": "apple",
+    "keywords": ["nouns", "fruits", "substantiivit", "hedelmät"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "luumu",
+    "translation": "plum",
+    "keywords": ["nouns", "fruits", "substantiivit", "hedelmät"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "greippi",
+    "translation": "grapefruits",
+    "keywords": ["nouns", "fruits", "substantiivit", "hedelmät"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "banaani",
+    "translation": "banana",
+    "keywords": ["nouns", "fruits", "substantiivit", "hedelmät"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "kurkku",
+    "translation": "cucumber",
+    "keywords": ["nouns", "vegetables", "substantiivit", "kasvikset"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "kaali",
+    "translation": "cabbage",
+    "keywords": ["nouns", "vegetables", "substantiivit", "kasvikset"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "peruna",
+    "translation": "potato",
+    "keywords": ["nouns", "vegetables", "substantiivit", "kasvikset"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "kurpitsa",
+    "translation": "pumpkin",
+    "keywords": ["nouns", "vegetables", "substantiivit", "kasvikset"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "koira",
+    "translation": "dog",
+    "keywords": ["nouns", "animals", "", "", "substantiivit", "eläimet"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "kissa",
+    "translation": "cat",
+    "keywords": ["nouns", "animals", "", "", "substantiivit", "eläimet"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "hevonen",
+    "translation": "horse",
+    "keywords": ["nouns", "animals", "", "", "substantiivit", "eläimet"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "vuohi",
+    "translation": "goat",
+    "keywords": ["nouns", "animals", "", "", "substantiivit", "eläimet"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "susi",
+    "translation": "wolf",
+    "keywords": ["nouns", "animals", "", "", "substantiivit", "eläimet"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "lammas",
+    "translation": "sheep",
+    "keywords": ["nouns", "animals", "", "", "substantiivit", "eläimet"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "sika",
+    "translation": "pig",
+    "keywords": ["nouns", "animals", "", "", "substantiivit", "eläimet"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "apina",
+    "translation": "monkey",
+    "keywords": ["nouns", "animals", "", "", "substantiivit", "eläimet"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "leijona",
+    "translation": "lion",
+    "keywords": ["nouns", "animals", "", "", "substantiivit", "eläimet"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "kirahvi",
+    "translation": "giraffe",
+    "keywords": ["nouns", "animals", "", "", "substantiivit", "eläimet"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "elefantti",
+    "translation": "elephant",
+    "keywords": ["nouns", "animals", "", "", "substantiivit", "eläimet"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "lehmä",
+    "translation": "cow",
+    "keywords": ["nouns", "animals", "", "", "substantiivit", "eläimet"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "kyyhkynen",
+    "translation": "pigeon",
+    "keywords": ["noun", "birds", "", "", "nimisana", "lintuja"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "viiriäinen",
+    "translation": "quail",
+    "keywords": ["noun", "birds", "", "", "nimisana", "lintuja"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "papukaija",
+    "translation": "parrot",
+    "keywords": ["noun", "birds", "", "", "nimisana", "lintuja"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "pöllö",
+    "translation": "owl",
+    "keywords": ["noun", "birds", "", "", "nimisana", "lintuja"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "strutsi",
+    "translation": "ostrich",
+    "keywords": ["noun", "birds", "", "", "nimisana", "lintuja"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "joutsen",
+    "translation": "swan",
+    "keywords": ["noun", "birds", "", "", "nimisana", "lintuja"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "tikka",
+    "translation": "woodpecker",
+    "keywords": ["noun", "birds", "", "", "nimisana", "lintuja"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "silmä",
+    "translation": "eye",
+    "keywords": ["noun", "body parts", "", "", "nimisana", "ruumiinosat"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "pää",
+    "translation": "head",
+    "keywords": ["noun", "body parts", "", "", "nimisana", "ruumiinosat"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "nenä",
+    "translation": "nose",
+    "keywords": ["noun", "body parts", "", "", "nimisana", "ruumiinosat"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "suu",
+    "translation": "mouth",
+    "keywords": ["noun", "body parts", "", "", "nimisana", "ruumiinosat"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "korva",
+    "translation": "ear",
+    "keywords": ["noun", "body parts", "", "", "nimisana", "ruumiinosat"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "huuli",
+    "translation": "lip",
+    "keywords": ["noun", "body parts", "", "", "nimisana", "ruumiinosat"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "sormi",
+    "translation": "finger",
+    "keywords": ["noun", "body parts", "", "", "nimisana", "ruumiinosat"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "hiukset or tukka",
+    "translation": "hair",
+    "keywords": ["noun", "body parts", "", "", "nimisana", "ruumiinosat"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "hammas",
+    "translation": "tooth",
+    "keywords": ["noun", "body parts", "", "", "nimisana", "ruumiinosat"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "perhe",
+    "translation": "family",
+    "keywords": ["noun", "family", "", "", "nimisana", "perhe"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "äiti",
+    "translation": "mother",
+    "keywords": ["noun", "family", "", "", "nimisana", "perhe"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "isä",
+    "translation": "father",
+    "keywords": ["noun", "family", "", "", "nimisana", "perhe"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "vaimo",
+    "translation": "wife",
+    "keywords": ["noun", "family", "", "", "nimisana", "perhe"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "aviomies",
+    "translation": "husband",
+    "keywords": ["noun", "family", "", "", "nimisana", "perhe"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "lapsi",
+    "translation": "child",
+    "keywords": ["noun", "family", "", "", "nimisana", "perhe"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "tytär",
+    "translation": "daughter",
+    "keywords": ["noun", "family", "", "", "nimisana", "perhe"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "poika",
+    "translation": "son",
+    "keywords": ["noun", "family", "", "", "nimisana", "perhe"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "sisko",
+    "translation": "sister",
+    "keywords": ["noun", "family", "", "", "nimisana", "perhe"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "veli",
+    "translation": "brother",
+    "keywords": ["noun", "family", "", "", "nimisana", "perhe"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "pikkusisko",
+    "translation": "younger sister",
+    "keywords": ["noun", "family", "", "", "nimisana", "perhe"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "pikkuveli",
+    "translation": "younger brother",
+    "keywords": ["noun", "family", "", "", "nimisana", "perhe"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "isoveli",
+    "translation": "older brother",
+    "keywords": ["noun", "family", "", "", "nimisana", "perhe"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "isoisoäiti",
+    "translation": "great-grandmother",
+    "keywords": ["noun", "family", "", "", "nimisana", "perhe"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "isoisoisä",
+    "translation": "great-grandfather",
+    "keywords": ["noun", "family", "", "", "nimisana", "perhe"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "isoäiti",
+    "translation": "grandmother",
+    "keywords": ["noun", "family", "", "", "nimisana", "perhe"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "puhua",
+    "translation": "to speak",
+    "keywords": ["verbs", "type 1", "verbit", "tyyppi 1"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "sanoa",
+    "translation": "to say",
+    "keywords": ["verbs", "type 1", "verbit", "tyyppi 1"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "kysyä",
+    "translation": "to ask",
+    "keywords": ["verbs", "type 1", "verbit", "tyyppi 1"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "asua",
+    "translation": "to live",
+    "keywords": ["verbs", "type 1", "verbit", "tyyppi 1"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "katsoa",
+    "translation": "to watch",
+    "keywords": ["verbs", "type 1", "verbit", "tyyppi 1"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "ostaa",
+    "translation": "to buy",
+    "keywords": ["verbs", "type 1", "verbit", "tyyppi 1"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "maksaa",
+    "translation": "to pay",
+    "keywords": ["verbs", "type 1", "verbit", "tyyppi 1"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "ottaa",
+    "translation": "to take",
+    "keywords": ["verbs", "type 1", "verbit", "tyyppi 1"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "rakastaa",
+    "translation": "to love",
+    "keywords": ["verbs", "type 1", "verbit", "tyyppi 1"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "auttaa",
+    "translation": "to help",
+    "keywords": ["verbs", "type 1", "verbit", "tyyppi 1"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "saada",
+    "translation": "to get",
+    "keywords": ["verbs", "type 2", "verbit", "tyyppi 2"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "juoda",
+    "translation": "to drink",
+    "keywords": ["verbs", "type 2", "verbit", "tyyppi 2"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "syödä",
+    "translation": "to eat",
+    "keywords": ["verbs", "type 2", "verbit", "tyyppi 2"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "imuroida",
+    "translation": "to vacuum",
+    "keywords": ["verbs", "type 2", "verbit", "tyyppi 2"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "jäädä",
+    "translation": "to stay",
+    "keywords": ["verbs", "type 2", "verbit", "tyyppi 2"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "käydä",
+    "translation": "to visit",
+    "keywords": ["verbs", "type 2", "verbit", "tyyppi 2"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "soida",
+    "translation": "to ring",
+    "keywords": ["verbs", "type 2", "verbit", "tyyppi 2"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "tehdä",
+    "translation": "to make",
+    "keywords": ["verbs", "type 2", "verbit", "tyyppi 2"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "uida",
+    "translation": "to swim",
+    "keywords": ["verbs", "type 2", "verbit", "tyyppi 2"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "nähdä",
+    "translation": "to see",
+    "keywords": ["verbs", "type 2", "verbit", "tyyppi 2"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "tulla",
+    "translation": "to come",
+    "keywords": ["verbs", "type 3", "verbit", "tyyppi 3"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "mennä",
+    "translation": "to go",
+    "keywords": ["verbs", "type 3", "verbit", "tyyppi 3"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "pestä",
+    "translation": "to wash",
+    "keywords": ["verbs", "type 3", "verbit", "tyyppi 3"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "panna",
+    "translation": "to put",
+    "keywords": ["verbs", "type 3", "verbit", "tyyppi 3"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "opiskella",
+    "translation": "to study",
+    "keywords": ["verbs", "type 3", "verbit", "tyyppi 3"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "olla",
+    "translation": "to be",
+    "keywords": ["verbs", "type 3", "verbit", "tyyppi 3"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "kävellä",
+    "translation": "to walk",
+    "keywords": ["verbs", "type 3", "verbit", "tyyppi 3"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "pyöräillä",
+    "translation": "to ride a bike",
+    "keywords": ["verbs", "type 3", "verbit", "tyyppi 3"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "hymyillä",
+    "translation": "to smile",
+    "keywords": ["verbs", "type 3", "verbit", "tyyppi 3"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+
+  {
+    "name": "keskustella",
+    "translation": "to chat",
+    "keywords": ["verbs", "type 3", "verbit", "tyyppi 3"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+ 
+  {
+    "name": "avata",
+    "translation": "to open",
+    "keywords": ["verbs", "type 4", "verbit", "tyyppi 4"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "haluta",
+    "translation": "to want",
+    "keywords": ["verbs", "type 4", "verbit", "tyyppi 4"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "herätä",
+    "translation": "to wake up",
+    "keywords": ["verbs", "type 4", "verbit", "tyyppi 4"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "kadota",
+    "translation": "to disappear",
+    "keywords": ["verbs", "type 4", "verbit", "tyyppi 4"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "pelata",
+    "translation": "to play",
+    "keywords": ["verbs", "type 4", "verbit", "tyyppi 4"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "pelätä",
+    "translation": "to be scared",
+    "keywords": ["verbs", "type 4", "verbit", "tyyppi 4"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "hallita",
+    "translation": "to rule",
+    "keywords": ["verbs", "type 5", "verbit", "tyyppi 5"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "mainita",
+    "translation": "to mention",
+    "keywords": ["verbs", "type 5", "verbit", "tyyppi 5"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "merkitä",
+    "translation": "to mark",
+    "keywords": ["verbs", "type 5", "verbit", "tyyppi 5"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "tarvita",
+    "translation": "to need",
+    "keywords": ["verbs", "type 5", "verbit", "tyyppi 5"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "tulkita",
+    "translation": "to interpret",
+    "keywords": ["verbs", "type 5", "verbit", "tyyppi 5"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "pidetä",
+    "translation": "to become longer",
+    "keywords": ["verbs", "type 6", "verbit", "tyyppi 6"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "pimetä",
+    "translation": "to become darker",
+    "keywords": ["verbs", "type 6", "verbit", "tyyppi 6"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "vanheta",
+    "translation": "to become older",
+    "keywords": ["verbs", "type 6", "verbit", "tyyppi 6"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "kuumeta",
+    "translation": "to become hot",
+    "keywords": ["verbs", "type 6", "verbit", "tyyppi 6"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "kylmetä",
+    "translation": "to become colder",
+    "keywords": ["verbs", "type 6", "verbit", "tyyppi 6"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "suuresti",
+    "translation": "greatly",
+    "keywords": ["adverbs", "adverbit"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "monesti",
+    "translation": "often",
+    "keywords": ["adverbs", "adverbit"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "vapaasti",
+    "translation": "freely",
+    "keywords": ["adverbs", "adverbit"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "vahvasti",
+    "translation": "strongly",
+    "keywords": ["adverbs", "adverbit"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "kivasti",
+    "translation": "nicely",
+    "keywords": ["adverbs", "adverbit"],
+    "example": [],
+    "level": "easy",
+    "links": []
+  }
+]

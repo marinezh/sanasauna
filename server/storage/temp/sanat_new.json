@@ -1,0 +1,958 @@
+[
+  {
+    "name": "helmikuu",
+    "translation": "February",
+    "keywords": ["nouns", "months", "substantiivit", "kuukaudet"],
+    "example": [],
+    "level": "easy",
+    "links": ["helmi", "kuu"]
+  },
+  {
+    "name": "kissa",
+    "translation": "cat",
+    "keywords": ["nouns", "animals", "eläimet"],
+    "example": ["Minulla on kissa.", "Kissa nukkuu sohvalla."],
+    "level": "easy",
+    "links": ["kisu"]
+  },
+  {
+    "name": "auto",
+    "translation": "car",
+    "keywords": ["nouns", "vehicles", "ajoneuvot"],
+    "example": ["Auto on parkkipaikalla.", "Ostan uuden auton ensi kuussa."],
+    "level": "easy",
+    "links": ["ajoneuvo"]
+  },
+  {
+    "name": "puu",
+    "translation": "tree",
+    "keywords": ["nouns", "nature", "luonto"],
+    "example": [
+      "Puut ovat kauniita syksyllä.",
+      "Talojen ympärillä kasvaa paljon puita."
+    ],
+    "level": "easy",
+    "links": ["metsä"]
+  },
+  {
+    "name": "juusto",
+    "translation": "cheese",
+    "keywords": ["nouns", "food", "ruoka"],
+    "example": [
+      "Leivän päällä on juustoa.",
+      "Pidän erityisesti cheddar-juustosta."
+    ],
+    "level": "easy",
+    "links": ["maito"]
+  },
+  {
+    "name": "sänky",
+    "translation": "bed",
+    "keywords": ["nouns", "furniture", "huonekalut"],
+    "example": ["Nukun yöni sängyssä.", "Sängyn alla on paljon pölyä."],
+    "level": "easy",
+    "links": ["patja"]
+  },
+  {
+    "name": "pöytä",
+    "translation": "table",
+    "keywords": ["nouns", "furniture", "huonekalut"],
+    "example": [
+      "Ruoka syödään pöydän ääressä.",
+      "Pöydällä on paljon tavaroita."
+    ],
+    "level": "easy",
+    "links": ["tuoli"]
+  },
+  {
+    "name": "lintu",
+    "translation": "bird",
+    "keywords": ["nouns", "animals", "eläimet"],
+    "example": [
+      "Pihallamme on paljon lintuja.",
+      "Tunnen monta erilaista lintulajia."
+    ],
+    "level": "easy",
+    "links": ["siipi"]
+  },
+  {
+    "name": "järvi",
+    "translation": "lake",
+    "keywords": ["nouns", "nature", "luonto"],
+    "example": ["Järvi on täynnä kaloja.", "Uin joka päivä järveen kesällä."],
+    "level": "easy",
+    "links": ["vesi"]
+  },
+  {
+    "name": "vaate",
+    "translation": "clothing",
+    "keywords": ["nouns", "fashion", "muoti"],
+    "example": [
+      "Ostan usein uusia vaatteita.",
+      "Vaatekaapissani on paljon erilaisia vaatteita."
+    ],
+    "level": "easy",
+    "links": ["paita", "housut"]
+  },
+  {
+    "name": "kirja",
+    "translation": "book",
+    "keywords": ["nouns", "literature", "kirjallisuus"],
+    "example": ["Luen paljon kirjoja.", "Ostan uusia kirjoja aina kun pystyn."],
+    "level": "easy",
+    "links": ["sanakirja", "romaani"]
+  },
+  {
+    "name": "aurinko",
+    "translation": "sun",
+    "keywords": ["nouns", "nature", "luonto"],
+    "example": [
+      "Aurinko paistaa tänään kirkkaasti.",
+      "Aurinko nousee aina itäiseltä taivaanrannalta."
+    ],
+    "level": "easy",
+    "links": ["taivas"]
+  },
+  {
+    "name": "omena",
+    "translation": "apple",
+    "keywords": ["nouns", "food", "ruoka"],
+    "example": [
+      "Syön joka päivä vähintään yhden omenan.",
+      "Omenat ovat hyvä välipala."
+    ],
+    "level": "easy",
+    "links": ["hedelmä"]
+  },
+  {
+    "name": "suklaa",
+    "translation": "chocolate",
+    "keywords": ["nouns", "food", "ruoka"],
+    "example": [
+      "Pidän erityisesti tummasta suklaasta.",
+      "Suklaa tekee minut onnelliseksi."
+    ],
+    "level": "easy",
+    "links": ["karkki"]
+  },
+  {
+    "name": "kahvi",
+    "translation": "coffee",
+    "keywords": ["nouns", "beverages", "juomat"],
+    "example": ["Juon joka aamu kupin kahvia.", "Kahvi saa minut virkeäksi."],
+    "level": "easy",
+    "links": ["tee"]
+  },
+  {
+    "name": "talo",
+    "translation": "house",
+    "keywords": ["nouns", "architecture", "arkkitehtuuri"],
+    "example": ["Talon edessä on iso piha.", "Talo on rakennettu vuonna 1980."],
+    "level": "easy",
+    "links": ["asunto"]
+  },
+  {
+    "name": "laiva",
+    "translation": "ship",
+    "keywords": ["nouns", "transportation", "kuljetus"],
+    "example": [
+      "Laiva kulkee meren yli.",
+      "Laivalla voi matkustaa ulkomaille."
+    ],
+    "level": "easy",
+    "links": ["vene"]
+  },
+  {
+    "name": "kynä",
+    "translation": "pen",
+    "keywords": ["nouns", "writing", "kirjoittaminen"],
+    "example": ["Kirjoitan aina kynällä.", "Kynästäni loppui muste."],
+    "level": "easy",
+    "links": ["paperi"]
+  },
+  {
+    "name": "kukka",
+    "translation": "flower",
+    "keywords": ["nouns", "nature", "luonto"],
+    "example": [
+      "Kukat ovat kauniita keväällä.",
+      "Annoin ystävälleni kukkakimpun syntymäpäivänään."
+    ],
+    "level": "easy",
+    "links": ["puu"]
+  },
+  {
+    "name": "auto",
+    "translation": "car",
+    "keywords": ["nouns", "transportation", "kuljetus"],
+    "example": ["Minulla on oma auto.", "Autoilu on kätevää kaupungissa."],
+    "level": "easy",
+    "links": ["moottoripyörä"]
+  },
+  {
+    "name": "laukku",
+    "translation": "bag",
+    "keywords": ["nouns", "fashion", "muoti"],
+    "example": [
+      "Minulla on aina mukana laukku.",
+      "Laukku on kätevä säilytyspaikka tavaroille."
+    ],
+    "level": "easy",
+    "links": ["reppu"]
+  },
+  {
+    "name": "pöytä",
+    "translation": "table",
+    "keywords": ["nouns", "furniture", "huonekalut"],
+    "example": [
+      "Ruokapöytä on olohuoneessa.",
+      "Kirjoitan tietokoneella pöydän ääressä."
+    ],
+    "level": "easy",
+    "links": ["tuoli"]
+  },
+  {
+    "name": "kissa",
+    "translation": "cat",
+    "keywords": ["nouns", "animals", "eläimet"],
+    "example": ["Minulla on kaksi kissaa.", "Kissa nukkuu usein päivällä."],
+    "level": "easy",
+    "links": ["koira"]
+  },
+  {
+    "name": "koira",
+    "translation": "dog",
+    "keywords": ["nouns", "animals", "eläimet"],
+    "example": ["Koirani on hyvin leikkisä.", "Koira on uskollinen ystävä."],
+    "level": "easy",
+    "links": ["kissa"]
+  },
+  {
+    "name": "tietokone",
+    "translation": "computer",
+    "keywords": ["nouns", "technology", "teknologia"],
+    "example": [
+      "Käytän tietokonetta joka päivä.",
+      "Tietokoneella voi tehdä monia erilaisia asioita."
+    ],
+    "level": "easy",
+    "links": ["kännykkä"]
+  },
+  {
+    "name": "peruna",
+    "translation": "potato",
+    "keywords": ["nouns", "food", "ruoka"],
+    "example": [
+      "Perunat ovat hyvä lisuke lihalle.",
+      "Teen usein perunamuusia perunoista."
+    ],
+    "level": "easy",
+    "links": ["porkkana"]
+  },
+  {
+    "name": "kala",
+    "translation": "fish",
+    "keywords": ["nouns", "food", "ruoka"],
+    "example": ["Syön paljon kalaa.", "Kala on terveellinen ruoka."],
+    "level": "easy",
+    "links": ["liha"]
+  },
+  {
+    "name": "pöllö",
+    "translation": "owl",
+    "keywords": ["nouns", "animals", "eläimet"],
+    "example": ["Pöllö on yöeläin.", "Pöllö voi kääntää päänsä ympäri."],
+    "level": "easy",
+    "links": ["lintu"]
+  },
+  {
+    "name": "järvi",
+    "translation": "lake",
+    "keywords": ["nouns", "nature", "luonto"],
+    "example": ["Järvi on suuri vesistö.", "Käyn usein uimassa järvessä."],
+    "level": "easy",
+    "links": ["joki"]
+  },
+  {
+    "name": "leipä",
+    "translation": "bread",
+    "keywords": ["nouns", "food", "ruoka"],
+    "example": [
+      "Syön usein leipää aamupalaksi.",
+      "Leipä on tärkeä osa ruokavaliota."
+    ],
+    "level": "easy",
+    "links": ["juusto"]
+  },
+  {
+    "name": "lintu",
+    "translation": "bird",
+    "keywords": ["nouns", "animals", "eläimet"],
+    "example": [
+      "Lintuja on monia erilaisia.",
+      "Käki on yleinen lintu Suomessa."
+    ],
+    "level": "easy",
+    "links": ["pöllö"]
+  },
+  {
+    "name": "keltainen",
+    "translation": "yellow",
+    "keywords": ["adjectives", "colors", "värit"],
+    "example": ["Keltainen on aurinkoinen väri.", "Pidän keltaisesta väristä."],
+    "level": "easy",
+    "links": ["punainen"]
+  },
+  {
+    "name": "valkoinen",
+    "translation": "white",
+    "keywords": ["adjectives", "colors", "värit"],
+    "example": ["Lumihanget ovat valkoisia.", "Pidän valkoisesta paidasta."],
+    "level": "easy",
+    "links": ["musta"]
+  },
+  {
+    "name": "iso",
+    "translation": "big",
+    "keywords": ["adjectives", "size", "koko"],
+    "example": ["Elefantti on iso eläin.", "Tämä talo on iso."],
+    "level": "easy",
+    "links": ["pieni"]
+  },
+  {
+    "name": "pieni",
+    "translation": "small",
+    "keywords": ["adjectives", "size", "koko"],
+    "example": ["Kissanpentu on pieni.", "Tämä kirja on pieni."],
+    "level": "easy",
+    "links": ["iso"]
+  },
+  {
+    "name": "kaunis",
+    "translation": "beautiful",
+    "keywords": ["adjectives", "appearance", "ulkonäkö"],
+    "example": ["Aurinkonlasku on kaunis näky.", "Nainen on kaunis."],
+    "level": "easy",
+    "links": ["ruma"]
+  },
+  {
+    "name": "ruma",
+    "translation": "ugly",
+    "keywords": ["adjectives", "appearance", "ulkonäkö"],
+    "example": ["Tämä rakennus on ruma.", "En pidä rumista vaatteista."],
+    "level": "easy",
+    "links": ["kaunis"]
+  },
+  {
+    "name": "kissa",
+    "translation": "cat",
+    "keywords": ["nouns", "animals", "eläimet"],
+    "example": ["Minulla on kissa.", "Kissa naukaisee."],
+    "level": "easy",
+    "links": ["koira"]
+  },
+  {
+    "name": "koira",
+    "translation": "dog",
+    "keywords": ["nouns", "animals", "eläimet"],
+    "example": ["Koiran häntä heiluu.", "Koiran haukunta on äänekästä."],
+    "level": "easy",
+    "links": ["kissa"]
+  },
+  {
+    "name": "kaupunki",
+    "translation": "city",
+    "keywords": ["nouns", "places", "paikat"],
+    "example": [
+      "Helsinki on Suomen pääkaupunki.",
+      "Kaupunki on täynnä elämää."
+    ],
+    "level": "easy",
+    "links": ["kylä"]
+  },
+  {
+    "name": "kylä",
+    "translation": "village",
+    "keywords": ["nouns", "places", "paikat"],
+    "example": [
+      "Kylässä on paljon vanhoja taloja.",
+      "Kylässä on yhteisöllinen ilmapiiri."
+    ],
+    "level": "easy",
+    "links": ["kaupunki"]
+  },
+  {
+    "name": "pää",
+    "translation": "head",
+    "keywords": ["nouns", "anatomy", "anatomia"],
+    "example": ["Ihmisellä on yksi pää.", "Päässä on aivot."],
+    "level": "easy",
+    "links": ["käsi"]
+  },
+  {
+    "name": "käsi",
+    "translation": "hand",
+    "keywords": ["nouns", "anatomy", "anatomia"],
+    "example": ["Ihmisellä on kaksi kättä.", "Kädessä on viisi sormea."],
+    "level": "easy",
+    "links": ["pää"]
+  },
+  {
+    "name": "puu",
+    "translation": "tree",
+    "keywords": ["nouns", "nature", "luonto"],
+    "example": ["Metsässä on paljon puita.", "Talvella puut ovat lumisia."],
+    "level": "easy",
+    "links": ["kukka"]
+  },
+  {
+    "name": "kukka",
+    "translation": "flower",
+    "keywords": ["nouns", "nature", "luonto"],
+    "example": ["Kukat tuoksuvat hyvälle.", "Tämä kukka on kaunis."],
+    "level": "easy",
+    "links": ["puu"]
+  },
+  {
+    "name": "lämmin",
+    "translation": "warm",
+    "keywords": ["adjectives", "temperature", "lämpötila"],
+    "example": ["Ulkoa tuleva ilma on lämmin.", "Lämmin huoneilma on mukavaa."],
+    "level": "easy",
+    "links": ["kylmä"]
+  },
+  {
+    "name": "kylmä",
+    "translation": "cold",
+    "keywords": ["adjectives", "temperature", "lämpötila"],
+    "example": ["Talvella ulkona on kylmä.", "Jääkaapin sisällä on kylmää."],
+    "level": "easy",
+    "links": ["lämmin"]
+  },
+  {
+    "name": "musta",
+    "translation": "black",
+    "keywords": ["adjectives", "colors", "värit"],
+    "example": ["Musta on surun väri.", "Tämä paita on musta."],
+    "level": "easy",
+    "links": ["valkoinen"]
+  },
+  {
+    "name": "valkoinen",
+    "translation": "white",
+    "keywords": ["adjectives", "colors", "värit"],
+    "example": ["Lumi on valkoista.", "Tämä seinä on valkoinen."],
+    "level": "easy",
+    "links": ["musta"]
+  },
+  {
+    "name": "iso",
+    "translation": "big",
+    "keywords": ["adjectives", "size", "koko"],
+    "example": ["Tämä talo on iso.", "Elefantti on iso eläin."],
+    "level": "easy",
+    "links": ["pieni"]
+  },
+  {
+    "name": "pieni",
+    "translation": "small",
+    "keywords": ["adjectives", "size", "koko"],
+    "example": ["Tämä kukka on pieni.", "Koiranpentu on vielä pieni."],
+    "level": "easy",
+    "links": ["iso"]
+  },
+  {
+    "name": "kuukausi",
+    "translation": "month",
+    "keywords": ["nouns", "time", "aika", "substantiivit"],
+    "example": [
+      "Vuodessa on 12 kuukautta.",
+      "Tämä on ensimmäinen kuukausi uudessa työpaikassa."
+    ],
+    "level": "easy",
+    "links": ["vuosi"]
+  },
+  {
+    "name": "vuosi",
+    "translation": "year",
+    "keywords": ["nouns", "time", "aika", "substantiivit"],
+    "example": ["Vuodessa on 365 päivää.", "Tämä vuosi on ollut haastava."],
+    "level": "easy",
+    "links": ["kuukausi"]
+  },
+  {
+    "name": "auto",
+    "translation": "car",
+    "keywords": ["nouns", "vehicles", "ajoneuvot", "substantiivit"],
+    "example": [
+      "Minulla on punainen auto.",
+      "Tänään kävin pesettämässä auton."
+    ],
+    "level": "easy",
+    "links": ["moottoripyörä", "bussi"]
+  },
+  {
+    "name": "moottoripyörä",
+    "translation": "motorcycle",
+    "keywords": ["nouns", "vehicles", "ajoneuvot", "substantiivit"],
+    "example": [
+      "Moottoripyörä on nopea kulkuväline.",
+      "Kaverillani on hieno moottoripyörä."
+    ],
+    "level": "medium",
+    "links": ["auto", "pyörä"]
+  },
+  {
+    "name": "bussi",
+    "translation": "bus",
+    "keywords": ["nouns", "vehicles", "ajoneuvot", "substantiivit"],
+    "example": [
+      "Aamulla käytän usein bussia.",
+      "Tämä bussi menee suoraan keskustaan."
+    ],
+    "level": "easy",
+    "links": ["auto", "juna"]
+  },
+  {
+    "name": "pyörä",
+    "translation": "bike",
+    "keywords": ["nouns", "vehicles", "ajoneuvot", "substantiivit"],
+    "example": [
+      "Lainasin kaverin pyörää.",
+      "Ostin uuden pyörän viime viikolla."
+    ],
+    "level": "medium",
+    "links": ["moottoripyörä"]
+  },
+  {
+    "name": "puu",
+    "translation": "tree",
+    "keywords": ["nouns", "nature", "luonto", "substantiivit"],
+    "example": [
+      "Tämä puu on yli sata vuotta vanha.",
+      "Puut tuottavat happea fotosynteesin avulla."
+    ],
+    "level": "easy",
+    "links": ["kasvi"]
+  },
+  {
+    "name": "vuori",
+    "translation": "mountain",
+    "keywords": ["nouns", "nature", "luonto", "substantiivit"],
+    "example": [
+      "Vuoren huipulla on upea näkymä.",
+      "Vuorella on paljon erilaisia eläimiä."
+    ],
+    "level": "hard",
+    "links": ["metsä"]
+  },
+  {
+    "name": "joki",
+    "translation": "river",
+    "keywords": ["nouns", "nature", "luonto", "substantiivit"],
+    "example": [
+      "Joki virtaa kovalla vauhdilla.",
+      "Joen vesi on kirkasta ja puhdasta."
+    ],
+    "level": "medium",
+    "links": ["meri"]
+  },
+  {
+    "name": "aurinko",
+    "translation": "sun",
+    "keywords": ["nouns", "nature", "luonto", "substantiivit"],
+    "example": [
+      "Aurinko paistaa tänään kirkkaalta taivaalta.",
+      "Aurinko nousee aamulla ja laskee illalla."
+    ],
+    "level": "easy",
+    "links": ["kuu"]
+  },
+  {
+    "name": "tähti",
+    "translation": "star",
+    "keywords": ["nouns", "nature", "luonto", "substantiivit"],
+    "example": [
+      "Yötaivaalla näkyy paljon erilaisia tähtiä.",
+      "Tähdet ovat kauniita ja salaperäisiä."
+    ],
+    "level": "medium",
+    "links": ["aurinko"]
+  },
+  {
+    "name": "tietokone",
+    "translation": "computer",
+    "keywords": ["nouns", "technology", "teknologia", "substantiivit"],
+    "example": [
+      "Tämä tietokone on erittäin tehokas.",
+      "Käytän tietokonetta päivittäin töissä."
+    ],
+    "level": "easy",
+    "links": ["hiiri", "näyttö"]
+  },
+  {
+    "name": "puhelin",
+    "translation": "phone",
+    "keywords": ["nouns", "technology", "teknologia", "substantiivit"],
+    "example": [
+      "Minulla on uusi puhelin.",
+      "Käytän puhelinta paljon sosiaalisen median selailuun."
+    ],
+    "level": "easy",
+    "links": ["kuulokkeet", "laturi"]
+  },
+  {
+    "name": "televisio",
+    "translation": "television",
+    "keywords": ["nouns", "technology", "teknologia", "substantiivit"],
+    "example": [
+      "Katson televisiota usein illalla.",
+      "Televisiossa on hyvä kuvanlaatu."
+    ],
+    "level": "easy",
+    "links": ["kaukosäädin", "kanavat"]
+  },
+  {
+    "name": "auto",
+    "translation": "car",
+    "keywords": ["nouns", "vehicles", "ajoneuvot", "substantiivit"],
+    "example": [
+      "Minulla on iso auto.",
+      "Auto on kätevä tapa liikkua kaupungissa."
+    ],
+    "level": "easy",
+    "links": ["moottori", "renkaat"]
+  },
+  {
+    "name": "lentokone",
+    "translation": "airplane",
+    "keywords": ["nouns", "vehicles", "ajoneuvot", "substantiivit"],
+    "example": ["Lentokoneessa on ahdasta.", "Lentokoneen matka sujui hyvin."],
+    "level": "medium",
+    "links": ["siivet", "polttoaine"]
+  },
+  {
+    "name": "vene",
+    "translation": "boat",
+    "keywords": ["nouns", "vehicles", "ajoneuvot", "substantiivit"],
+    "example": ["Minulla on pieni vene.", "Veneen moottori on rikki."],
+    "level": "medium",
+    "links": ["ankkuri", "purje"]
+  },
+  {
+    "name": "pyörä",
+    "translation": "bike",
+    "keywords": ["nouns", "vehicles", "ajoneuvot", "substantiivit"],
+    "example": ["Käytän pyörääni työmatkoilla.", "Pyörän renkaat ovat tyhjät."],
+    "level": "medium",
+    "links": ["satula", "jarrut"]
+  },
+  {
+    "name": "juna",
+    "translation": "train",
+    "keywords": ["nouns", "vehicles", "ajoneuvot", "substantiivit"],
+    "example": [
+      "Juna on myöhässä.",
+      "Juna on mukava tapa matkustaa kaupunkien välillä."
+    ],
+    "level": "medium",
+    "links": ["vaunut", "raide"]
+  },
+  {
+    "name": "kissa",
+    "translation": "cat",
+    "keywords": ["nouns", "animals", "eläimet", "substantiivit"],
+    "example": ["Kissa nukkuu sohvalla.", "Kissa juoksee takapihalla."],
+    "level": "easy",
+    "links": ["kynnet", "karvat"]
+  },
+  {
+    "name": "koira",
+    "translation": "dog",
+    "keywords": ["nouns", "animals", "eläimet", "substantiivit"],
+    "example": ["Koirani on iloinen.", "Koira haukkuu ulkona."],
+    "level": "easy",
+    "links": ["häntä", "kuono"]
+  },
+  {
+    "name": "hevonen",
+    "translation": "horse",
+    "keywords": ["nouns", "animals", "eläimet", "substantiivit"],
+    "example": [
+      "Hevonen syö heinää laitumella.",
+      "Hevosen harja on takkuinen."
+    ],
+    "level": "medium",
+    "links": ["satula", "suitsi"]
+  },
+  {
+    "name": "lehmä",
+    "translation": "cow",
+    "keywords": ["nouns", "animals", "eläimet", "substantiivit"],
+    "example": ["Lehmä lypsetään aamuisin.", "Lehmä laiduntaa pellolla."],
+    "level": "medium",
+    "links": ["maito", "sarvet"]
+  },
+  {
+    "name": "lintu",
+    "translation": "bird",
+    "keywords": ["nouns", "animals", "eläimet", "substantiivit"],
+    "example": ["Lintu lentää taivaalla.", "Linnut laulavat aamulla."],
+    "level": "medium",
+    "links": ["siivet", "pönttö"]
+  },
+  {
+    "name": "kärpänen",
+    "translation": "fly",
+    "keywords": ["nouns", "animals", "eläimet", "substantiivit"],
+    "example": ["Kärpänen surisee huoneessa.", "Kärpänen istuu ikkunalla."],
+    "level": "hard",
+    "links": ["siivet", "hyttysverkko"]
+  },
+  {
+    "name": "hämähäkki",
+    "translation": "spider",
+    "keywords": ["nouns", "animals", "eläimet", "substantiivit"],
+    "example": [
+      "Hämähäkki kulkee seinää pitkin.",
+      "Hämähäkki tekee verkkoansa."
+    ],
+    "level": "hard",
+    "links": ["toukat", "myrkky"]
+  },
+  {
+    "name": "kotka",
+    "translation": "eagle",
+    "keywords": ["nouns", "animals", "eläimet", "substantiivit"],
+    "example": [
+      "Kotka lentää korkealla taivaalla.",
+      "Kotka on uhanalainen eläinlaji."
+    ],
+    "level": "hard",
+    "links": []
+  },
+
+  {
+    "name": "koiruoho",
+    "translation": "thyme",
+    "keywords": ["nouns", "herbs", "substantiivit", "yrtit"],
+    "example": ["Tänään laitetaan ruokaan koiruohoa."],
+    "level": "easy",
+    "links": ["koira", "ruoho"]
+  },
+  {
+    "name": "sinappi",
+    "translation": "mustard",
+    "keywords": ["nouns", "condiments", "substantiivit", "mausteet"],
+    "example": ["Voitko antaa minulle sinappia?"],
+    "level": "easy",
+    "links": ["sinapinsiemen"]
+  },
+  {
+    "name": "paloviina",
+    "translation": "moonshine",
+    "keywords": ["nouns", "alcohol", "substantiivit", "alkoholi"],
+    "example": ["Paloviina on voimakasta alkoholia."],
+    "level": "medium",
+    "links": ["palo", "viina"]
+  },
+  {
+    "name": "mustikka",
+    "translation": "blueberry",
+    "keywords": ["nouns", "fruits", "substantiivit", "hedelmät"],
+    "example": ["Lapset poimivat metsässä mustikoita."],
+    "level": "easy",
+    "links": ["musta", "marja"]
+  },
+  {
+    "name": "joutsen",
+    "translation": "swan",
+    "keywords": ["nouns", "animals", "substantiivit", "eläimet"],
+    "example": ["Joutsen ui lammen keskellä."],
+    "level": "easy",
+    "links": []
+  },
+  {
+    "name": "kyyhkynen",
+    "translation": "dove",
+    "keywords": ["nouns", "animals", "substantiivit", "eläimet"],
+    "example": ["Kyyhkynen istuu puun oksalla."],
+    "level": "medium",
+    "links": ["kyyhky", "kyynel"]
+  },
+  {
+    "name": "karpalo",
+    "translation": "cranberry",
+    "keywords": ["nouns", "fruits", "substantiivit", "hedelmät"],
+    "example": ["Syksyllä syömme usein karpalokastiketta."],
+    "level": "easy",
+    "links": ["karva", "palo"]
+  },
+  {
+    "name": "jäkälä",
+    "translation": "lichen",
+    "keywords": ["nouns", "plants", "substantiivit", "kasvit"],
+    "example": ["Jäkälä kasvaa kivien päällä."],
+    "level": "hard",
+    "links": []
+  },
+  {
+    "name": "tikkari",
+    "translation": "lollipop",
+    "keywords": ["nouns", "candy", "substantiivit", "karkit"],
+    "example": ["Lapsille annettiin tikkareita juhliin."],
+    "level": "easy",
+    "links": ["tikku"]
+  },
+  {
+    "name": "merirosvo",
+    "translation": "pirate",
+    "keywords": ["nouns", "occupations", "substantiivit", "ammattikuvaukset"],
+    "example": ["Merirosvot etsivät aarretta."],
+    "level": "medium",
+    "links": ["meri", "rosvous"]
+  },
+  {
+    "name": "hernekeitto",
+    "translation": "pea soup",
+    "keywords": ["nouns", "food", "substantiivit", "ruoka"],
+    "example": ["Hernekeitto on suomalaista ruokaa."],
+    "level": "easy",
+    "links": ["herne", "keitto"]
+  },
+  {
+    "name": "ranta",
+    "translation": "beach",
+    "keywords": ["nouns", "places", "substantiivit", "paikat"],
+    "example": ["Kesällä pidämme piknikkiä rannalla."],
+    "level": "easy",
+    "links": ["meri", "hiekka"]
+  },
+  {
+    "name": "leipä",
+    "translation": "bread",
+    "keywords": ["nouns", "food", "substantiivit", "ruoka"],
+    "example": ["Aamupalaksi syön yleensä leipää."],
+    "level": "easy",
+    "links": ["vehnä", "jauho"]
+  },
+  {
+    "name": "pallo",
+    "translation": "ball",
+    "keywords": ["nouns", "toys", "substantiivit", "lelut"],
+    "example": ["Lapset leikkivät palloa pihalla."],
+    "level": "easy",
+    "links": ["pyöreä", "pelata"]
+  },
+
+  {
+    "name": "käsi",
+    "translation": "hand",
+    "keywords": ["nouns", "body parts", "substantiivit", "kehon osat"],
+    "example": ["Pyyhi kädet ennen ruokailua."],
+    "level": "easy",
+    "links": ["sormi", "koskettaa"]
+  },
+  {
+    "name": "avain",
+    "translation": "key",
+    "keywords": ["nouns", "objects", "substantiivit", "esineet"],
+    "example": ["Unohdin avaimet kotiin."],
+    "level": "easy",
+    "links": ["lukko", "avaaminen"]
+  },
+  {
+    "name": "kuva",
+    "translation": "picture",
+    "keywords": ["nouns", "objects", "substantiivit", "esineet"],
+    "example": [
+      "Minulla on kaunis kuva seinällä.",
+      "Otetaan kuva yhdessä!",
+      "Kuva on tuhannen sanan arvoinen."
+    ],
+    "level": "easy",
+    "links": ["maalaus", "kamera"]
+  },
+  {
+    "name": "näyttö",
+    "translation": "screen",
+    "keywords": ["nouns", "technology", "substantiivit", "teknologia"],
+    "example": [
+      "Tämän tietokoneen näyttö on todella iso.",
+      "Katso elokuva isolta näytöltä.",
+      "Puhelimen näyttö on rikki."
+    ],
+    "level": "easy",
+    "links": ["tietokone", "televisio"]
+  },
+  {
+    "name": "kynä",
+    "translation": "pen",
+    "keywords": ["nouns", "objects", "substantiivit", "esineet"],
+    "example": [
+      "Kirjoitan kynällä nimeni paperille.",
+      "Anna minulle kynä, niin voin kirjoittaa.",
+      "Tämä kynä on loppuun kulunut."
+    ],
+    "level": "easy",
+    "links": ["paperi", "kirjoittaa"]
+  },
+  {
+    "name": "kiitos",
+    "translation": "thank you",
+    "keywords": ["phrases", "gratitude", "fraasit", "kiitollisuus"],
+    "example": [
+      "Kiitos avusta!",
+      "Kiitos ruoasta, se oli herkullista.",
+      "Kiitos paljon lahjasta."
+    ],
+    "level": "easy",
+    "links": ["tervetuloa", "anteeksi"]
+  },
+  {
+    "name": "ruoka",
+    "translation": "food",
+    "keywords": ["nouns", "food", "substantiivit", "ruoka"],
+    "example": [
+      "Tämä ravintola tarjoaa hyvää ruokaa.",
+      "Ostan ruokaa kaupasta.",
+      "Ruoka on valmista pian."
+    ],
+    "level": "easy",
+    "links": ["syödä", "maistaa"]
+  },
+  {
+    "name": "laukku",
+    "translation": "bag",
+    "keywords": ["nouns", "objects", "substantiivit", "esineet"],
+    "example": [
+      "Minulla on iso laukku.",
+      "Osta itsellesi uusi laukku matkalle."
+    ],
+    "level": "easy",
+    "links": ["matka", "ostaa"]
+  },
+  {
+    "name": "lämpö",
+    "translation": "heat",
+    "keywords": ["nouns", "weather", "substantiivit", "sää"],
+    "example": [
+      "Huoneessa on hyvä lämpötila.",
+      "Tänään on todella kuuma, lämpötila on yli 30 astetta."
+    ],
+    "level": "medium",
+    "links": ["talvi", "ilmasto"]
+  },
+
+  {
+    "name": "raha",
+    "translation": "money",
+    "keywords": ["nouns", "finance", "substantiivit", "raha"],
+    "example": [
+      "Tarvitsen lisää rahaa loman aikana.",
+      "Miten paljon rahaa sinulla on tililläsi?"
+    ],
+    "level": "medium",
+    "links": ["talous", "sijoittaminen"]
+  }
+]
