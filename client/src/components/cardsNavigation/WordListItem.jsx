@@ -4,19 +4,29 @@ import axios from "axios";
 import classes from "./WordListItem.module.css";
 
 const WordListItem = ({ word }) => {
-  const [links, setLinks] = useState([]);
-
-  const urls = word.links.map(
-    (word) => `http://localhost:3001/API/word/${word}`
-  );
+  const [relatedWords, setRelatedWords] = useState([]);
 
   useEffect(() => {
-    axios.all(urls.map((endpoint) => axios.get(endpoint))).then((data) => {
-      data.forEach((data) => {
-        setLinks((links) => links.concat(data.data));
+    axios
+      .all(
+        word.links
+          .map((word) => `http://localhost:3001/API/word/${word}`)
+          .map((url) => axios.get(url))
+      )
+      .then((data) => {
+        console.log("data", data);
+        const newWords = [];
+        data.forEach((res) => {
+          console.log("adding", res.data);
+          if (res.data) newWords.push(res.data);
+        });
+        setRelatedWords(newWords);
+        console.log("new words", newWords);
+      })
+      .catch((err) => {
+        console.log(err);
       });
-    });
-  }, []);
+  }, [word.links]);
 
   return (
     <tr className={classes.word_row}>
@@ -24,7 +34,7 @@ const WordListItem = ({ word }) => {
 
       <td>{word.translation}</td>
       <td>
-        {links.map((link) => (
+        {relatedWords.map((link) => (
           <p key={link.name}>
             <span className={classes.link_name}>{link.name}</span> -{" "}
             <span className={classes.link_translation}>{link.translation}</span>
