@@ -119,6 +119,17 @@ const wordsList = [
     links: ["taivas"],
   },
   {
+    name: "maasto",
+    translation: "terrain",
+    keywords: ["nouns", "nature", "luonto", "substantiivit"],
+    example: [
+      "Tämä alue on hyvin kivikkoinen ja vaikeakulkuinen.",
+      "Maasto on muuttunut rankkojen sateiden jälkeen.",
+    ],
+    level: "medium",
+    links: ["maastojuoksu", "ulkoilu"],
+  },
+  {
     name: "omena",
     translation: "apple",
     keywords: ["nouns", "food", "ruoka"],
@@ -557,6 +568,17 @@ const wordsList = [
     ],
     level: "easy",
     links: ["kuu"],
+  },
+  {
+    name: "auringonlasku",
+    translation: "sunset",
+    keywords: ["nouns", "nature", "luonto", "substantiivit"],
+    example: [
+      "Auringonlasku on yksi päivän kauneimmista hetkistä.",
+      "Tänä iltana taivaanrannassa näkyy upea auringonlasku.",
+    ],
+    level: "easy",
+    links: ["taivas", "horisontti"],
   },
   {
     name: "tähti",
