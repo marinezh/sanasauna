@@ -14,6 +14,9 @@ const Nav = () => {
     <nav className={classes.nav}>
       <ul>
         <li>
+          <NavLink to="/">Home</NavLink>
+        </li>
+        <li>
           <NavLink to="allwords">All words</NavLink>
         </li>
         <li>
