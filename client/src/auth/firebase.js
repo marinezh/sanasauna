@@ -53,7 +53,7 @@ const registerWithEmailAndPassword = async (email, password) => {
       email,
     });
     await setDoc(doc(db, "savedWords", user.uid), {
-      faves: [],
+      words: [],
       uid: user.uid,
     });
   } catch (err) {
