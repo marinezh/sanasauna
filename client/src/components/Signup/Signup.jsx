@@ -11,17 +11,18 @@ import classes from "./Signup.module.css";
 const Signup = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [password_repeat, setPasswordRepeat] = useState("");
+  const [passwordRepeat, setPasswordRepeat] = useState("");
   //const [name, setName] = useState("");
   const [user, loading, error] = useAuthState(auth);
   const navigate = useNavigate();
 
-  const register = () => {
+  const register = (e) => {
+    e.preventDefault();
     if (!email) {
       alert("please enter email");
       return;
     }
-    if (password_repeat !== password) {
+    if (passwordRepeat !== password) {
       alert("password do not match");
       return;
     }
@@ -38,15 +39,16 @@ const Signup = () => {
       <div className={classes.bread}>
         <BreadcrumbsGeneric />
       </div>
-      <div className={classes.login}>
+      <form onSubmit={register} className={classes.login}>
         <h1>Join us</h1>
         <div className={classes.field_container}>
-          <label>Username </label>
+          <label>Email </label>
           <input
             type="text"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             placeholder="email"
+            required
           />
         </div>
         <div className={classes.field_container}>
@@ -56,19 +58,21 @@ const Signup = () => {
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             placeholder="Password"
+            required
           />
         </div>
         <div className={classes.field_container}>
           <label>Repeat password </label>
           <input
             type="password"
-            value={password_repeat}
+            value={passwordRepeat}
             onChange={(e) => setPasswordRepeat(e.target.value)}
-            placeholder="Password repeat"
+            placeholder="Repeat password"
+            required
           />
         </div>
         <div className={classes.button_container}>
-          <button className={classes.button} onClick={register}>
+          <button type="sumbit" className={classes.button}>
             Sign Up
           </button>
           <div>
@@ -76,7 +80,7 @@ const Signup = () => {
             <Link to="/login">Login</Link>
           </div>
         </div>
-      </div>
+      </form>
     </div>
   );
 };

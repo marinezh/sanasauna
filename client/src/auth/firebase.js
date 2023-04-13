@@ -6,7 +6,13 @@ import {
   signOut,
 } from "firebase/auth";
 import { initializeApp } from "firebase/app";
-import { addDoc, collection, getFirestore } from "firebase/firestore";
+import {
+  addDoc,
+  setDoc,
+  doc,
+  collection,
+  getFirestore,
+} from "firebase/firestore";
 
 const firebaseConfig = {
   apiKey: "AIzaSyAidIC-uVj5LlRML8LJGBpwNTJNVlOlyf4",
@@ -43,9 +49,12 @@ const registerWithEmailAndPassword = async (email, password) => {
     // This will be our fields in the database
     await addDoc(collection(db, "users"), {
       uid: user.uid,
-
       authProvider: "local",
       email,
+    });
+    await setDoc(doc(db, "savedWords", user.uid), {
+      words: [],
+      uid: user.uid,
     });
   } catch (err) {
     console.log(err);
@@ -56,13 +65,6 @@ const registerWithEmailAndPassword = async (email, password) => {
 const logout = () => {
   signOut(auth);
 };
-
-// const getWords = () => {
-//   const data = db.collection("words").get();
-//   return data;
-// };
-
-// const createWord = () => {};
 
 export {
   auth,

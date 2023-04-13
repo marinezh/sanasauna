@@ -27,12 +27,13 @@ const Login = () => {
       <div className={classes.login}>
         <h1>Welcome back</h1>
         <div className={classes.field_container}>
-          <label>Username </label>
+          <label>Email </label>
           <input
             type="text"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             placeholder="email"
+            required
           />
         </div>
         <div className={classes.field_container}>
@@ -42,6 +43,7 @@ const Login = () => {
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             placeholder="Password"
+            required
           />
         </div>
         <div className={classes.button_container}>

@@ -34,3 +34,8 @@ h3,
 h4 {
   font-weight: 300;
 }
+
+button,
+a {
+  cursor: pointer;
+}
