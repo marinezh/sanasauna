@@ -30,8 +30,9 @@ function App() {
           <Route path="about" element={<About />} />
           <Route path="login" element={<Login />} />
           <Route path="signup" element={<Signup />} />
-          <Route path="account" element={<Account />} />
-          <Route element={<ProtectedRoute user={user} />} />
+          <Route element={<ProtectedRoute user={user} />}>
+            <Route path="account" element={<Account />} />
+          </Route>
           <Route path=":categoryName" element={<TopicPage />}>
             <Route index element={<Navigate to="flipcards" replace />} />
             <Route path="flipcards" element={<CategoryDetailsFlipCards />} />
