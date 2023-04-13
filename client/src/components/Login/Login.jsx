@@ -19,12 +19,17 @@ const Login = () => {
     if (user) navigate("/allwords");
   }, [user, loading, navigate]);
 
+  const loginHandler = (e) => {
+    e.preventDefault();
+    logInWithEmailAndPassword(email, password);
+  };
+
   return (
     <div className={classes.login_container}>
       <div className={classes.bread}>
         <BreadcrumbsGeneric />
       </div>
-      <div className={classes.login}>
+      <form onSubmit={loginHandler} className={classes.login}>
         <h1>Welcome back</h1>
         <div className={classes.field_container}>
           <label>Email </label>
@@ -47,11 +52,7 @@ const Login = () => {
           />
         </div>
         <div className={classes.button_container}>
-          <button
-            className={classes.button}
-            onClick={() => logInWithEmailAndPassword(email, password)}
-          >
-            {" "}
+          <button type="submit" className={classes.button}>
             Login
           </button>
           <div>
@@ -59,7 +60,7 @@ const Login = () => {
             <Link to="/signup">Register</Link>
           </div>
         </div>
-      </div>
+      </form>
     </div>
   );
 };
