@@ -36,20 +36,15 @@ const Nav = () => {
         )}
         {user && (
           <>
-            <li className={classes.user_action}>
-              <NavLink to="/account">
+            <li>
+              <NavLink to="account">
                 <span>Account</span>
               </NavLink>
             </li>
-
             <li className={classes.user_action}>
-              <button
-                className={classes.logout_button}
-                to="/signout"
-                onClick={() => logout()}
-              >
+              <NavLink onClick={logout}>
                 <span>Sign Out</span>
-              </button>
+              </NavLink>
             </li>
           </>
         )}

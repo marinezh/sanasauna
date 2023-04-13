@@ -24,10 +24,3 @@
 .user_action span {
   color: white;
 }
-
-.logout_button {
-  padding: 0;
-  border: none;
-  background: none;
-  margin-right: 2rem;
-}
