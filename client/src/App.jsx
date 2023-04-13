@@ -11,11 +11,14 @@ import Games from "./components/cardsNavigation/Games";
 import CategoryDetailsQuiz from "./components/CategoryDetails/CategoryDetailsQuiz";
 import CategoryDetailsFlipCards from "./components/CategoryDetails/CategoryDetailsFlipCards";
 import CategoryDetailsWordList from "./components/CategoryDetails/CategoryDetailsWordList";
-
+import { ProtectedRoute } from "./auth/ProtectedRoute";
+import { useAuthState } from "react-firebase-hooks/auth";
+import { auth } from "./auth/firebase";
 import "./App.css";
 import PageNotFound from "./components/PageNotFound/PageNotFound";
 
 function App() {
+  const [user] = useAuthState(auth);
   return (
     <BrowserRouter>
       <Routes>
@@ -27,6 +30,7 @@ function App() {
           <Route path="login" element={<Login />} />
           <Route path="signup" element={<Signup />} />
 
+          <Route element={<ProtectedRoute user={user} />} />
           <Route path=":categoryName" element={<TopicPage />}>
             <Route index element={<Navigate to="flipcards" replace />} />
             <Route path="flipcards" element={<CategoryDetailsFlipCards />} />
