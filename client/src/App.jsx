@@ -32,14 +32,15 @@ function App() {
           <Route path="signup" element={<Signup />} />
           <Route element={<ProtectedRoute user={user} />}>
             <Route path="account" element={<Account />} />
-          </Route>
-          <Route path=":categoryName" element={<TopicPage />}>
-            <Route index element={<Navigate to="flipcards" replace />} />
-            <Route path="flipcards" element={<CategoryDetailsFlipCards />} />
-            <Route path="wordlist" element={<CategoryDetailsWordList />} />
-            <Route path="test" element={<CategoryDetailsQuiz />} />
-            <Route path="game" element={<Games />} />
-            <Route path="*" element={<Navigate to="/404" replace />} />
+
+            <Route path=":categoryName" element={<TopicPage />}>
+              <Route index element={<Navigate to="flipcards" replace />} />
+              <Route path="flipcards" element={<CategoryDetailsFlipCards />} />
+              <Route path="wordlist" element={<CategoryDetailsWordList />} />
+              <Route path="test" element={<CategoryDetailsQuiz />} />
+              <Route path="game" element={<Games />} />
+              <Route path="*" element={<Navigate to="/404" replace />} />
+            </Route>
           </Route>
         </Route>
       </Routes>

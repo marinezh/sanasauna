@@ -41,6 +41,9 @@ const WordListItem = ({ word }) => {
           </p>
         ))}
       </td>
+      <td>
+        <i className="fa-regular fa-bookmark"></i>
+      </td>
     </tr>
   );
 };
