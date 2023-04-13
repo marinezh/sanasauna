@@ -41,6 +41,43 @@ const WordListItem = ({ word }) => {
           </p>
         ))}
       </td>
+      <td>
+        <div className={classes.all_tags}>
+          <div>
+            <label
+              htmlFor="one"
+              className="material-symbols-outlined radio-style"
+            >
+              star
+            </label>
+            <input
+              type="radio"
+              id="one"
+              value="one"
+              name="tag"
+              ckecked="true"
+            />
+          </div>
+          <div>
+            <label
+              htmlFor="two"
+              className="material-symbols-outlined radio-style"
+            >
+              star
+            </label>
+            <input type="radio" id="one" value="one" name="tag" />
+          </div>
+          <div>
+            <label
+              htmlFor="three"
+              className="material-symbols-outlined radio-style"
+            >
+              star
+            </label>
+            <input type="radio" id="three" value="three" name="tag" />
+          </div>
+        </div>
+      </td>
     </tr>
   );
 };

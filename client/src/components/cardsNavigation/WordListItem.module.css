@@ -25,3 +25,42 @@
 .link_name {
   color: var(--purple);
 }
+
+.tag1 {
+  border-radius: 40px;
+  background-color: pink;
+  width: 35px;
+  height: 25px;
+}
+.tag2 {
+  border-radius: 40px;
+  background-color: lightyellow;
+  width: 40px;
+  height: 30px;
+  position: absolute;
+}
+.tag3 {
+  border-radius: 40px;
+  background-color: lightgreen;
+  width: 40px;
+  height: 30px;
+  position: absolute;
+}
+.fa-solid {
+  margin: 0.7rem;
+  padding-left: 0.5rem;
+}
+.all_tags {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.radio_style {
+  background-color: yellow;
+  cursor: pointer;
+}
+
+/* take away dots radio battons */
+[type="radio"] {
+  width: 0;
+}

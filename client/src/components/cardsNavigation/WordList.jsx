@@ -13,6 +13,7 @@ const WordList = ({ data }) => {
             <th>Word</th>
             <th>Translation</th>
             <th>Related words</th>
+            <th>Tag</th>
           </tr>
         </thead>
         <tbody>
