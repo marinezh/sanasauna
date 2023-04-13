@@ -16,6 +16,7 @@ import { useAuthState } from "react-firebase-hooks/auth";
 import { auth } from "./auth/firebase";
 import "./App.css";
 import PageNotFound from "./components/PageNotFound/PageNotFound";
+import Account from "./components/Account/Account";
 
 function App() {
   const [user] = useAuthState(auth);
@@ -38,6 +39,7 @@ function App() {
             <Route path="test" element={<CategoryDetailsQuiz />} />
             <Route path="game" element={<Games />} />
             <Route path="*" element={<Navigate to="/404" replace />} />
+            <Route path="account" element={<Account />} />
           </Route>
         </Route>
       </Routes>
