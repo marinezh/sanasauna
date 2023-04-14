@@ -17,8 +17,6 @@ const WordList = ({ data }) => {
     const docRef = doc(db, "savedWords", user.uid);
     const docSnap = await getDoc(docRef);
     const savedWords = await docSnap.data().words;
-    console.log("data", data);
-    console.log("savedWords", savedWords);
     const wordsToAdd = data.map((word) => {
       const item = {};
       item.word = word.name;
@@ -37,14 +35,6 @@ const WordList = ({ data }) => {
 
   return (
     <div className={classes.word_list}>
-      <div className={classes.buttons}>
-        {user && (
-          <button onClick={addCollection}>
-            Add all words to my collection
-          </button>
-        )}
-      </div>
-
       <h2>Word list</h2>
       <table>
         <thead>
@@ -61,6 +51,13 @@ const WordList = ({ data }) => {
           ))}
         </tbody>
       </table>
+      <div className={classes.buttons}>
+        {user && (
+          <button onClick={addCollection}>
+            Add all words to my collection
+          </button>
+        )}
+      </div>
     </div>
   );
 };
