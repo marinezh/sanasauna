@@ -12,7 +12,6 @@ const TopicPage = () => {
 
   return (
     <div className={classes.topic_page_container}>
-      <h1>hello</h1>
       <div className={classes.topic_page}>
         <Breadcrumbs />
         <h1>{capitaliseFirstLetter(categoryName)}</h1>
