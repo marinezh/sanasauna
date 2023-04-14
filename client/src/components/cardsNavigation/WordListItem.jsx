@@ -5,6 +5,7 @@ import classes from "./WordListItem.module.css";
 
 const WordListItem = ({ word }) => {
   const [relatedWords, setRelatedWords] = useState([]);
+  const [tagedWords, setTagedWords] = useState([]);
 
   useEffect(() => {
     axios
@@ -43,7 +44,7 @@ const WordListItem = ({ word }) => {
       </td>
       <td>
         <div className={classes.all_tags}>
-          <div>
+          {/* <div>
             <label
               htmlFor="one"
               className="material-symbols-outlined radio-style"
@@ -75,7 +76,9 @@ const WordListItem = ({ word }) => {
               star
             </label>
             <input type="radio" id="three" value="three" name="tag" />
-          </div>
+          </div> */}
+          <label htmlFor="tag"></label>
+          <input type="checkbox" />
         </div>
       </td>
     </tr>
