@@ -1,13 +1,39 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 //import classes from "../TopicPage.module.css";
 import classes from "./Dashboard.module.css";
 
+// Firebase
+import { useAuthState } from "react-firebase-hooks/auth";
+import { getAuth } from "firebase/auth";
+import { doc, getDoc, setDoc } from "firebase/firestore";
+import { db, auth } from "../../auth/firebase";
+
+import WordListItem from "../cardsNavigation/WordListItem";
+
 const Dashboard = (data) => {
+  const [words, setWords] = useState([]);
+  const [user] = useAuthState(auth);
+
+  const getCollection = async () => {
+    const docRef = doc(db, "savedWords", user.uid);
+    const docSnap = await getDoc(docRef);
+    const savedWords = await docSnap.data().words;
+    setWords(savedWords);
+  };
+
+  useEffect(() => {
+    getCollection();
+  }, []);
+
+  useEffect(() => {
+    console.log("saved words changed", words);
+  }, [words]);
+
   return (
     <div className={classes.dashboard}>
       <div>
         <h2>My words</h2>
-        <div>
+        {/* <div>
           <button>All words</button>
           <span>522</span>
         </div>
@@ -23,7 +49,7 @@ const Dashboard = (data) => {
         <div>
           <button>Learned Words</button>
           <span>22</span>
-        </div>
+        </div> */}
       </div>
       <div>
         <table>
@@ -34,9 +60,9 @@ const Dashboard = (data) => {
             </tr>
           </thead>
           <tbody>
-            {/* {data.map((word) => (
+            {words.map((word) => (
               <WordListItem key={word.name} word={word} />
-            ))} */}
+            ))}
           </tbody>
         </table>
       </div>
