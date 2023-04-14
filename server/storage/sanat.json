@@ -90,6 +90,16 @@
     "links": ["syksy", "kuu"]
   },
   {
+    "name": "kuu",
+    "translation": "month",
+    "img": "#",
+    "keywords": ["nouns", "substantiivit"],
+    "example": [],
+    "explanation": "",
+    "level": "easy",
+    "links": ["elokuu"]
+  },
+  {
     "name": "lokakuu",
     "translation": "october",
     "img": "#",
@@ -247,7 +257,7 @@
     "example": [],
     "explanation": "",
     "level": "easy",
-    "links": []
+    "links": ["väri"]
   },
   {
     "name": "valkoinen",

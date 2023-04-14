@@ -1,3 +1,15 @@
+.dashboard {
+  border: 3px solid var(--mint);
+  padding: 4rem 3rem;
+  border-radius: 0 1rem 1rem 1rem;
+  background-color: lightyellow;
+  height: 500px;
+  width: calc(80%);
+  display: flex;
+  gap: 5rem;
+  margin: 0 auto;
+}
+
 .topic_page_container {
   width: 100%;
   height: 100%;
@@ -15,7 +27,7 @@
 }
 
 .topic_page {
-  width: 1050px;
+  width: 900px;
 }
 
 .topic_nav {
