@@ -25,8 +25,10 @@ const WordList = ({ data }) => {
       item.status = "toLearn";
       return item;
     });
+    const newWords = [...savedWords, ...wordsToAdd];
+    console.log("newWords", newWords);
     await setDoc(docRef, {
-      words: [...savedWords, wordsToAdd],
+      words: newWords,
       uid: user.uid,
     });
     const docSnap2 = await getDoc(docRef);
