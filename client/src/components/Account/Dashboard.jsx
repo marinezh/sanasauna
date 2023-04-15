@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useMemo } from "react";
 import axios from "axios";
 import classes from "./Dashboard.module.css";
 
@@ -12,14 +12,18 @@ import WordListItem from "../cardsNavigation/WordListItem";
 
 const Dashboard = (data) => {
   const [words, setWords] = useState(null);
+  const [favourites, setFavourites] = useState(null);
   const [user] = useAuthState(auth);
+
+  /* const updateMap = (k, v) => {
+    setFavourites(favourites.set(k, v));
+  }; */
 
   const getCollection = async () => {
     const docRef = doc(db, "savedWords", user.uid);
     const docSnap = await getDoc(docRef);
-    console.log("snap", docSnap);
     const savedWords = await docSnap.data().words;
-    console.log("fetched words", savedWords);
+    setFavourites(savedWords);
     return savedWords;
   };
 
@@ -32,14 +36,16 @@ const Dashboard = (data) => {
             .map((url) => axios.get(url))
         )
         .then((data) => {
-          console.log("data", data);
+          console.log("data from API", data);
           const newWords = [];
           data.forEach((res) => {
-            console.log("adding", res.data);
             if (res.data) newWords.push(res.data);
           });
+          for (let i = 0; i < newWords.length; i++) {
+            newWords[i].wordStatus = favourites[i].status;
+          }
           setWords(newWords);
-          console.log("new words", newWords);
+          console.log("new words set", newWords);
         })
         .catch((err) => {
           console.log(err);
@@ -57,23 +63,23 @@ const Dashboard = (data) => {
       <div className={classes.dashboard}>
         <div>
           <h2>My words</h2>
-          {/* <div>
-          <button>All words</button>
-          <span>522</span>
-        </div>
-        <div>
-          <button>Words to learn</button>
-          <span>400</span>
-        </div>
-        <div>
-          <button>Words to repeat</button>
-          <span>100</span>
-        </div>
+          <div>
+            <button>All words</button>
+            <span>522</span>
+          </div>
+          <div>
+            <button>Words to learn</button>
+            <span>400</span>
+          </div>
+          <div>
+            <button>Words to repeat</button>
+            <span>100</span>
+          </div>
 
-        <div>
-          <button>Learned Words</button>
-          <span>22</span>
-        </div> */}
+          <div>
+            <button>Learned Words</button>
+            <span>22</span>
+          </div>
         </div>
         <div>
           <table>

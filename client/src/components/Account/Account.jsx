@@ -1,13 +1,15 @@
 import React from "react";
-import Dashboard from "./Dashboard";
-import classes from "./Account.module.css";
 import { Outlet, Link, useParams } from "react-router-dom";
+
+import Dashboard from "./Dashboard";
+
+import classes from "./Account.module.css";
 
 const Account = () => {
   return (
     <div>
       <h2>My Account</h2>
-      <nav className={classes.topic_nav}>
+      {/* <nav className={classes.topic_nav}>
         <ul className={classes.view_tabs}>
           <li>
             <Link to="flipcards">Flip cards</Link>
@@ -24,7 +26,7 @@ const Account = () => {
             <Link to="game">Games</Link>
           </li>
         </ul>
-      </nav>
+      </nav> */}
       <Dashboard />
     </div>
   );

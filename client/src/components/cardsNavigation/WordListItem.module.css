@@ -64,3 +64,18 @@
 [type="radio"] {
   width: 0;
 }
+
+.checkbox {
+  background-color: var(--gray-dark);
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.3rem;
+  color: white;
+}
+
+.checked {
+  background-color: #000;
+}

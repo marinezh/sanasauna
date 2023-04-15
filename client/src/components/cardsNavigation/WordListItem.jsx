@@ -1,11 +1,19 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 
+// Firebase
+import { useAuthState } from "react-firebase-hooks/auth";
+import { getAuth } from "firebase/auth";
+import { doc, getDoc, setDoc, updateDoc, arrayUnion } from "firebase/firestore";
+import { db, auth } from "../../auth/firebase";
+
 import classes from "./WordListItem.module.css";
 
 const WordListItem = ({ word }) => {
   const [relatedWords, setRelatedWords] = useState([]);
-  const [taggedWords, setTaggedWords] = useState([]);
+  /*   const [taggedWords, setTaggedWords] = useState([]); */
+  const [wordStatus, setWordStatus] = useState(word.wordStatus);
+  const [user] = useAuthState(auth);
 
   useEffect(() => {
     axios
@@ -28,6 +36,26 @@ const WordListItem = ({ word }) => {
         console.log(err);
       });
   }, [word]);
+
+  const editStatus = async (word, newStatus) => {
+    console.log(newStatus);
+    const docRef = doc(db, "savedWords", user.uid);
+    const docSnap = await getDoc(docRef);
+    const savedWords = await docSnap.data().words;
+    savedWords.forEach((savedWord) => {
+      if (savedWord.word === word) savedWord.status = newStatus;
+    });
+    console.log("updated Words", savedWords);
+    await setDoc(docRef, {
+      words: savedWords,
+      uid: user.uid,
+    });
+  };
+
+  const saveWordStatus = (newStatus) => {
+    setWordStatus(newStatus);
+    editStatus(word.name, newStatus);
+  };
 
   return (
     <tr className={classes.word_row}>
@@ -77,8 +105,30 @@ const WordListItem = ({ word }) => {
             </label>
             <input type="radio" id="three" value="three" name="tag" />
           </div> */}
-          <label htmlFor="tag"></label>
-          <input type="checkbox" />
+          <div
+            onClick={() => saveWordStatus("toLearn")}
+            className={`${wordStatus === "toLearn" ? classes["checked"] : ""} ${
+              classes.checkbox
+            }`}
+          >
+            {wordStatus === "toLearn" && <i className="fa-solid fa-check"></i>}
+          </div>
+          <div
+            onClick={() => saveWordStatus("learning")}
+            className={`${
+              wordStatus === "learning" ? classes["checked"] : ""
+            } ${classes.checkbox}`}
+          >
+            {wordStatus === "learning" && <i className="fa-solid fa-check"></i>}
+          </div>
+          <div
+            onClick={() => saveWordStatus("learned")}
+            className={`${wordStatus === "learned" ? classes["checked"] : ""} ${
+              classes.checkbox
+            }`}
+          >
+            {wordStatus === "learned" && <i className="fa-solid fa-check"></i>}
+          </div>
         </div>
       </td>
     </tr>
