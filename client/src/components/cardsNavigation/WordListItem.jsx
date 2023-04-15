@@ -107,7 +107,7 @@ const WordListItem = ({ word }) => {
           </div> */}
           <div
             onClick={() => saveWordStatus("toLearn")}
-            className={`${wordStatus === "toLearn" ? classes["checked"] : ""} ${
+            className={`${wordStatus === "toLearn" ? classes["toLearn"] : ""} ${
               classes.checkbox
             }`}
           >
@@ -116,14 +116,14 @@ const WordListItem = ({ word }) => {
           <div
             onClick={() => saveWordStatus("learning")}
             className={`${
-              wordStatus === "learning" ? classes["checked"] : ""
+              wordStatus === "learning" ? classes["learning"] : ""
             } ${classes.checkbox}`}
           >
             {wordStatus === "learning" && <i className="fa-solid fa-check"></i>}
           </div>
           <div
             onClick={() => saveWordStatus("learned")}
-            className={`${wordStatus === "learned" ? classes["checked"] : ""} ${
+            className={`${wordStatus === "learned" ? classes["learned"] : ""} ${
               classes.checkbox
             }`}
           >
