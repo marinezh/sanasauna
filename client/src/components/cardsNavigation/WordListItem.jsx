@@ -5,7 +5,7 @@ import classes from "./WordListItem.module.css";
 
 const WordListItem = ({ word }) => {
   const [relatedWords, setRelatedWords] = useState([]);
-  const [tagedWords, setTagedWords] = useState([]);
+  const [taggedWords, setTaggedWords] = useState([]);
 
   useEffect(() => {
     axios
@@ -27,7 +27,7 @@ const WordListItem = ({ word }) => {
       .catch((err) => {
         console.log(err);
       });
-  }, [word.links]);
+  }, [word]);
 
   return (
     <tr className={classes.word_row}>
