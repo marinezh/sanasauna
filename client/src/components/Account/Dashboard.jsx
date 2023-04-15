@@ -65,20 +65,26 @@ const Dashboard = (data) => {
           <h2>My words</h2>
           <div>
             <button>All words</button>
-            <span>522</span>
+            <span>{favourites.length}</span>
           </div>
           <div>
             <button>Words to learn</button>
-            <span>400</span>
+            <span>
+              {favourites.filter((word) => word.status === "toLearn").length}
+            </span>
           </div>
           <div>
             <button>Words to repeat</button>
-            <span>100</span>
+            <span>
+              {favourites.filter((word) => word.status === "learning").length}
+            </span>
           </div>
 
           <div>
             <button>Learned Words</button>
-            <span>22</span>
+            <span>
+              {favourites.filter((word) => word.status === "learned").length}
+            </span>
           </div>
         </div>
         <div>

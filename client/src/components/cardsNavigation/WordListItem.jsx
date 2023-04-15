@@ -60,7 +60,6 @@ const WordListItem = ({ word }) => {
   return (
     <tr className={classes.word_row}>
       <td>{word.name}</td>
-
       <td>{word.translation}</td>
       <td>
         {relatedWords.map((link) => (
