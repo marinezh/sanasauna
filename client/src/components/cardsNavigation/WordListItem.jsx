@@ -1,5 +1,10 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import cloneDeep from "lodash/cloneDeep";
+
+// Redux
+import { useDispatch, useSelector } from "react-redux";
+import { setFavourites } from "../../features/words/favouritesSlice";
 
 // Firebase
 import { useAuthState } from "react-firebase-hooks/auth";
@@ -14,6 +19,8 @@ const WordListItem = ({ word }) => {
   /*   const [taggedWords, setTaggedWords] = useState([]); */
   const [wordStatus, setWordStatus] = useState(word.wordStatus);
   const [user] = useAuthState(auth);
+  const favourites = useSelector((state) => state.favourites.favourites);
+  const dispatch = useDispatch();
 
   useEffect(() => {
     axios
@@ -37,7 +44,7 @@ const WordListItem = ({ word }) => {
       });
   }, [word]);
 
-  const editStatus = async (word, newStatus) => {
+  /* const editStatus = async (word, newStatus) => {
     console.log(newStatus);
     const docRef = doc(db, "savedWords", user.uid);
     const docSnap = await getDoc(docRef);
@@ -50,11 +57,17 @@ const WordListItem = ({ word }) => {
       words: savedWords,
       uid: user.uid,
     });
-  };
+  }; */
 
-  const saveWordStatus = (newStatus) => {
+  const toggleWordStatus = (newStatus) => {
     setWordStatus(newStatus);
-    editStatus(word.name, newStatus);
+    console.log(newStatus);
+    const newFavourites = cloneDeep(favourites);
+    newFavourites.forEach((favourite) => {
+      if (favourite.word === word.name) favourite.status = newStatus;
+    });
+    console.log("updated faves", newFavourites);
+    dispatch(setFavourites(newFavourites));
   };
 
   return (
@@ -105,7 +118,7 @@ const WordListItem = ({ word }) => {
             <input type="radio" id="three" value="three" name="tag" />
           </div> */}
           <div
-            onClick={() => saveWordStatus("toLearn")}
+            onClick={() => toggleWordStatus("toLearn")}
             className={`${wordStatus === "toLearn" ? classes["toLearn"] : ""} ${
               classes.checkbox
             }`}
@@ -113,7 +126,7 @@ const WordListItem = ({ word }) => {
             {wordStatus === "toLearn" && <i className="fa-solid fa-check"></i>}
           </div>
           <div
-            onClick={() => saveWordStatus("learning")}
+            onClick={() => toggleWordStatus("learning")}
             className={`${
               wordStatus === "learning" ? classes["learning"] : ""
             } ${classes.checkbox}`}
@@ -121,7 +134,7 @@ const WordListItem = ({ word }) => {
             {wordStatus === "learning" && <i className="fa-solid fa-check"></i>}
           </div>
           <div
-            onClick={() => saveWordStatus("learned")}
+            onClick={() => toggleWordStatus("learned")}
             className={`${wordStatus === "learned" ? classes["learned"] : ""} ${
               classes.checkbox
             }`}

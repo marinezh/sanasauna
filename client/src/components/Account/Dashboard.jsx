@@ -1,6 +1,12 @@
 import React, { useEffect, useState, useMemo } from "react";
 import axios from "axios";
-import classes from "./Dashboard.module.css";
+
+// Redux
+import { useDispatch, useSelector } from "react-redux";
+import {
+  setFavourites,
+  fetchFavourites,
+} from "../../features/words/favouritesSlice";
 
 // Firebase
 import { useAuthState } from "react-firebase-hooks/auth";
@@ -10,54 +16,64 @@ import { db, auth } from "../../auth/firebase";
 
 import WordListItem from "../cardsNavigation/WordListItem";
 
-const Dashboard = (data) => {
+import classes from "./Dashboard.module.css";
+const Dashboard = () => {
   const [words, setWords] = useState(null);
-  const [favourites, setFavourites] = useState(null);
+  const favourites = useSelector((state) => state.favourites.favourites);
+  const dispatch = useDispatch();
   const [user] = useAuthState(auth);
 
-  /* const updateMap = (k, v) => {
-    setFavourites(favourites.set(k, v));
-  }; */
-
-  const getCollection = async () => {
+  /* const getCollection = async () => {
     const docRef = doc(db, "savedWords", user.uid);
     const docSnap = await getDoc(docRef);
     const savedWords = await docSnap.data().words;
-    setFavourites(savedWords);
+    dispatch(setFavourites(savedWords));
     return savedWords;
-  };
+  }; */
 
   useEffect(() => {
-    getCollection().then((savedWords) => {
-      axios
-        .all(
-          savedWords
-            .map((word) => `/API/word/${word.word}`)
-            .map((url) => axios.get(url))
-        )
-        .then((data) => {
-          console.log("data from API", data);
-          const newWords = [];
-          data.forEach((res) => {
-            if (res.data) newWords.push(res.data);
-          });
-          for (let i = 0; i < newWords.length; i++) {
-            newWords[i].wordStatus = favourites[i].status;
-          }
-          setWords(newWords);
-          console.log("new words set", newWords);
-        })
-        .catch((err) => {
-          console.log(err);
-        });
-    });
-  }, []);
+    dispatch(fetchFavourites());
+  }, [dispatch]);
 
   useEffect(() => {
-    console.log("saved words changed", words);
+    console.log("savedWords change", favourites);
+  }, [favourites]);
+
+  useEffect(() => {
+    console.log("words changed", words);
   }, [words]);
 
-  if (!words) return "loading";
+  useEffect(() => {
+    if (!favourites) return;
+    const savedWords = favourites;
+    console.log("savedWords array", savedWords);
+    axios
+      .all(
+        savedWords
+          .map((word) => `/API/word/${word.word}`)
+          .map((url) => axios.get(url))
+      )
+      .then((data) => {
+        console.log("data from API", data);
+        const newWords = [];
+        data.forEach((res) => {
+          if (res.data) newWords.push(res.data);
+        });
+        for (let i = 0; i < newWords.length; i++) {
+          console.log("i", i);
+          console.log(newWords[i]);
+          console.log("favourites", favourites);
+          newWords[i].wordStatus = favourites[i].status;
+        }
+        setWords(newWords);
+        console.log("new words set", newWords);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, [favourites]);
+
+  if (!words || !favourites) return "loading";
   else
     return (
       <div className={classes.dashboard}>
