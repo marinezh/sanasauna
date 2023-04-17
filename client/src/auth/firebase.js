@@ -15,7 +15,7 @@ import {
 } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAidIC-uVj5LlRML8LJGBpwNTJNVlOlyf4",
+  apiKey: process.env.REACT_APP_FIREBASE_KEY,
   authDomain: "sanasauna-af75f.firebaseapp.com",
   databaseURL:
     "https://sanasauna-af75f-default-rtdb.europe-west1.firebasedatabase.app",
