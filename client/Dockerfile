@@ -18,4 +18,4 @@ EXPOSE 3000
 # Install serve
 RUN npm install --global serve
 # Start the app
-CMD [ "serve", "build" ]
+CMD [ "serve", "-s", "build" ]
