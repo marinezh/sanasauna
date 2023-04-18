@@ -10,43 +10,27 @@ import {
 
 // Firebase
 import { useAuthState } from "react-firebase-hooks/auth";
-import { getAuth } from "firebase/auth";
-import { doc, getDoc, setDoc } from "firebase/firestore";
-import { db, auth } from "../../auth/firebase";
+import { auth } from "../../auth/firebase";
 
 import WordListItem from "../cardsNavigation/WordListItem";
 
 import classes from "./Dashboard.module.css";
+import { Link } from "react-router-dom";
+
 const Dashboard = () => {
   const [words, setWords] = useState(null);
   const favourites = useSelector((state) => state.favourites.favourites);
   const dispatch = useDispatch();
   const [user] = useAuthState(auth);
 
-  /* const getCollection = async () => {
-    const docRef = doc(db, "savedWords", user.uid);
-    const docSnap = await getDoc(docRef);
-    const savedWords = await docSnap.data().words;
-    dispatch(setFavourites(savedWords));
-    return savedWords;
-  }; */
-
   useEffect(() => {
+    console.log("useeffect1");
     dispatch(fetchFavourites());
   }, [dispatch]);
 
   useEffect(() => {
-    console.log("savedWords change", favourites);
-  }, [favourites]);
-
-  useEffect(() => {
-    console.log("words changed", words);
-  }, [words]);
-
-  useEffect(() => {
     if (!favourites) return;
     const savedWords = favourites;
-    console.log("savedWords array", savedWords);
     axios
       .all(
         savedWords
@@ -54,15 +38,12 @@ const Dashboard = () => {
           .map((url) => axios.get(url))
       )
       .then((data) => {
-        console.log("data from API", data);
+        // fetch all words info from API and form a structured array
         const newWords = [];
         data.forEach((res) => {
           if (res.data) newWords.push(res.data);
         });
         for (let i = 0; i < newWords.length; i++) {
-          console.log("i", i);
-          console.log(newWords[i]);
-          console.log("favourites", favourites);
           newWords[i].wordStatus = favourites[i].status;
         }
         setWords(newWords);
@@ -78,46 +59,120 @@ const Dashboard = () => {
     return (
       <div className={classes.dashboard}>
         <div>
-          <h2>My words</h2>
+          <h1>My word collection</h1>
           <div>
-            <button>All words</button>
-            <span>{favourites.length}</span>
+            All words <span>{favourites.length}</span>
           </div>
           <div>
-            <button>Words to learn</button>
+            <Link
+              to="/tag/flipcards"
+              state={{
+                words: words,
+                collectionName: "All words from my collection",
+              }}
+            >
+              Flipcards with all words
+            </Link>
+          </div>
+          <div>
+            <Link
+              to="/tag/wordlist"
+              state={{
+                words: words,
+                collectionName: "All words from my collection",
+              }}
+            >
+              Word list with all words
+            </Link>
+          </div>
+          <div>
+            <Link
+              to="/tag/test"
+              state={{
+                words: words,
+                collectionName: "All words from my collection",
+              }}
+            >
+              Quiz with all words
+            </Link>
+          </div>
+
+          <div>
+            Words to learn{" "}
             <span>
               {favourites.filter((word) => word.status === "toLearn").length}
             </span>
           </div>
           <div>
-            <button>Words to repeat</button>
+            <Link
+              to="/tag/flipcards"
+              state={{
+                words: words.filter((word) => word.wordStatus === "toLearn"),
+                collectionName: "Words to learn from my collection",
+              }}
+            >
+              Flipcards with words to learn
+            </Link>
+          </div>
+          <div>
+            <Link
+              to="/tag/wordlist"
+              state={{
+                words: words.filter((word) => word.wordStatus === "toLearn"),
+                collectionName: "Words to learn from my collection",
+              }}
+            >
+              Word list with words to learn
+            </Link>
+          </div>
+          <div>
+            <Link
+              to="/tag/test"
+              state={{
+                words: words.filter((word) => word.wordStatus === "toLearn"),
+                collectionName: "Words to learn from my collection",
+              }}
+            >
+              Quiz with words to learn
+            </Link>
+          </div>
+          <div>
+            Words to repeat{" "}
             <span>
               {favourites.filter((word) => word.status === "learning").length}
             </span>
           </div>
 
           <div>
-            <button>Learned Words</button>
+            Learned words{" "}
             <span>
               {favourites.filter((word) => word.status === "learned").length}
             </span>
           </div>
         </div>
-        <div>
-          <table>
-            <thead>
-              <tr>
-                <th>Word</th>
-                <th>Tag</th>
-              </tr>
-            </thead>
-            <tbody>
-              {words.map((word) => (
-                <WordListItem key={word.name} word={word} />
-              ))}
-            </tbody>
-          </table>
-        </div>
+        {words.length ? (
+          <div className={classes.word_list}>
+            <table>
+              <thead>
+                <tr>
+                  <th>Word</th>
+                  <th>Translation</th>
+                  <th>To learn</th>
+                  <th>Learning</th>
+                  <th>Learned</th>
+                  <th>Related words</th>
+                </tr>
+              </thead>
+              <tbody>
+                {words.map((word) => (
+                  <WordListItem key={word.name} word={word} />
+                ))}
+              </tbody>
+            </table>
+          </div>
+        ) : (
+          <h2>You don't have any words in your collection yet</h2>
+        )}
       </div>
     );
 };

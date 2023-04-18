@@ -15,6 +15,7 @@ import classes from "./FlipCards.module.css";
 const FlipCards = ({ data }) => {
   const [englishFirst, setEnglishFirst] = useState(false);
   const [words, setWords] = useState(data);
+  console.log("words in flipcards", words);
 
   return (
     <div className={classes.cards_container}>

@@ -4,22 +4,22 @@
 }
 
 .word_row td {
-  padding: 0.7rem 2rem;
+  padding: 0.5rem 2rem;
 }
 
 .word_row td:nth-child(1) {
   font-weight: 600;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   width: 25%;
 }
 
 .word_row td:nth-child(2) {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   width: 25%;
 }
 
-.word_row td:nth-child(3) {
-  width: 50%;
+.word_row td:nth-child(6) {
+  width: 20%;
 }
 
 .link_name {

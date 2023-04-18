@@ -48,6 +48,7 @@ const favouritesSlice = createSlice({
       })
       .addCase(setFavourites.fulfilled, (state, action) => {
         state.favourites = action.payload;
+        console.log("state.setFavourites", state.favourites);
       });
   },
 });
