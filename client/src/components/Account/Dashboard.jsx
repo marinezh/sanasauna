@@ -70,6 +70,15 @@ const Dashboard = () => {
             Flipcards with all words
           </Link>
           <Link
+            to="/tag/wordlist"
+            state={{
+              words: words,
+              collectionName: "All words from my collection",
+            }}
+          >
+            Word list with all words
+          </Link>
+          <Link
             to="/tag/test"
             state={{
               words: words,
@@ -78,6 +87,7 @@ const Dashboard = () => {
           >
             Quiz with all words
           </Link>
+
           <div>
             All words <span>{favourites.length}</span>
           </div>
