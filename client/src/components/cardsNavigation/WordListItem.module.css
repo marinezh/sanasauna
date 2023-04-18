@@ -18,8 +18,8 @@
   width: 25%;
 }
 
-.word_row td:nth-child(3) {
-  width: 50%;
+.word_row td:nth-child(6) {
+  width: 20%;
 }
 
 .link_name {

@@ -2,7 +2,7 @@
   {
     "name": "tammikuu",
     "translation": "january",
-    "keywords": "nouns,months,substantiivit,kuukaudet",
+    "keywords": ["nouns", "months", "substantiivit", "kuukaudet"],
     "example": [],
     "level": "easy",
     "links": ["tammi", "kuu"]

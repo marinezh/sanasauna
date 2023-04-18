@@ -10,43 +10,26 @@ import {
 
 // Firebase
 import { useAuthState } from "react-firebase-hooks/auth";
-import { getAuth } from "firebase/auth";
-import { doc, getDoc, setDoc } from "firebase/firestore";
-import { db, auth } from "../../auth/firebase";
+import { auth } from "../../auth/firebase";
 
 import WordListItem from "../cardsNavigation/WordListItem";
 
 import classes from "./Dashboard.module.css";
+
 const Dashboard = () => {
   const [words, setWords] = useState(null);
   const favourites = useSelector((state) => state.favourites.favourites);
   const dispatch = useDispatch();
   const [user] = useAuthState(auth);
 
-  /* const getCollection = async () => {
-    const docRef = doc(db, "savedWords", user.uid);
-    const docSnap = await getDoc(docRef);
-    const savedWords = await docSnap.data().words;
-    dispatch(setFavourites(savedWords));
-    return savedWords;
-  }; */
-
   useEffect(() => {
+    console.log("useeffect1");
     dispatch(fetchFavourites());
   }, [dispatch]);
 
   useEffect(() => {
-    console.log("savedWords change", favourites);
-  }, [favourites]);
-
-  useEffect(() => {
-    console.log("words changed", words);
-  }, [words]);
-
-  useEffect(() => {
     if (!favourites) return;
     const savedWords = favourites;
-    console.log("savedWords array", savedWords);
     axios
       .all(
         savedWords
@@ -54,15 +37,12 @@ const Dashboard = () => {
           .map((url) => axios.get(url))
       )
       .then((data) => {
-        console.log("data from API", data);
+        // fetch all words info from API and form a structured array
         const newWords = [];
         data.forEach((res) => {
           if (res.data) newWords.push(res.data);
         });
         for (let i = 0; i < newWords.length; i++) {
-          console.log("i", i);
-          console.log(newWords[i]);
-          console.log("favourites", favourites);
           newWords[i].wordStatus = favourites[i].status;
         }
         setWords(newWords);
@@ -108,7 +88,11 @@ const Dashboard = () => {
             <thead>
               <tr>
                 <th>Word</th>
-                <th>Tag</th>
+                <th>Translation</th>
+                <th>To learn</th>
+                <th>Learning</th>
+                <th>Learned</th>
+                <th>Related words</th>
               </tr>
             </thead>
             <tbody>

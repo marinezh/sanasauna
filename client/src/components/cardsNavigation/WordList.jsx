@@ -1,30 +1,113 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import axios from "axios";
+
+// Redux
+import { useDispatch, useSelector } from "react-redux";
+import {
+  setFavourites,
+  fetchFavourites,
+} from "../../features/words/favouritesSlice";
 
 // Firebase
 import { useAuthState } from "react-firebase-hooks/auth";
-import { getAuth } from "firebase/auth";
-import { doc, getDoc, setDoc, updateDoc, arrayUnion } from "firebase/firestore";
-import { db, auth } from "../../auth/firebase";
+import { auth } from "../../auth/firebase";
 
-import classes from "./WordList.module.css";
+import cloneDeep from "lodash/cloneDeep";
+
 import WordListItem from "./WordListItem";
 
+import classes from "./WordList.module.css";
+
 const WordList = ({ data }) => {
+  const [words, setWords] = useState(null);
+  const dispatch = useDispatch();
   const [user] = useAuthState(auth);
+  const favourites = useSelector((state) => state.favourites.favourites);
+
+  console.log("favourites", favourites);
+
+  useEffect(() => {
+    console.log("useeffect1");
+    dispatch(fetchFavourites());
+  }, [dispatch]);
+
+  useEffect(() => {
+    console.log("useeffect2");
+    if (!favourites) return;
+    // fetch all words info from API and form a structured array
+    let newWords = cloneDeep(data);
+    newWords.forEach((word) => {
+      const faveFound = favourites.find((fave) => fave.word === word.name);
+      if (faveFound) {
+        word.wordStatus = faveFound.status;
+      }
+    });
+    setWords(newWords);
+    console.log("new words set", newWords);
+  }, [favourites, data]);
+
+  /*   useEffect(() => {
+    console.log("favourites useeffect", favourites);
+    console.log("data in wordlist", data);
+    const newWords = cloneDeep(data);
+    for (let i = 0; i < newWords.length; i++) {
+      console.log("favourites[i]", favourites[i]);
+      if (favourites[i]) {
+        newWords[i].wordStatus = favourites[i].status;
+      }
+    }
+    console.log("setting words again");
+    setWords(newWords);
+  }, [data, favourites]); */
+
+  useEffect(() => {
+    console.log("favourites changed", favourites);
+  }, [favourites]);
+
+  useEffect(() => {
+    console.log("words changed", words);
+  }, [words]);
+
+  /* useEffect(() => {
+    if (!favourites) return;
+    const savedWords = favourites;
+    axios
+      .all(
+        savedWords
+          .map((word) => `/API/word/${word.word}`)
+          .map((url) => axios.get(url))
+      )
+      .then((data) => {
+        // fetch all words info from API and form a structured array
+        const newWords = [];
+        data.forEach((res) => {
+          if (res.data) newWords.push(res.data);
+        });
+        for (let i = 0; i < newWords.length; i++) {
+          newWords[i].wordStatus = favourites[i].status;
+        }
+        setWords(newWords);
+        console.log("new words set", newWords);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, [favourites]); */
 
   const addCollection = async () => {
-    const docRef = doc(db, "savedWords", user.uid);
-    const wordsToAdd = data.map((word) => {
+    const filteredData = data.filter((word) => {
+      return favourites.find((fave) => fave.word === word.name) === undefined;
+    });
+    const wordsToAdd = filteredData.map((word) => {
       const item = {};
       item.word = word.name;
       item.status = "toLearn";
       return item;
     });
-    await updateDoc(docRef, {
-      words: arrayUnion(...wordsToAdd),
-    });
+    dispatch(setFavourites([...favourites, ...wordsToAdd]));
   };
 
+  if (!words || !favourites) return "loading";
   return (
     <div className={classes.word_list}>
       <h2>Word list</h2>
@@ -33,12 +116,14 @@ const WordList = ({ data }) => {
           <tr>
             <th>Word</th>
             <th>Translation</th>
+            <th>To learn</th>
+            <th>Learning</th>
+            <th>Learned</th>
             <th>Related words</th>
-            <th>Tag</th>
           </tr>
         </thead>
         <tbody>
-          {data.map((word) => (
+          {words.map((word) => (
             <WordListItem key={word.name} word={word} />
           ))}
         </tbody>
@@ -46,7 +131,7 @@ const WordList = ({ data }) => {
       <div className={classes.buttons}>
         {user && (
           <button onClick={addCollection}>
-            Add all words to my collection
+            Add all words to my collection!
           </button>
         )}
       </div>
