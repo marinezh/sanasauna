@@ -61,7 +61,9 @@ const Dashboard = () => {
         <div>
           <h1>My word collection</h1>
           <div>
-            All words <span>{favourites.length}</span>
+            <input type="checkbox" name="status" id="all" />
+            <label htmlFor="all"> All words</label>{" "}
+            <span>{favourites.length}</span>
           </div>
           <div>
             <Link
@@ -98,7 +100,8 @@ const Dashboard = () => {
           </div>
 
           <div>
-            Words to learn{" "}
+            <input type="checkbox" name="status" id="toLearn" />
+            <label htmlFor="toLearn"></label> Words to learn{" "}
             <span>
               {favourites.filter((word) => word.status === "toLearn").length}
             </span>
@@ -115,36 +118,15 @@ const Dashboard = () => {
             </Link>
           </div>
           <div>
-            <Link
-              to="/tag/wordlist"
-              state={{
-                words: words.filter((word) => word.wordStatus === "toLearn"),
-                collectionName: "Words to learn from my collection",
-              }}
-            >
-              Word list with words to learn
-            </Link>
-          </div>
-          <div>
-            <Link
-              to="/tag/test"
-              state={{
-                words: words.filter((word) => word.wordStatus === "toLearn"),
-                collectionName: "Words to learn from my collection",
-              }}
-            >
-              Quiz with words to learn
-            </Link>
-          </div>
-          <div>
-            Words to repeat{" "}
+            <input type="checkbox" name="status" id="learning" /> Words to
+            repeat{" "}
             <span>
               {favourites.filter((word) => word.status === "learning").length}
             </span>
           </div>
 
           <div>
-            Learned words{" "}
+            <input type="checkbox" name="status" id="learned" /> Learned words{" "}
             <span>
               {favourites.filter((word) => word.status === "learned").length}
             </span>

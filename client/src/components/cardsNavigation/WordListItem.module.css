@@ -18,6 +18,13 @@
   width: 25%;
 }
 
+.word_row td:nth-child(3),
+.word_row td:nth-child(4),
+.word_row td:nth-child(5) {
+  font-size: 1.3rem;
+  width: 3%;
+}
+
 .word_row td:nth-child(6) {
   width: 20%;
 }
@@ -73,6 +80,8 @@
   justify-content: center;
   align-items: center;
   border-radius: 0.3rem;
+}
+.checkbox td {
 }
 
 .toLearn {

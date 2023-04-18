@@ -2,14 +2,24 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
 
+// Firebase
+import { useAuthState } from "react-firebase-hooks/auth";
+import { auth } from "../../auth/firebase";
+
 import { capitaliseFirstLetter } from "../../helperFunctions";
 
 import ProgressBar from "../progressBar/ProgressBar";
 
 import classes from "./Category.module.css";
+import { useSelector } from "react-redux";
 
 const Category = ({ categoryInfo }) => {
+  const [user] = useAuthState(auth);
   const [wordData, setWordData] = useState([]);
+  const [wordsToLearn, setWordsToLearn] = useState([]);
+  const [wordsLearning, setWordsLearning] = useState([]);
+  const [wordsLearned, setWordsLearned] = useState([]);
+  const favourites = useSelector((state) => state.favourites.favourites);
 
   const endpoint = categoryInfo.name;
 
@@ -32,14 +42,17 @@ const Category = ({ categoryInfo }) => {
             <h3>{capitaliseFirstLetter(categoryInfo.name)}</h3>
           </Link>
         </div>
-
         <div className={classes.number_of_words}>
           <p>{wordData.length} words</p>
         </div>
+        {user && (
+          <div>
+            <p></p>
+          </div>
+        )}
         <div className={classes.difficulty}>
           <ProgressBar difficulty="easy" />
         </div>
-        <i className="fa-regular fa-bookmark"></i>
       </div>
     </div>
   );
