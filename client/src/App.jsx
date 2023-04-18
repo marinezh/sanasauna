@@ -11,6 +11,8 @@ import Games from "./components/cardsNavigation/Games";
 import CategoryDetailsQuiz from "./components/CategoryDetails/CategoryDetailsQuiz";
 import CategoryDetailsFlipCards from "./components/CategoryDetails/CategoryDetailsFlipCards";
 import CategoryDetailsWordList from "./components/CategoryDetails/CategoryDetailsWordList";
+import TagPage from "./components/TagPage";
+import TagDetailsFlipCards from "./components/TagDetails/TagDetailsFlipCards";
 import { ProtectedRoute } from "./auth/ProtectedRoute";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { auth } from "./auth/firebase";
@@ -31,11 +33,18 @@ function App() {
           <Route path="login" element={<Login />} />
           <Route path="signup" element={<Signup />} />
           <Route element={<ProtectedRoute user={user} />}>
-            <Route path="account" element={<Account />} />
+            <Route path="account" element={<Account />}></Route>
           </Route>
           <Route path=":categoryName" element={<TopicPage />}>
             <Route index element={<Navigate to="flipcards" replace />} />
             <Route path="flipcards" element={<CategoryDetailsFlipCards />} />
+            <Route path="wordlist" element={<CategoryDetailsWordList />} />
+            <Route path="test" element={<CategoryDetailsQuiz />} />
+            <Route path="game" element={<Games />} />
+          </Route>
+          <Route path="tag" element={<TagPage />}>
+            <Route index element={<Navigate to="flipcards" replace />} />
+            <Route path="flipcards" element={<TagDetailsFlipCards />} />
             <Route path="wordlist" element={<CategoryDetailsWordList />} />
             <Route path="test" element={<CategoryDetailsQuiz />} />
             <Route path="game" element={<Games />} />

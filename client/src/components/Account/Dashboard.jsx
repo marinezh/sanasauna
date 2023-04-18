@@ -15,6 +15,7 @@ import { auth } from "../../auth/firebase";
 import WordListItem from "../cardsNavigation/WordListItem";
 
 import classes from "./Dashboard.module.css";
+import { Link } from "react-router-dom";
 
 const Dashboard = () => {
   const [words, setWords] = useState(null);
@@ -63,6 +64,15 @@ const Dashboard = () => {
             <button>All words</button>
             <span>{favourites.length}</span>
           </div>
+          <Link
+            to="/tag/flipcards"
+            state={{
+              words: words,
+              collectionName: "All words from my collection",
+            }}
+          >
+            Flipcards with all words
+          </Link>
           <div>
             <button>Words to learn</button>
             <span>
@@ -83,25 +93,29 @@ const Dashboard = () => {
             </span>
           </div>
         </div>
-        <div className={classes.word_list}>
-          <table>
-            <thead>
-              <tr>
-                <th>Word</th>
-                <th>Translation</th>
-                <th>To learn</th>
-                <th>Learning</th>
-                <th>Learned</th>
-                <th>Related words</th>
-              </tr>
-            </thead>
-            <tbody>
-              {words.map((word) => (
-                <WordListItem key={word.name} word={word} />
-              ))}
-            </tbody>
-          </table>
-        </div>
+        {words.length ? (
+          <div className={classes.word_list}>
+            <table>
+              <thead>
+                <tr>
+                  <th>Word</th>
+                  <th>Translation</th>
+                  <th>To learn</th>
+                  <th>Learning</th>
+                  <th>Learned</th>
+                  <th>Related words</th>
+                </tr>
+              </thead>
+              <tbody>
+                {words.map((word) => (
+                  <WordListItem key={word.name} word={word} />
+                ))}
+              </tbody>
+            </table>
+          </div>
+        ) : (
+          <h2>You don't have any words in your collection yet</h2>
+        )}
       </div>
     );
 };
