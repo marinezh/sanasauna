@@ -39,9 +39,9 @@ function App() {
             <Route path="wordlist" element={<CategoryDetailsWordList />} />
             <Route path="test" element={<CategoryDetailsQuiz />} />
             <Route path="game" element={<Games />} />
-            <Route path="*" element={<Navigate to="/404" replace />} />
           </Route>
         </Route>
+        <Route path="*" element={<Navigate to="/404" replace />} />
       </Routes>
     </BrowserRouter>
   );
