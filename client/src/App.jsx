@@ -44,12 +44,14 @@ function App() {
             <Route path="test" element={<CategoryDetailsQuiz />} />
             <Route path="game" element={<Games />} />
           </Route>
-          <Route path="tag" element={<TagPage />}>
-            <Route index element={<Navigate to="flipcards" replace />} />
-            <Route path="flipcards" element={<TagDetailsFlipCards />} />
-            <Route path="wordlist" element={<TagDetailsWordList />} />
-            <Route path="test" element={<TagDetailsQuiz />} />
-            <Route path="game" element={<Games />} />
+          <Route element={<ProtectedRoute user={user} />}>
+            <Route path="tag" element={<TagPage />}>
+              <Route index element={<Navigate to="flipcards" replace />} />
+              <Route path="flipcards" element={<TagDetailsFlipCards />} />
+              <Route path="wordlist" element={<TagDetailsWordList />} />
+              <Route path="test" element={<TagDetailsQuiz />} />
+              <Route path="game" element={<Games />} />
+            </Route>
           </Route>
         </Route>
         <Route path="*" element={<Navigate to="/404" replace />} />
