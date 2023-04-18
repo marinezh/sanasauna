@@ -46,20 +46,6 @@ const WordList = ({ data }) => {
     console.log("new words set", newWords);
   }, [favourites, data]);
 
-  /*   useEffect(() => {
-    console.log("favourites useeffect", favourites);
-    console.log("data in wordlist", data);
-    const newWords = cloneDeep(data);
-    for (let i = 0; i < newWords.length; i++) {
-      console.log("favourites[i]", favourites[i]);
-      if (favourites[i]) {
-        newWords[i].wordStatus = favourites[i].status;
-      }
-    }
-    console.log("setting words again");
-    setWords(newWords);
-  }, [data, favourites]); */
-
   useEffect(() => {
     console.log("favourites changed", favourites);
   }, [favourites]);
@@ -67,32 +53,6 @@ const WordList = ({ data }) => {
   useEffect(() => {
     console.log("words changed", words);
   }, [words]);
-
-  /* useEffect(() => {
-    if (!favourites) return;
-    const savedWords = favourites;
-    axios
-      .all(
-        savedWords
-          .map((word) => `/API/word/${word.word}`)
-          .map((url) => axios.get(url))
-      )
-      .then((data) => {
-        // fetch all words info from API and form a structured array
-        const newWords = [];
-        data.forEach((res) => {
-          if (res.data) newWords.push(res.data);
-        });
-        for (let i = 0; i < newWords.length; i++) {
-          newWords[i].wordStatus = favourites[i].status;
-        }
-        setWords(newWords);
-        console.log("new words set", newWords);
-      })
-      .catch((err) => {
-        console.log(err);
-      });
-  }, [favourites]); */
 
   const addCollection = async () => {
     const filteredData = data.filter((word) => {
@@ -119,19 +79,6 @@ const WordList = ({ data }) => {
   if (!words || !favourites) return "loading";
   return (
     <div className={classes.word_list}>
-      <div className={classes.buttons}>
-        {user && (
-          <>
-            <button onClick={addCollection}>
-              Add all words from this topic to my collection
-            </button>
-            <button onClick={removeCollection}>
-              Remove all words on this topic from my collection
-            </button>
-          </>
-        )}
-      </div>
-      <p></p>
       <table>
         <thead>
           <tr>
@@ -153,6 +100,16 @@ const WordList = ({ data }) => {
           ))}
         </tbody>
       </table>
+      {user && (
+        <div className={classes.buttons}>
+          <button onClick={addCollection}>
+            Add all words from this topic to my collection
+          </button>
+          <button onClick={removeCollection}>
+            Remove all words on this topic from my collection
+          </button>
+        </div>
+      )}
     </div>
   );
 };
