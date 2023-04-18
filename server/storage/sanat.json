@@ -145,6 +145,14 @@
     "links": ["tuoli"]
   },
   {
+    "name": "siipi",
+    "translation": "wing",
+    "keywords": ["nouns"],
+    "example": [],
+    "level": "easy",
+    "links": ["lintu"]
+  },
+  {
     "name": "lintu",
     "translation": "bird",
     "keywords": ["nouns", "animals", "eläimet"],
@@ -575,6 +583,16 @@
     "links": ["siivet", "hyttysverkko"]
   },
   {
+    "name": "hyttysverkko",
+    "translation": "mosquito net",
+    "keywords": ["nouns"],
+    "example": [
+      "Tämä hyttysverkko on helppo asentaa ja se sopii hyvin pieniin ikkunoihin."
+    ],
+    "level": "hard",
+    "links": ["siivet", "hyttysverkko"]
+  },
+  {
     "name": "hämähäkki",
     "translation": "spider",
     "keywords": ["nouns", "animals", "eläimet", "substantiivit"],
@@ -582,6 +600,14 @@
       "Hämähäkki kulkee seinää pitkin.",
       "Hämähäkki tekee verkkoansa."
     ],
+    "level": "hard",
+    "links": ["seitti"]
+  },
+  {
+    "name": "seitti",
+    "translation": "spiderweb",
+    "keywords": ["nouns"],
+    "example": [],
     "level": "hard",
     "links": ["toukat", "myrkky"]
   },
@@ -594,7 +620,7 @@
       "Kotka on uhanalainen eläinlaji."
     ],
     "level": "hard",
-    "links": []
+    "links": ["lintu"]
   },
 
   {
@@ -603,7 +629,7 @@
     "keywords": ["nouns", "herbs", "substantiivit", "yrtit"],
     "example": ["Tänään laitetaan ruokaan koiruohoa."],
     "level": "easy",
-    "links": ["koira", "ruoho"]
+    "links": ["ruoho"]
   },
   {
     "name": "sinappi",
@@ -1246,6 +1272,14 @@
     "links": []
   },
   {
+    "name": "satula",
+    "translation": "saddle",
+    "keywords": ["nouns"],
+    "example": [],
+    "level": "medium",
+    "links": ["hevonen", "suitsi"]
+  },
+  {
     "name": "hevonen",
     "translation": "horse",
     "keywords": ["nouns", "animals", "eläimet", "substantiivit"],
@@ -1262,7 +1296,15 @@
     "keywords": ["nouns", "animals", "", "", "substantiivit", "eläimet"],
     "example": [],
     "level": "easy",
-    "links": []
+    "links": ["sarvet"]
+  },
+  {
+    "name": "sarvet",
+    "translation": "antler",
+    "keywords": ["nouns"],
+    "example": [],
+    "level": "medium",
+    "links": ["vuohi"]
   },
   {
     "name": "susi",
@@ -1270,7 +1312,15 @@
     "keywords": ["nouns", "animals", "", "", "substantiivit", "eläimet"],
     "example": [],
     "level": "easy",
-    "links": []
+    "links": ["metsä"]
+  },
+  {
+    "name": "metsä",
+    "translation": "forest",
+    "keywords": ["nouns", "nature"],
+    "example": [],
+    "level": "easy",
+    "links": ["puu"]
   },
   {
     "name": "lammas",
@@ -1278,7 +1328,23 @@
     "keywords": ["nouns", "animals", "", "", "substantiivit", "eläimet"],
     "example": [],
     "level": "easy",
-    "links": []
+    "links": ["villa", "paimen"]
+  },
+  {
+    "name": "villa",
+    "translation": "wool",
+    "keywords": ["nouns"],
+    "example": [],
+    "level": "medium",
+    "links": ["villa", "paimen"]
+  },
+  {
+    "name": "paimen",
+    "translation": "shepherd",
+    "keywords": ["nouns"],
+    "example": [],
+    "level": "medium",
+    "links": ["lammas"]
   },
   {
     "name": "sika",
@@ -1286,7 +1352,15 @@
     "keywords": ["nouns", "animals", "", "", "substantiivit", "eläimet"],
     "example": [],
     "level": "easy",
-    "links": []
+    "links": ["porsas"]
+  },
+  {
+    "name": "porsas",
+    "translation": "pig",
+    "keywords": ["nouns", "animals", "", "", "substantiivit", "eläimet"],
+    "example": [],
+    "level": "easy",
+    "links": ["sika"]
   },
   {
     "name": "apina",
@@ -1294,7 +1368,7 @@
     "keywords": ["nouns", "animals", "", "", "substantiivit", "eläimet"],
     "example": [],
     "level": "easy",
-    "links": []
+    "links": ["banaani", "viidakko", "häntä"]
   },
   {
     "name": "leijona",
@@ -1302,7 +1376,15 @@
     "keywords": ["nouns", "animals", "", "", "substantiivit", "eläimet"],
     "example": [],
     "level": "easy",
-    "links": []
+    "links": ["harja"]
+  },
+  {
+    "name": "harja",
+    "translation": "mane",
+    "keywords": ["nouns"],
+    "example": [],
+    "level": "easy",
+    "links": ["leijona"]
   },
   {
     "name": "kirahvi",
@@ -1310,7 +1392,7 @@
     "keywords": ["nouns", "animals", "", "", "substantiivit", "eläimet"],
     "example": [],
     "level": "easy",
-    "links": []
+    "links": ["pitkä kaula", "afrikka", "puu"]
   },
   {
     "name": "elefantti",
@@ -1318,7 +1400,15 @@
     "keywords": ["nouns", "animals", "", "", "substantiivit", "eläimet"],
     "example": [],
     "level": "easy",
-    "links": []
+    "links": ["kärsä", "savanni", "torakka"]
+  },
+  {
+    "name": "kärsä",
+    "translation": "trunk",
+    "keywords": ["nouns"],
+    "example": [],
+    "level": "medium",
+    "links": ["elefantti", "savanni"]
   },
   {
     "name": "lehmä",
@@ -1326,7 +1416,7 @@
     "keywords": ["nouns", "animals", "eläimet", "substantiivit"],
     "example": ["Lehmä lypsetään aamuisin.", "Lehmä laiduntaa pellolla."],
     "level": "medium",
-    "links": ["maito", "sarvet"]
+    "links": ["maito", "sarvet", "navetta"]
   },
   {
     "name": "kyyhkynen",
@@ -1462,7 +1552,7 @@
     "keywords": ["noun", "family", "", "", "nimisana", "perhe"],
     "example": [],
     "level": "easy",
-    "links": []
+    "links": ["äiti", "isä", "sisko"]
   },
   {
     "name": "äiti",
@@ -1470,7 +1560,7 @@
     "keywords": ["noun", "family", "", "", "nimisana", "perhe"],
     "example": [],
     "level": "easy",
-    "links": []
+    "links": ["isä"]
   },
   {
     "name": "isä",
@@ -1478,7 +1568,7 @@
     "keywords": ["noun", "family", "", "", "nimisana", "perhe"],
     "example": [],
     "level": "easy",
-    "links": []
+    "links": ["äiti"]
   },
   {
     "name": "vaimo",
@@ -1486,7 +1576,7 @@
     "keywords": ["noun", "family", "", "", "nimisana", "perhe"],
     "example": [],
     "level": "easy",
-    "links": []
+    "links": ["aviomies"]
   },
   {
     "name": "aviomies",
@@ -1494,7 +1584,7 @@
     "keywords": ["noun", "family", "", "", "nimisana", "perhe"],
     "example": [],
     "level": "easy",
-    "links": []
+    "links": ["vaimo"]
   },
   {
     "name": "lapsi",
@@ -1502,7 +1592,7 @@
     "keywords": ["noun", "family", "", "", "nimisana", "perhe"],
     "example": [],
     "level": "easy",
-    "links": []
+    "links": ["tytär", "poika"]
   },
   {
     "name": "tytär",
@@ -1510,7 +1600,7 @@
     "keywords": ["noun", "family", "", "", "nimisana", "perhe"],
     "example": [],
     "level": "easy",
-    "links": []
+    "links": ["lapsi"]
   },
   {
     "name": "poika",
@@ -1518,7 +1608,7 @@
     "keywords": ["noun", "family", "", "", "nimisana", "perhe"],
     "example": [],
     "level": "easy",
-    "links": []
+    "links": ["lapsi"]
   },
   {
     "name": "sisko",
@@ -1526,7 +1616,7 @@
     "keywords": ["noun", "family", "", "", "nimisana", "perhe"],
     "example": [],
     "level": "easy",
-    "links": []
+    "links": ["veli"]
   },
   {
     "name": "veli",
@@ -1534,7 +1624,7 @@
     "keywords": ["noun", "family", "", "", "nimisana", "perhe"],
     "example": [],
     "level": "easy",
-    "links": []
+    "links": ["sisko"]
   },
   {
     "name": "pikkusisko",
@@ -1542,7 +1632,7 @@
     "keywords": ["noun", "family", "", "", "nimisana", "perhe"],
     "example": [],
     "level": "easy",
-    "links": []
+    "links": ["pikkuveli"]
   },
   {
     "name": "pikkuveli",
@@ -1550,7 +1640,7 @@
     "keywords": ["noun", "family", "", "", "nimisana", "perhe"],
     "example": [],
     "level": "easy",
-    "links": []
+    "links": ["pikkusisko"]
   },
   {
     "name": "isoveli",
@@ -1558,7 +1648,15 @@
     "keywords": ["noun", "family", "", "", "nimisana", "perhe"],
     "example": [],
     "level": "easy",
-    "links": []
+    "links": ["isosisko"]
+  },
+  {
+    "name": "isosisko",
+    "translation": "older sister",
+    "keywords": ["noun", "family", "", "", "nimisana", "perhe"],
+    "example": [],
+    "level": "easy",
+    "links": ["isoveli"]
   },
   {
     "name": "isoisoäiti",
@@ -1566,7 +1664,7 @@
     "keywords": ["noun", "family", "", "", "nimisana", "perhe"],
     "example": [],
     "level": "easy",
-    "links": []
+    "links": ["isoisoisä"]
   },
   {
     "name": "isoisoisä",
@@ -1574,7 +1672,7 @@
     "keywords": ["noun", "family", "", "", "nimisana", "perhe"],
     "example": [],
     "level": "easy",
-    "links": []
+    "links": ["isoisoäiti"]
   },
   {
     "name": "isoäiti",
@@ -1582,7 +1680,7 @@
     "keywords": ["noun", "family", "", "", "nimisana", "perhe"],
     "example": [],
     "level": "easy",
-    "links": []
+    "links": ["isoisä"]
   },
   {
     "name": "puhua",
