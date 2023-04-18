@@ -241,6 +241,14 @@
     "links": ["asunto"]
   },
   {
+    "name": "asunto",
+    "translation": "apartment",
+    "keywords": ["nouns", "architecture", "arkkitehtuuri"],
+    "example": ["Talon edessä on iso piha.", "Talo on rakennettu vuonna 1980."],
+    "level": "easy",
+    "links": ["talo"]
+  },
+  {
     "name": "laiva",
     "translation": "ship",
     "keywords": ["nouns", "transportation", "kuljetus"],
@@ -1339,6 +1347,15 @@
     "links": ["villa", "paimen"]
   },
   {
+    "name": "apu",
+    "translation": "help",
+    "keywords": ["nouns"],
+    "example": [],
+    "level": "medium",
+    "links": ["auttaa"]
+  },
+
+  {
     "name": "paimen",
     "translation": "shepherd",
     "keywords": ["nouns"],
@@ -1683,84 +1700,114 @@
     "links": ["isoisä"]
   },
   {
+    "name": "isoisä",
+    "translation": "grandmother",
+    "keywords": ["noun", "family", "", "", "nimisana", "perhe"],
+    "example": [],
+    "level": "easy",
+    "links": ["isoäiti"]
+  },
+  {
     "name": "puhua",
     "translation": "to speak",
     "keywords": ["verbs", "type 1", "verbit", "tyyppi 1"],
-    "example": [],
+    "example": ["Minä puhun suomea.", "Hän ei puhunut mitään."],
     "level": "easy",
-    "links": []
+    "links": ["keskustella", "lausua"]
   },
   {
     "name": "sanoa",
     "translation": "to say",
     "keywords": ["verbs", "type 1", "verbit", "tyyppi 1"],
-    "example": [],
+    "example": ["Hän sanoi sen minulle.", "Älä sano mitään."],
     "level": "easy",
-    "links": []
+    "links": ["puhua", "lausua"]
   },
   {
     "name": "kysyä",
     "translation": "to ask",
     "keywords": ["verbs", "type 1", "verbit", "tyyppi 1"],
-    "example": [],
+    "example": [
+      "Voinko kysyä sinulta jotain?",
+      "Hän kysyi minulta, missä olin ollut."
+    ],
     "level": "easy",
-    "links": []
+    "links": ["pyytää", "kysellä"]
+  },
+  {
+    "name": "pyytää",
+    "translation": "to request",
+    "keywords": ["verbs", "type 1", "verbit", "tyyppi 1"],
+    "example": [],
+    "level": "medium",
+    "links": ["kysyä", "kysellä"]
   },
   {
     "name": "asua",
     "translation": "to live",
     "keywords": ["verbs", "type 1", "verbit", "tyyppi 1"],
-    "example": [],
+    "example": ["Missä sinä asut?", "He asuvat kaupungissa."],
     "level": "easy",
-    "links": []
+    "links": ["asunto", "talo"]
   },
   {
     "name": "katsoa",
     "translation": "to watch",
     "keywords": ["verbs", "type 1", "verbit", "tyyppi 1"],
-    "example": [],
+    "example": ["Minä katson televisiota.", "Hän katsoo ulos ikkunasta."],
     "level": "easy",
-    "links": []
+    "links": ["televisio", "tarkkailla"]
   },
   {
     "name": "ostaa",
     "translation": "to buy",
     "keywords": ["verbs", "type 1", "verbit", "tyyppi 1"],
-    "example": [],
+    "example": ["Minä ostan ruokaa kaupasta.", "He ostavat uuden auton."],
     "level": "easy",
-    "links": []
+    "links": ["maksaa", "tilata"]
   },
   {
     "name": "maksaa",
     "translation": "to pay",
     "keywords": ["verbs", "type 1", "verbit", "tyyppi 1"],
-    "example": [],
+    "example": ["Voitko maksaa käteisellä?", "Maksan laskun huomenna."],
     "level": "easy",
-    "links": []
+    "links": ["ostaa", "lunastaa"]
   },
   {
     "name": "ottaa",
     "translation": "to take",
     "keywords": ["verbs", "type 1", "verbit", "tyyppi 1"],
-    "example": [],
+    "example": ["Voinko ottaa kuvan?", "Otan mukaani vain pienen laukun."],
     "level": "easy",
-    "links": []
+    "links": ["saada", "napata"]
   },
   {
     "name": "rakastaa",
     "translation": "to love",
     "keywords": ["verbs", "type 1", "verbit", "tyyppi 1"],
-    "example": [],
+    "example": ["Minä rakastan sinua.", "Hän rakastaa matkustamista."],
     "level": "easy",
-    "links": []
+    "links": ["pitää"]
+  },
+  {
+    "name": "pitää",
+    "translation": "to like",
+    "keywords": ["verbs", "type 1", "verbit", "tyyppi 1"],
+    "example": ["Minä rakastan sinua.", "Hän rakastaa matkustamista."],
+    "level": "easy",
+    "links": ["rakastaa"]
   },
   {
     "name": "auttaa",
     "translation": "to help",
     "keywords": ["verbs", "type 1", "verbit", "tyyppi 1"],
-    "example": [],
+    "example": [
+      "Voinko auttaa sinua jotenkin?",
+      "Haluan auttaa muita ihmisia."
+    ],
     "level": "easy",
-    "links": []
+    "links": ["apu", "hyväntekeväisyys", "vapaaehtoistyö"]
   },
   {
     "name": "saada",
