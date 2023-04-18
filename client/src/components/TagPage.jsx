@@ -21,18 +21,50 @@ const TagPage = () => {
         <nav className={classes.topic_nav}>
           <ul className={classes.view_tabs}>
             <li>
-              <Link to="flipcards">Flip cards</Link>
+              <Link
+                state={{
+                  words: words,
+                  collectionName: "All words from my collection",
+                }}
+                to="flipcards"
+              >
+                Flip cards
+              </Link>
             </li>
             <li>
-              <Link to="wordlist">Word list</Link>
+              <Link
+                state={{
+                  words: words,
+                  collectionName: "All words from my collection",
+                }}
+                to="wordlist"
+              >
+                Word list
+              </Link>
             </li>
           </ul>
           <ul className={classes.features}>
             <li>
-              <Link to="test">Test</Link>
+              <Link
+                state={{
+                  words: words,
+                  collectionName: "All words from my collection",
+                }}
+                to="test"
+              >
+                Test
+              </Link>
             </li>
             <li>
-              <Link to="game">Games</Link>
+              <Link
+                state={{
+                  words: words,
+                  collectionName: "All words from my collection",
+                }}
+                to="game"
+              >
+                Games
+              </Link>
             </li>
           </ul>
         </nav>
