@@ -60,36 +60,41 @@ const Dashboard = () => {
       <div className={classes.dashboard}>
         <div>
           <h1>My word collection</h1>
-          <Link
-            to="/tag/flipcards"
-            state={{
-              words: words,
-              collectionName: "All words from my collection",
-            }}
-          >
-            Flipcards with all words
-          </Link>
-          <Link
-            to="/tag/wordlist"
-            state={{
-              words: words,
-              collectionName: "All words from my collection",
-            }}
-          >
-            Word list with all words
-          </Link>
-          <Link
-            to="/tag/test"
-            state={{
-              words: words,
-              collectionName: "All words from my collection",
-            }}
-          >
-            Quiz with all words
-          </Link>
-
           <div>
             All words <span>{favourites.length}</span>
+          </div>
+          <div>
+            <Link
+              to="/tag/flipcards"
+              state={{
+                words: words,
+                collectionName: "All words from my collection",
+              }}
+            >
+              Flipcards with all words
+            </Link>
+          </div>
+          <div>
+            <Link
+              to="/tag/wordlist"
+              state={{
+                words: words,
+                collectionName: "All words from my collection",
+              }}
+            >
+              Word list with all words
+            </Link>
+          </div>
+          <div>
+            <Link
+              to="/tag/test"
+              state={{
+                words: words,
+                collectionName: "All words from my collection",
+              }}
+            >
+              Quiz with all words
+            </Link>
           </div>
 
           <div>
@@ -97,6 +102,39 @@ const Dashboard = () => {
             <span>
               {favourites.filter((word) => word.status === "toLearn").length}
             </span>
+          </div>
+          <div>
+            <Link
+              to="/tag/flipcards"
+              state={{
+                words: words.filter((word) => word.wordStatus === "toLearn"),
+                collectionName: "Words to learn from my collection",
+              }}
+            >
+              Flipcards with words to learn
+            </Link>
+          </div>
+          <div>
+            <Link
+              to="/tag/wordlist"
+              state={{
+                words: words.filter((word) => word.wordStatus === "toLearn"),
+                collectionName: "Words to learn from my collection",
+              }}
+            >
+              Word list with words to learn
+            </Link>
+          </div>
+          <div>
+            <Link
+              to="/tag/test"
+              state={{
+                words: words.filter((word) => word.wordStatus === "toLearn"),
+                collectionName: "Words to learn from my collection",
+              }}
+            >
+              Quiz with words to learn
+            </Link>
           </div>
           <div>
             Words to repeat{" "}
