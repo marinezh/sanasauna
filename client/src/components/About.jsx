@@ -1,6 +1,6 @@
 import React from "react";
 
-import BlobName from "./Blob_name";
+import BlobName from "./BlobName";
 import BreadcrumbsGeneric from "./breadCrumbs/BreadcrumbsGeneric";
 
 import classes from "./About.module.css";

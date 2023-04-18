@@ -58,7 +58,7 @@ const Dashboard = () => {
     return (
       <div className={classes.dashboard}>
         <div>
-          <h2>My words</h2>
+          <h1>My word collection</h1>
           <div>
             <button>All words</button>
             <span>{favourites.length}</span>
