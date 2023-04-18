@@ -60,10 +60,6 @@ const Dashboard = () => {
       <div className={classes.dashboard}>
         <div>
           <h1>My word collection</h1>
-          <div>
-            <button>All words</button>
-            <span>{favourites.length}</span>
-          </div>
           <Link
             to="/tag/flipcards"
             state={{
@@ -74,20 +70,24 @@ const Dashboard = () => {
             Flipcards with all words
           </Link>
           <div>
-            <button>Words to learn</button>
+            All words <span>{favourites.length}</span>
+          </div>
+
+          <div>
+            Words to learn{" "}
             <span>
               {favourites.filter((word) => word.status === "toLearn").length}
             </span>
           </div>
           <div>
-            <button>Words to repeat</button>
+            Words to repeat{" "}
             <span>
               {favourites.filter((word) => word.status === "learning").length}
             </span>
           </div>
 
           <div>
-            <button>Learned Words</button>
+            Learned words{" "}
             <span>
               {favourites.filter((word) => word.status === "learned").length}
             </span>

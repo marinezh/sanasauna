@@ -13,6 +13,8 @@ import CategoryDetailsFlipCards from "./components/CategoryDetails/CategoryDetai
 import CategoryDetailsWordList from "./components/CategoryDetails/CategoryDetailsWordList";
 import TagPage from "./components/TagPage";
 import TagDetailsFlipCards from "./components/TagDetails/TagDetailsFlipCards";
+import TagDetailsQuiz from "./components/TagDetails/TagDetailsQuiz";
+import TagDetailsWordList from "./components/TagDetails/TagDetailsWordList";
 import { ProtectedRoute } from "./auth/ProtectedRoute";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { auth } from "./auth/firebase";
@@ -45,8 +47,8 @@ function App() {
           <Route path="tag" element={<TagPage />}>
             <Route index element={<Navigate to="flipcards" replace />} />
             <Route path="flipcards" element={<TagDetailsFlipCards />} />
-            <Route path="wordlist" element={<CategoryDetailsWordList />} />
-            <Route path="test" element={<CategoryDetailsQuiz />} />
+            <Route path="wordlist" element={<TagDetailsWordList />} />
+            <Route path="test" element={<TagDetailsQuiz />} />
             <Route path="game" element={<Games />} />
           </Route>
         </Route>
