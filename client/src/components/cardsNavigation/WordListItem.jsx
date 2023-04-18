@@ -63,16 +63,34 @@ const WordListItem = ({ word }) => {
     dispatch(setFavourites(newFavourites));
   };
 
+  const addToFavourites = (newStatus) => {
+    const newFavourites = cloneDeep(favourites);
+    const newWord = { word: word.name, status: newStatus };
+    newFavourites.push(newWord);
+    console.log("newFavourites", newFavourites);
+    dispatch(setFavourites(newFavourites));
+  };
+
+  const editFavourites = (newStatus) => {
+    const newFavourites = cloneDeep(favourites);
+    newFavourites.forEach((favourite) => {
+      if (favourite.word === word.name) favourite.status = newStatus;
+    });
+    dispatch(setFavourites(newFavourites));
+  };
+
   const toggleWordStatus = (newStatus) => {
     if (wordStatus === newStatus) {
       deleteFromFavourites();
     } else {
       setWordStatus(newStatus);
-      const newFavourites = cloneDeep(favourites);
-      newFavourites.forEach((favourite) => {
-        if (favourite.word === word.name) favourite.status = newStatus;
-      });
-      dispatch(setFavourites(newFavourites));
+      if (!favourites.find((fave) => fave.word === word.name)) {
+        console.log("adding to faves");
+        addToFavourites(newStatus);
+      } else {
+        console.log("editing faves");
+        editFavourites(newStatus);
+      }
     }
   };
 
