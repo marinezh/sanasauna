@@ -107,10 +107,31 @@ const WordList = ({ data }) => {
     dispatch(setFavourites([...favourites, ...wordsToAdd]));
   };
 
+  const removeCollection = async () => {
+    const newFavourites = favourites.filter((fave) => {
+      return (
+        data.find((topicWord) => topicWord.name === fave.word) === undefined
+      );
+    });
+    dispatch(setFavourites(newFavourites));
+  };
+
   if (!words || !favourites) return "loading";
   return (
     <div className={classes.word_list}>
-      <h2>Word list</h2>
+      <div className={classes.buttons}>
+        {user && (
+          <>
+            <button onClick={addCollection}>
+              Add all words from this topic to my collection
+            </button>
+            <button onClick={removeCollection}>
+              Remove all words on this topic from my collection
+            </button>
+          </>
+        )}
+      </div>
+      <p></p>
       <table>
         <thead>
           <tr>
@@ -128,13 +149,6 @@ const WordList = ({ data }) => {
           ))}
         </tbody>
       </table>
-      <div className={classes.buttons}>
-        {user && (
-          <button onClick={addCollection}>
-            Add all words to my collection!
-          </button>
-        )}
-      </div>
     </div>
   );
 };

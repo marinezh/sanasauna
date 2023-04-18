@@ -83,7 +83,7 @@ const Dashboard = () => {
             </span>
           </div>
         </div>
-        <div>
+        <div className={classes.word_list}>
           <table>
             <thead>
               <tr>
