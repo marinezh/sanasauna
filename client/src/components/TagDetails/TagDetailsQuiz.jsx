@@ -1,25 +1,15 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import { useParams } from "react-router-dom";
+import { useOutletContext } from "react-router-dom";
 
 import Quiz from "../Quiz/Quiz";
 
 const TagDetailsQuiz = () => {
-  const [wordData, setWordData] = useState([]);
-  const { categoryName } = useParams();
+  const [words] = useOutletContext();
 
-  useEffect(() => {
-    axios
-      .get(`/API/keyword/${categoryName}`)
-      .then((data) => {
-        setWordData(data.data);
-      })
-      .catch((err) => console.log(err));
-  }, [categoryName]);
+  console.log("useOutletContext", words);
 
-  return (
-    <div>{wordData.length ? <Quiz data={wordData} /> : <p>Loading...</p>}</div>
-  );
+  return <div>{words.length ? <Quiz data={words} /> : <p>Loading...</p>}</div>;
 };
 
 export default TagDetailsQuiz;
