@@ -98,40 +98,49 @@ const WordListItem = ({ word }) => {
     <tr className={classes.word_row}>
       <td>{word.name}</td>
       <td>{word.translation}</td>
+      {user && (
+        <>
+          <td>
+            {/*  <div className={classes.all_tags}> */}
+            <div
+              onClick={() => toggleWordStatus("toLearn")}
+              className={`${
+                wordStatus === "toLearn" ? classes["toLearn"] : ""
+              } ${classes.checkbox}`}
+            >
+              {wordStatus === "toLearn" && (
+                <i className="fa-solid fa-check"></i>
+              )}
+            </div>
+          </td>
+          <td>
+            <div
+              onClick={() => toggleWordStatus("learning")}
+              className={`${
+                wordStatus === "learning" ? classes["learning"] : ""
+              } ${classes.checkbox}`}
+            >
+              {wordStatus === "learning" && (
+                <i className="fa-solid fa-check"></i>
+              )}
+            </div>
+          </td>
+          <td>
+            <div
+              onClick={() => toggleWordStatus("learned")}
+              className={`${
+                wordStatus === "learned" ? classes["learned"] : ""
+              } ${classes.checkbox}`}
+            >
+              {wordStatus === "learned" && (
+                <i className="fa-solid fa-check"></i>
+              )}
+            </div>
 
-      <td>
-        {/*  <div className={classes.all_tags}> */}
-        <div
-          onClick={() => toggleWordStatus("toLearn")}
-          className={`${wordStatus === "toLearn" ? classes["toLearn"] : ""} ${
-            classes.checkbox
-          }`}
-        >
-          {wordStatus === "toLearn" && <i className="fa-solid fa-check"></i>}
-        </div>
-      </td>
-      <td>
-        <div
-          onClick={() => toggleWordStatus("learning")}
-          className={`${wordStatus === "learning" ? classes["learning"] : ""} ${
-            classes.checkbox
-          }`}
-        >
-          {wordStatus === "learning" && <i className="fa-solid fa-check"></i>}
-        </div>
-      </td>
-      <td>
-        <div
-          onClick={() => toggleWordStatus("learned")}
-          className={`${wordStatus === "learned" ? classes["learned"] : ""} ${
-            classes.checkbox
-          }`}
-        >
-          {wordStatus === "learned" && <i className="fa-solid fa-check"></i>}
-        </div>
-
-        {/* </div> */}
-      </td>
+            {/* </div> */}
+          </td>
+        </>
+      )}
       <td>
         {relatedWords.map((link) => (
           <p key={link.name}>

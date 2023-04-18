@@ -137,9 +137,13 @@ const WordList = ({ data }) => {
           <tr>
             <th>Word</th>
             <th>Translation</th>
-            <th>To learn</th>
-            <th>Learning</th>
-            <th>Learned</th>
+            {user && (
+              <>
+                <th>To learn</th>
+                <th>Learning</th>
+                <th>Learned</th>
+              </>
+            )}
             <th>Related words</th>
           </tr>
         </thead>
