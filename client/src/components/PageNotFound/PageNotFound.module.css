@@ -11,7 +11,7 @@
 
 .about {
   width: 900px;
-  background: linear-gradient(to bottom, var(--blush), var(--purple));
+  background: linear-gradient(to bottom, var(--blush), var(--mint));
   box-shadow: var(--shadow);
   border-radius: 1rem;
   padding: 3rem 5rem 4rem;
