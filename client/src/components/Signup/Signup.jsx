@@ -75,7 +75,7 @@ const Signup = () => {
           <button type="sumbit" className={classes.button}>
             Sign Up
           </button>
-          <div>
+          <div className={classes.forwarding_to_login}>
             Already have an acoount?
             <Link to="/login">Login</Link>
           </div>
