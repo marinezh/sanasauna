@@ -36,6 +36,9 @@ const Signup = () => {
 
   return (
     <div className={classes.login_container}>
+
+      <div className={classes.bread}></div>
+
       <form onSubmit={register} className={classes.login}>
         <h1>Join us</h1>
         <div className={classes.field_container}>
@@ -72,7 +75,7 @@ const Signup = () => {
           <button type="sumbit" className={classes.button}>
             Sign Up
           </button>
-          <div>
+          <div className={classes.forwarding_to_login}>
             Already have an acoount?
             <Link to="/login">Login</Link>
           </div>

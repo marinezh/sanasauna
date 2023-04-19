@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 2rem;
 }
 
 .login {
@@ -34,7 +35,7 @@
   font-family: inherit;
   font-size: inherit;
   border-radius: 0.3rem;
-  margin: 1rem 0 0.5rem;
+  margin: 1rem 0 1.5rem;
 }
 
 .button:hover,
@@ -59,4 +60,8 @@
   padding: 0.5rem 1rem;
   border: 1px solid black;
   border-radius: 0.3rem;
+}
+
+.forwarding_to_login {
+  font-size: smaller;
 }
