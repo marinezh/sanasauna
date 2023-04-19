@@ -36,7 +36,9 @@ const Signup = () => {
 
   return (
     <div className={classes.login_container}>
+
       <div className={classes.bread}></div>
+
       <form onSubmit={register} className={classes.login}>
         <h1>Join us</h1>
         <div className={classes.field_container}>
