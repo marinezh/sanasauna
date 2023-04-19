@@ -66,7 +66,6 @@
 
 .buttons a:nth-child(2) button {
   background-color: var(--coral);
-  color: white;
 }
 
 .buttons a:nth-child(3) button {
@@ -75,4 +74,9 @@
 
 .buttons a:nth-child(4) button {
   background-color: var(--mint);
+}
+
+.filters {
+  display: flex;
+  gap: 1rem;
 }

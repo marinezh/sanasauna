@@ -19,6 +19,16 @@ import { Link } from "react-router-dom";
 
 const Dashboard = () => {
   const [words, setWords] = useState(null);
+  const [allChecked, setAllChecked] = useState(false);
+  const [toLearnChecked, setToLearnChecked] = useState(false);
+  const [learningChecked, setLearningChecked] = useState(false);
+  const [learnedChecked, setLearnedChecked] = useState(false);
+  const [checked, setChecked] = useState(
+    { all: false },
+    { toLearn: false },
+    { learning: false },
+    { learned: false }
+  );
   const favourites = useSelector((state) => state.favourites.favourites);
   const dispatch = useDispatch();
   const [user] = useAuthState(auth);
@@ -53,6 +63,50 @@ const Dashboard = () => {
         console.log(err);
       });
   }, [favourites]);
+
+  const allCheckboxHandler = (e) => {
+    if (e.target.checked) {
+      setAllChecked(true);
+      setToLearnChecked(true);
+      setLearningChecked(true);
+      setLearnedChecked(true);
+    } else {
+      setAllChecked(false);
+      setToLearnChecked(false);
+      setLearningChecked(false);
+      setLearnedChecked(false);
+    }
+  };
+
+  const toLearnCheckboxHandler = (e) => {
+    if (e.target.checked) {
+      setToLearnChecked(true);
+      if (learningChecked && learnedChecked && !allChecked) setAllChecked(true);
+    } else {
+      if (allChecked) setAllChecked(false);
+      setToLearnChecked(false);
+    }
+  };
+
+  const learningCheckboxHandler = (e) => {
+    if (e.target.checked) {
+      setLearningChecked(true);
+      if (toLearnChecked && learnedChecked && !allChecked) setAllChecked(true);
+    } else {
+      if (allChecked) setAllChecked(false);
+      setLearningChecked(false);
+    }
+  };
+
+  const learnedCheckboxHandler = (e) => {
+    if (e.target.checked) {
+      setLearnedChecked(true);
+      if (toLearnChecked && learningChecked && !allChecked) setAllChecked(true);
+    } else {
+      if (allChecked) setAllChecked(false);
+      setLearnedChecked(false);
+    }
+  };
 
   if (!words || !favourites) return "loading";
   else
@@ -98,31 +152,58 @@ const Dashboard = () => {
               <button>Repeat words that I've learned</button>
             </Link>
           </div>
-          <div>
-            <input type="checkbox" name="status" id="all" />
-            <label htmlFor="all"> All words</label>{" "}
-            <span>{favourites.length}</span>
-          </div>
-          <div>
-            <input type="checkbox" name="status" id="toLearn" />
-            <label htmlFor="toLearn"></label> Words to learn{" "}
-            <span>
-              {favourites.filter((word) => word.status === "toLearn").length}
-            </span>
-          </div>
-          <div>
-            <input type="checkbox" name="status" id="learning" /> Words to
-            repeat{" "}
-            <span>
-              {favourites.filter((word) => word.status === "learning").length}
-            </span>
-          </div>
+          <div className={classes.filters}>
+            <div>
+              <input
+                type="checkbox"
+                name="status"
+                id="all"
+                checked={allChecked}
+                onChange={allCheckboxHandler}
+              />
+              <label htmlFor="all"> All words</label>{" "}
+              <span>{favourites.length}</span>
+            </div>
+            <div>
+              <input
+                type="checkbox"
+                name="status"
+                id="toLearn"
+                checked={toLearnChecked}
+                onChange={toLearnCheckboxHandler}
+              />
+              <label htmlFor="toLearn"></label> Words to learn{" "}
+              <span>
+                {favourites.filter((word) => word.status === "toLearn").length}
+              </span>
+            </div>
+            <div>
+              <input
+                type="checkbox"
+                name="status"
+                id="learning"
+                checked={learningChecked}
+                onChange={learningCheckboxHandler}
+              />{" "}
+              Words to repeat{" "}
+              <span>
+                {favourites.filter((word) => word.status === "learning").length}
+              </span>
+            </div>
 
-          <div>
-            <input type="checkbox" name="status" id="learned" /> Learned words{" "}
-            <span>
-              {favourites.filter((word) => word.status === "learned").length}
-            </span>
+            <div>
+              <input
+                type="checkbox"
+                name="status"
+                id="learned"
+                checked={learnedChecked}
+                onChange={learnedCheckboxHandler}
+              />{" "}
+              Learned words{" "}
+              <span>
+                {favourites.filter((word) => word.status === "learned").length}
+              </span>
+            </div>
           </div>
         </div>
         {words.length ? (
