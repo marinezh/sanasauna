@@ -1,7 +1,5 @@
 import React from "react";
-import BreadcrumbsGeneric from "../breadCrumbs/BreadcrumbsGeneric";
 import { useState, useEffect } from "react";
-
 import { useAuthState } from "react-firebase-hooks/auth";
 import { Link, useNavigate } from "react-router-dom";
 import { auth, logInWithEmailAndPassword } from "../../auth/firebase";
@@ -11,7 +9,7 @@ import classes from "./Login.module.css";
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [user, loading, error] = useAuthState(auth);
+  const [user, loading] = useAuthState(auth);
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -26,9 +24,7 @@ const Login = () => {
 
   return (
     <div className={classes.login_container}>
-
       <div className={classes.bread}></div>
-
 
       <form onSubmit={loginHandler} className={classes.login}>
         <h1>Welcome back</h1>
