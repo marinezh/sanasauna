@@ -19,10 +19,11 @@ import { Link } from "react-router-dom";
 
 const Dashboard = () => {
   const [words, setWords] = useState(null);
-  const [allChecked, setAllChecked] = useState(false);
-  const [toLearnChecked, setToLearnChecked] = useState(false);
-  const [learningChecked, setLearningChecked] = useState(false);
-  const [learnedChecked, setLearnedChecked] = useState(false);
+  const [filteredWords, setFilteredWords] = useState(null);
+  const [allChecked, setAllChecked] = useState(true);
+  const [toLearnChecked, setToLearnChecked] = useState(true);
+  const [learningChecked, setLearningChecked] = useState(true);
+  const [learnedChecked, setLearnedChecked] = useState(true);
   const [checked, setChecked] = useState(
     { all: false },
     { toLearn: false },
@@ -32,6 +33,9 @@ const Dashboard = () => {
   const favourites = useSelector((state) => state.favourites.favourites);
   const dispatch = useDispatch();
   const [user] = useAuthState(auth);
+
+  console.log("filteredWords", filteredWords);
+  console.log("checks", toLearnChecked, learningChecked, learnedChecked);
 
   useEffect(() => {
     console.log("useeffect1");
@@ -57,12 +61,27 @@ const Dashboard = () => {
           newWords[i].wordStatus = favourites[i].status;
         }
         setWords(newWords);
+
         console.log("new words set", newWords);
       })
       .catch((err) => {
         console.log(err);
       });
   }, [favourites]);
+
+  useEffect(() => {
+    if (!words) return;
+    const filtered = words.filter((fave) => {
+      console.log("fave.wordStatus", fave.wordStatus);
+      console.log("checks", toLearnChecked, learningChecked, learnedChecked);
+      if (toLearnChecked && fave.wordStatus === "toLearn") return true;
+      if (learningChecked && fave.wordStatus === "learning") return true;
+      if (learnedChecked && fave.wordStatus === "learned") return true;
+      return false;
+    });
+    console.log("filtered", filtered);
+    setFilteredWords(filtered);
+  }, [words, toLearnChecked, learningChecked, learnedChecked]);
 
   const allCheckboxHandler = (e) => {
     if (e.target.checked) {
@@ -206,7 +225,7 @@ const Dashboard = () => {
             </div>
           </div>
         </div>
-        {words.length ? (
+        {filteredWords.length ? (
           <div className={classes.word_list}>
             <table>
               <thead>
@@ -220,7 +239,7 @@ const Dashboard = () => {
                 </tr>
               </thead>
               <tbody>
-                {words.map((word) => (
+                {filteredWords.map((word) => (
                   <WordListItem key={word.name} word={word} />
                 ))}
               </tbody>
