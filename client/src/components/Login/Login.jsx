@@ -16,7 +16,7 @@ const Login = () => {
 
   useEffect(() => {
     if (loading) return;
-    if (user) navigate("/allwords");
+    if (user) navigate("/");
   }, [user, loading, navigate]);
 
   const loginHandler = (e) => {
