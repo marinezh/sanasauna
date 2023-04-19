@@ -26,9 +26,7 @@ const Login = () => {
 
   return (
     <div className={classes.login_container}>
-      <div className={classes.bread}>
-        <BreadcrumbsGeneric />
-      </div>
+      <div className={classes.bread}></div>
       <form onSubmit={loginHandler} className={classes.login}>
         <h1>Welcome back</h1>
         <div className={classes.field_container}>
