@@ -60,12 +60,7 @@ const Dashboard = () => {
       <div className={classes.dashboard}>
         <div>
           <h1>My word collection</h1>
-          <div>
-            <input type="checkbox" name="status" id="all" />
-            <label htmlFor="all"> All words</label>{" "}
-            <span>{favourites.length}</span>
-          </div>
-          <div>
+          <div className={classes.buttons}>
             <Link
               to="/tag/flipcards"
               state={{
@@ -73,40 +68,8 @@ const Dashboard = () => {
                 collectionName: "All words from my collection",
               }}
             >
-              Flipcards with all words
+              <button>Train all words</button>
             </Link>
-          </div>
-          <div>
-            <Link
-              to="/tag/wordlist"
-              state={{
-                words: words,
-                collectionName: "All words from my collection",
-              }}
-            >
-              Word list with all words
-            </Link>
-          </div>
-          <div>
-            <Link
-              to="/tag/test"
-              state={{
-                words: words,
-                collectionName: "All words from my collection",
-              }}
-            >
-              Quiz with all words
-            </Link>
-          </div>
-
-          <div>
-            <input type="checkbox" name="status" id="toLearn" />
-            <label htmlFor="toLearn"></label> Words to learn{" "}
-            <span>
-              {favourites.filter((word) => word.status === "toLearn").length}
-            </span>
-          </div>
-          <div>
             <Link
               to="/tag/flipcards"
               state={{
@@ -114,8 +77,38 @@ const Dashboard = () => {
                 collectionName: "Words to learn from my collection",
               }}
             >
-              Flipcards with words to learn
+              <button>Train new words</button>
             </Link>
+            <Link
+              to="/tag/flipcards"
+              state={{
+                words: words.filter((word) => word.wordStatus === "learning"),
+                collectionName: "Words that I'm learning",
+              }}
+            >
+              <button>Repeat words that I'm learning</button>
+            </Link>
+            <Link
+              to="/tag/flipcards"
+              state={{
+                words: words.filter((word) => word.wordStatus === "learned"),
+                collectionName: "Words that I already learned",
+              }}
+            >
+              <button>Repeat words that I've learned</button>
+            </Link>
+          </div>
+          <div>
+            <input type="checkbox" name="status" id="all" />
+            <label htmlFor="all"> All words</label>{" "}
+            <span>{favourites.length}</span>
+          </div>
+          <div>
+            <input type="checkbox" name="status" id="toLearn" />
+            <label htmlFor="toLearn"></label> Words to learn{" "}
+            <span>
+              {favourites.filter((word) => word.status === "toLearn").length}
+            </span>
           </div>
           <div>
             <input type="checkbox" name="status" id="learning" /> Words to

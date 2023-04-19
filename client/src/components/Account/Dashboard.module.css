@@ -1,10 +1,16 @@
 .dashboard {
   border: 3px solid var(--mint);
   background-color: white;
-  padding: 4rem 3rem;
+  padding: 2rem 3rem;
   border-radius: 1rem;
   width: 80%;
   margin: 1rem auto;
+}
+
+.dashboard h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .word_list {
@@ -34,4 +40,39 @@
   padding: 1rem;
   background-color: var(--purple);
   border-radius: 0.3rem 0.3rem 0 0;
+}
+
+.buttons {
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.buttons button {
+  min-width: 10rem;
+  border: none;
+  padding: 0.7rem 1rem;
+  border-radius: 0.3rem;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;
+  box-shadow: var(--shadow);
+}
+
+.buttons a:nth-child(1) button {
+  background-color: var(--purple);
+}
+
+.buttons a:nth-child(2) button {
+  background-color: var(--coral);
+  color: white;
+}
+
+.buttons a:nth-child(3) button {
+  background-color: var(--orange);
+}
+
+.buttons a:nth-child(4) button {
+  background-color: var(--mint);
 }
