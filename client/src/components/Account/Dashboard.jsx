@@ -127,7 +127,7 @@ const Dashboard = () => {
     }
   };
 
-  if (!words || !favourites) return "loading";
+  if (!words || !filteredWords || !favourites) return "loading";
   else
     return (
       <div className={classes.dashboard}>
