@@ -55,9 +55,20 @@ const Login = () => {
           <button type="submit" className={classes.button}>
             Login
           </button>
-          <div>
+          <div className={classes.credentials}>
+            <p>Feel free to use the following credentials for testing:</p>
+            <ul>
+              <li>
+                <span>Email:</span> test@test.com
+              </li>
+              <li>
+                <span>Password:</span> 123456
+              </li>
+            </ul>
+          </div>
+          <div className={classes.forwarding_to_signup}>
             Do not have an account?
-            <Link to="/signup">Register</Link>
+            <Link to="/signup">Sign Up</Link> here.
           </div>
         </div>
       </form>
