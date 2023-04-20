@@ -1,6 +1,5 @@
-import React, { useEffect, useState } from "react";
-import axios from "axios";
-import { useParams, useNavigate, useOutletContext } from "react-router-dom";
+import React from "react";
+import { useOutletContext } from "react-router-dom";
 
 import FlipCards from "../cardsNavigation/FlipCards";
 

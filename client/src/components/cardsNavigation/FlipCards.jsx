@@ -2,12 +2,6 @@ import React, { useState } from "react";
 
 import { shuffle } from "../../helperFunctions";
 
-// Firebase
-import { useAuthState } from "react-firebase-hooks/auth";
-import { getAuth } from "firebase/auth";
-import { doc, getDoc, setDoc } from "firebase/firestore";
-import { db, auth } from "../../auth/firebase";
-
 import Card from "../Card";
 
 import classes from "./FlipCards.module.css";

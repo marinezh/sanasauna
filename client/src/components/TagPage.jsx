@@ -1,7 +1,5 @@
-import { Outlet, Link, useParams, useLocation } from "react-router-dom";
+import { Outlet, Link, useLocation } from "react-router-dom";
 import React from "react";
-
-import { capitaliseFirstLetter } from "../helperFunctions";
 
 import Breadcrumbs from "./breadCrumbs/Breadcrumbs";
 

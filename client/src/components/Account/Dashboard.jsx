@@ -1,16 +1,9 @@
-import React, { useEffect, useState, useMemo } from "react";
+import React, { useEffect, useState } from "react";
 import axios from "axios";
 
 // Redux
 import { useDispatch, useSelector } from "react-redux";
-import {
-  setFavourites,
-  fetchFavourites,
-} from "../../features/words/favouritesSlice";
-
-// Firebase
-import { useAuthState } from "react-firebase-hooks/auth";
-import { auth } from "../../auth/firebase";
+import { fetchFavourites } from "../../features/words/favouritesSlice";
 
 import WordListItem from "../cardsNavigation/WordListItem";
 
@@ -24,15 +17,8 @@ const Dashboard = () => {
   const [toLearnChecked, setToLearnChecked] = useState(true);
   const [learningChecked, setLearningChecked] = useState(true);
   const [learnedChecked, setLearnedChecked] = useState(true);
-  const [checked, setChecked] = useState(
-    { all: false },
-    { toLearn: false },
-    { learning: false },
-    { learned: false }
-  );
   const favourites = useSelector((state) => state.favourites.favourites);
   const dispatch = useDispatch();
-  const [user] = useAuthState(auth);
 
   console.log("filteredWords", filteredWords);
   console.log("checks", toLearnChecked, learningChecked, learnedChecked);

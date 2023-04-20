@@ -11,15 +11,10 @@ import { capitaliseFirstLetter } from "../../helperFunctions";
 import ProgressBar from "../progressBar/ProgressBar";
 
 import classes from "./Category.module.css";
-import { useSelector } from "react-redux";
 
 const Category = ({ categoryInfo }) => {
   const [user] = useAuthState(auth);
   const [wordData, setWordData] = useState([]);
-  const [wordsToLearn, setWordsToLearn] = useState([]);
-  const [wordsLearning, setWordsLearning] = useState([]);
-  const [wordsLearned, setWordsLearned] = useState([]);
-  const favourites = useSelector((state) => state.favourites.favourites);
 
   const endpoint = categoryInfo.name;
 

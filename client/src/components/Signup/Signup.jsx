@@ -28,7 +28,7 @@ const Signup = () => {
 
   useEffect(() => {
     if (loading) return;
-    if (user) navigate("/allwords");
+    if (user) navigate("/");
   }, [user, loading, navigate]);
 
   return (
