@@ -146,6 +146,15 @@ const Dashboard = () => {
             <Link
               to="/tag/flipcards"
               state={{
+                words: filteredWords,
+                collectionName: "Selected words from my collection",
+              }}
+            >
+              <button>Train filtered selection</button>
+            </Link>
+            <Link
+              to="/tag/flipcards"
+              state={{
                 words: words.filter((word) => word.wordStatus === "toLearn"),
                 collectionName: "Words to learn from my collection",
               }}
@@ -169,15 +178,6 @@ const Dashboard = () => {
               }}
             >
               <button>Repeat words that I've learned</button>
-            </Link>
-            <Link
-              to="/tag/flipcards"
-              state={{
-                words: filteredWords,
-                collectionName: "Selected words from my collection",
-              }}
-            >
-              <button>Train filtered selection</button>
             </Link>
           </div>
           <div className={classes.filters}>
