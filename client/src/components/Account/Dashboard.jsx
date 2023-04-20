@@ -189,8 +189,10 @@ const Dashboard = () => {
                 checked={allChecked}
                 onChange={allCheckboxHandler}
               />
-              <label htmlFor="all"> All words</label>{" "}
+              <label htmlFor="all"> All words</label>
+              {" ("}
               <span>{favourites.length}</span>
+              {") "}
             </div>
             <div>
               <input
@@ -200,10 +202,11 @@ const Dashboard = () => {
                 checked={toLearnChecked}
                 onChange={toLearnCheckboxHandler}
               />
-              <label htmlFor="toLearn"></label> Words to learn{" "}
+              <label htmlFor="toLearn"></label> Words to learn {" ("}
               <span>
                 {favourites.filter((word) => word.status === "toLearn").length}
               </span>
+              {") "}
             </div>
             <div>
               <input
@@ -213,10 +216,11 @@ const Dashboard = () => {
                 checked={learningChecked}
                 onChange={learningCheckboxHandler}
               />{" "}
-              Words to repeat{" "}
+              Words to repeat {" ("}
               <span>
                 {favourites.filter((word) => word.status === "learning").length}
               </span>
+              {") "}
             </div>
 
             <div>
@@ -227,10 +231,11 @@ const Dashboard = () => {
                 checked={learnedChecked}
                 onChange={learnedCheckboxHandler}
               />{" "}
-              Learned words{" "}
+              Learned words {" ("}
               <span>
                 {favourites.filter((word) => word.status === "learned").length}
               </span>
+              {") "}
             </div>
           </div>
         </div>

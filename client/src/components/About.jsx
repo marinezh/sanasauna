@@ -23,7 +23,7 @@ const About = () => {
           Sanasauna was created in December 2022 as a part of Full Stack Web
           Development course at{" "}
           <a href="http://bc.fi">Business College Helsinki</a> by three
-          struggling non-Finns.
+          non-Finns struggling with language learning.
         </p>
         <h2>Our team</h2>
         <div className={classes.name_blobs}>
