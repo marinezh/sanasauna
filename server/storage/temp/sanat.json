@@ -8,14 +8,6 @@
     "links": ["tammi", "kuu"]
   },
   {
-    "name": "tammi",
-    "translation": "oak",
-    "keywords": ["nouns", "substantiivit"],
-    "example": [],
-    "level": "easy",
-    "links": ["tammikuu"]
-  },
-  {
     "name": "helmikuu",
     "translation": "february",
     "keywords": ["nouns", "months", "substantiivit", "kuukaudet"],
@@ -24,28 +16,12 @@
     "links": ["helmi", "kuu"]
   },
   {
-    "name": "helmi",
-    "translation": "pearl",
-    "keywords": ["nouns", "substantiivit"],
-    "example": [],
-    "level": "easy",
-    "links": ["helmikuu"]
-  },
-  {
     "name": "maaliskuu",
     "translation": "march",
     "keywords": ["nouns", "months", "substantiivit", "kuukaudet"],
     "example": [],
     "level": "easy",
     "links": ["maa", "kuu"]
-  },
-  {
-    "name": "maa",
-    "translation": "land",
-    "keywords": ["nouns", "substantiivit"],
-    "example": [],
-    "level": "easy",
-    "links": ["maaliskuu"]
   },
   {
     "name": "huhtikuu",
@@ -112,28 +88,12 @@
     "links": ["marras", "kuu"]
   },
   {
-    "name": "kuu",
-    "translation": "month",
-    "keywords": ["nouns", "substantiivit"],
-    "example": [],
-    "level": "easy",
-    "links": ["joulu", "kuu"]
-  },
-  {
     "name": "joulukuu",
     "translation": "december",
     "keywords": ["nouns", "months", "substantiivit", "kuukaudet"],
     "example": [],
     "level": "easy",
     "links": ["joulu", "kuu"]
-  },
-  {
-    "name": "joulu",
-    "translation": "Christmas",
-    "keywords": ["nouns", "substantiivit"],
-    "example": [],
-    "level": "easy",
-    "links": ["joulukuu"]
   },
   {
     "name": "kissa",
@@ -1834,7 +1794,7 @@
     "name": "pitää",
     "translation": "to like",
     "keywords": ["verbs", "type 1", "verbit", "tyyppi 1"],
-    "example": [],
+    "example": ["Minä rakastan sinua.", "Hän rakastaa matkustamista."],
     "level": "easy",
     "links": ["rakastaa"]
   },
