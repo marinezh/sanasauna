@@ -1,21 +1,24 @@
 # Sanasauna!
 
-Web app to help you learn those Finnish words. It can be accessed [here](http://sanasauna-balancer-646478718.us-east-1.elb.amazonaws.com/)
+Web app to help you learn those Finnish words. Check out the live version [here](http://sanasauna-balancer-646478718.us-east-1.elb.amazonaws.com/)!
 
 ![Screenshot](screenshot_home.png)
 
 ![Screenshot](screenshot_topic.png)
 
+
+![Screenshot](screenshot_account.png)
+
 ## About the project
 
-Team project created in December 2022 with [@preetiag18](https://github.com/preetiag18) and [@marinezh](https://github.com/marinezh) as a part of Full Stack Web Development course at Business College Helsinki.
+Team project created with [@preetiag18](https://github.com/preetiag18) and [@marinezh](https://github.com/marinezh) as a part of Full Stack Web Development course at Business College Helsinki.
 
 ### Technologies used
 
-- Node.js
-- Express
-- React
-- Axios
+- Node.js, Express
+- React, Redux
+- Firebase
+- AWS, Docker
 
 ## How to run
 
